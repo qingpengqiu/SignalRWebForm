@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SignalRWebForm", "SignalRWe
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "4666"
+		SlnRelativePath = "SignalRWebForm\"
 	EndProjectSection
 EndProject
 Global
