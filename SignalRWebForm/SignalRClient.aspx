@@ -8,7 +8,7 @@
     <script src="http://signalr.erun360.com/Scripts/jquery-1.10.2.js"></script>
     <script src="http://signalr.erun360.com/Scripts/jquery.signalR-2.2.0.js"></script>
     <script src='http://signalr.erun360.com/signalr/hubs/'></script>
-    <title></title>
+    <title>SignalR Demo</title>
 </head>
 <body>
     <script>
