@@ -1,0 +1,32 @@
+@charset "gb2312";
+body{background: url(../images/bj.png);}
+.b_w{width: 950px; margin: 0 auto; height:359px; position:relative}
+.b_w img{margin: 0;}
+.t_w{width: 100%;background: url(../images/t.png) no-repeat center 228px;}
+.c_w{background: #fff url(../images/dt.jpg) no-repeat bottom; padding-bottom:248px}
+.d_w{ background:url(../images/tui.png) no-repeat center 180px;}
+.tc_w{ background: #fff url(../images/meinv.jpg) no-repeat 0 5px; overflow:hidden; height:auto; padding-bottom:53px}
+.d_w ul{ width:360px;}
+.d_w li{background:url(../images/hdian.png) no-repeat 40px center; padding-left:53px; line-height:26px; padding-right:12px;}
+.d_w li a{ font-size:14px; color:#666666}
+.d_w li a:hover{ color:#ff6600}
+.ssbd{ margin-top:24px; margin-left:118px; float:left}
+.ssbd .title{ width:360px; height:51px; background: url(../images/ssbd.png) no-repeat; padding:0 0 20px 0}
+.ssbd .title a{ display:block; width:100%; height:100%;}
+.ssbd .more{ background:none; text-align:right; padding-right:20px;}
+.ssbd .more a{ font-size:12px; }
+.dogl{ float:right; margin: 52px 42px 0 -10px }
+.dogl .title{background: url(../images/dpgl.png) no-repeat;}
+.d_w ul.ssxw{ margin-left:38px; width:370px;}
+.ssxw .title{background: url(../images/ssxw.png) no-repeat;}
+.ssbd .tw{ background:none; padding-left:40px; padding-right:0}
+.ssbd .tw p{ width:100px; float:right; width:190px; margin:0; font-size:12px;line-height:21px; height:88px; overflow:hidden; color:#666}
+.ssbd .tw p a{ font-weight:bold}
+.footer_w{ text-align:center; color:#fff; font-size:12px; line-height:25px; padding: 15px 0 35px 0}
+.footer_w a{ color:#fff}
+.head_2{ height:40px; background:url(../images/topbj.png) repeat-x; overflow:hidden ; line-height:40px;}
+.head_2 ul{ float:right; margin:0}
+.head_2 ul li{ float:left; margin-right:10px; background:url(../images/shu.png) no-repeat left center; padding-left:10px;}
+.head_2 ul li.name_w{ color:#990000; background:none}
+.ssjh .title{background: url(../images/ssjh.png) no-repeat;}
+.ssbd em{ float:right; font-style:normal}

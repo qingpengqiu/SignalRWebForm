@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tiplist>
+  <language>
+    <value>chinese</value>
+  </language>
+  <alerttip>
+    <id>1</id>
+    <chinese>发布成功</chinese>
+    <english>success</english>
+  </alerttip>
+  <alerttip>
+    <id>-2</id>
+    <chinese>您未填写信息或者填写信息格式有问题，请重新填写！</chinese>
+    <english>tip</english>
+  </alerttip>
+  <alerttip>
+    <id>-1</id>
+    <chinese>发布失败</chinese>
+    <english>fail</english>
+  </alerttip>  
+</tiplist>

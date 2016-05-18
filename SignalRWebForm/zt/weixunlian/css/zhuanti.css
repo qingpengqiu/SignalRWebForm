@@ -1,0 +1,33 @@
+body,button,input,select,textarea {font:12px/1.125 Arial,Helvetica,sans-serif;_font-family:"SimSun";}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+table {border-collapse:collapse;	border-spacing:0;}
+li {list-style:none;}
+fieldset,img {border:0;}
+
+a:focus,input,textarea {outline-style:none;}
+input[type="text"],input[type="password"],textarea {outline-style:none;	-webkit-appearance:none;}
+textarea {resize:none}
+address,caption,cite,code,dfn,em,i,th,var {font-style:normal;font-weight:normal;}
+abbr,acronym {border:0;font-variant:normal;}
+a {	text-decoration:none; color: #666}
+a:hover {text-decoration:underline;color: #ff6600}
+.c950{width: 950px;margin: 0 auto}
+.header{background: url(../images/zt_topbj.png) repeat-x; height: 41px}
+.header ul li{float: right;line-height: 41px;margin-right: 12px;}
+#weixunlian .content .c950{background: url(../images/weixunlianbj.png) repeat-x;padding-bottom: 20px;}
+.footer{color: #5A5A5A; font-size: 12px; line-height: 25px; padding: 15px 0 35px;
+    text-align: center;}
+   #weixunlian .content .c950 .nr1{overflow: hidden;margin-top: -12px;}    
+   .title{background: #1041bd;font-size: 24px;color: #fff;font-weight: bold;border-radius:8px;padding: 2px 26px;margin: 6px 0 0 52px;display: inline-block;}
+   #weixunlian .content .c950 .nr1 .first{background: #fff;width: 368px;height: 144px;float: left;margin-left: 60px;border-radius:8px;padding: 12px 16px;line-height: 22px;font-size: 12px;color: #999}
+   #weixunlian .content .c950 .nr1 .first a{display: block;font-size: 14px;}
+   #weixunlian .content .c950 .nr1 .first img{float: left;margin: 12px 10px 0 0}
+   #weixunlian .content .c950 .nr1 ul{background: #fff;width: 368px;height: 144px;float: left;margin-left: 18px;border-radius:8px;padding: 12px 16px;}
+   #weixunlian .content .c950 .nr1 ul li{background: url(../images/hdian.png) no-repeat 0px center;padding-left: 10px;line-height: 26px;}
+   #weixunlian .content .c950 .nr2{overflow: hidden;margin:-12px 0 0 60px;background: #5066d9;width: 752px;height: 144px;border-radius:8px;padding: 6px 36px;color: #fff}
+   #weixunlian .content .c950 .nr2 a{color: #fff}   
+   #weixunlian .content .c950 .nr2 .first img{float: left;margin: 10px 18px 0 0}
+   #weixunlian .content .c950 .nr2 .first a{display: block;font-size: 14px;padding: 5px 0;}
+   #weixunlian .content .c950 .nr2 .first{width: 380px;float: left;line-height: 22px;}
+   #weixunlian .content .c950 .nr2 ul{padding: 0 16px;float: left;}
+   #weixunlian .content .c950 .nr2 ul li{background: url(../images/hdian.png) no-repeat 0px center;padding-left: 10px;line-height: 24px;}

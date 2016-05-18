@@ -1,0 +1,44 @@
+
+* { font-size:14px; }
+
+img{ cursor:pointer; border:0px;}
+body { margin:1px;background-color:#F8FFF8;}
+u { cursor:pointer; }
+table { border-collapse:collapse; }
+ul,ol,li { list-style:none; }
+
+a { color:#000000;cursor:pointer;text-decoration: none; }
+a:hover  { color:#FF6701;text-decoration: underline; }
+
+/*
+input { font-size:14px;padding:2px; }
+*/
+input { font-size:18px;padding:5px;font-family:Œ¢»Ì—≈∫⁄,ÀŒÃÂ;border:solid 1px #CCCCCC; }
+select { font-size:18px;font-family:Œ¢»Ì—≈∫⁄,ÀŒÃÂ;border:solid 1px #FFFFFF; }
+textarea { font-size:18px;padding:2px; }
+
+#page_nav { width:950px;padding-top:10px;color:#7E7E7E;text-align:left;font-size:12px; }
+#page_nav a { font-size:12px;color:#0000EE; }
+#page_nav a:hover { font-size:12px;color:#FFFFFF;background-color:#FC6902; }
+
+#tableCreate a { font-size:12px;color:#0000EE;padding:3px;padding-bottom:1px;border-bottom:solid 1px #0000EE; }
+#tableCreate a:hover { font-size:12px;color:#FFFFFF;background-color:#FC6902;padding:3px;padding-bottom:1px;border-bottom:solid 1px #FC6902; }
+#tableCreate td { padding:5px; }
+#tableCreate li { color:#7E7E7E;font-size:12px; }
+
+#user_right a { font-size:12px;color:#0000EE;padding:3px;padding-bottom:1px;border-bottom:solid 1px #0000EE; }
+#user_right a:hover { font-size:12px;color:#FFFFFF;background-color:#FC6902;padding:3px;padding-bottom:1px;border-bottom:solid 1px #FC6902; }
+
+.check_echo { font-size:12px;color:#FF0000; }
+
+/* ”“≤‡”√ªß–≈œ¢ */
+#blog_c_right { float:right;width:220px; }
+#blog_d_top { float:left;width:220px;height:12px;font-size:1px;line-height:0px;background-image:url(/images/blog/bk-right-00.png);background-repeat:no-repeat; }
+#blog_d_mid { float:left;width:220px;background-image:url(/images/blog/bk-right3.gif);text-align:center;padding-top:20px; }
+#blog_d_usr { width:180px;padding:20px;font-size:12px;text-align:left; }
+#blog_d_usr_line { height:20px; }
+#blog_d_usr_item { background-image:url(/images/blog/icons.gif);background-repeat:no-repeat;width:145px;height:17px;padding-left:25px;font-size:12px; }
+#blog_d_group { float:left;width:160px;padding:20px;padding-top:0px;font-size:12px;text-align:left;line-height:20px;white-space:nowrap;overflow:hidden; }
+#blog_d_group a { color:#4C98CC;font-size:12px; }
+#blog_d_clear { clear:both;width:220px;height:1px; }
+#blog_d_bot { float:left;width:220px;height:15px;font-size:1px;line-height:0px;background-image:url(/images/blog/bk-right2.gif);background-repeat:no-repeat; }

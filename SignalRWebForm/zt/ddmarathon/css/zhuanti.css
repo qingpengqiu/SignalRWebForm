@@ -1,0 +1,38 @@
+body,button,input,select,textarea {font:12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif,Microsoft YaHei;color: #666}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+table {border-collapse:collapse;	border-spacing:0;}
+li {list-style:none;}
+fieldset,img {border:0;}
+a:focus,input,textarea {outline-style:none;}
+input[type="text"],input[type="password"],textarea {outline-style:none;	-webkit-appearance:none;}
+textarea {resize:none}
+address,caption,cite,code,dfn,em,i,th,var {font-style:normal;font-weight:normal;}
+abbr,acronym {border:0;font-variant:normal;}
+a{text-decoration:none; color: #666}
+a:hover {color: #ff6600}
+.c950{width: 970px;margin: 0 auto;overflow: hidden;}
+.header{background: url(../images/zt_topbj.png) repeat-x; height: 41px}
+.header ul li{float: right;line-height: 41px;margin-right: 12px;}
+#strategy .content .c950{background: #fff;padding-bottom: 50px;}
+#strategy{background: url(../images/bj.png) repeat;}
+h2{background: url(../images/h-d.png) no-repeat center bottom;font-size: 24px;color: #555;line-height: 50px;padding-left: 52px;margin-top: 22px;}
+.jieshao{padding-top: 22px;font-size: 14px;color: #666;line-height: 30px}
+.jieshao span{font-weight: bold;}
+.jieshao img{float: left;margin: 0 36px 0 64px}
+.content ul {width: 100%;overflow: hidden;}
+.content ul li{float: left;margin:18px 0 0 36px;width: 432px;line-height: 24px;font-size: 12px;overflow: hidden;height: 164px;}
+.content ul.news li{height: auto;}
+.content ul li a{font-size: 14px;color: #2d7fc2;font-weight: bold;}
+.content ul li a:hover{text-decoration: none;color: #ff6600}
+.content ul li img{float: left;margin:6px  10px 0 0;}
+.content ul li p{text-align: right;}
+.content ul li p a{color: #666;font-size: 12px;}
+.content ul li em{padding-left: 30px;}
+.intel{padding: 26px 48px 0 38px;line-height: 25px;}
+.intel img{float:left;margin-right: 32px;}
+.intel p{text-align: right;}
+.footer{color: #5A5A5A;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 15px 0 35px;
+    text-align: center;}

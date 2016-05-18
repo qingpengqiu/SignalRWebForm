@@ -1,0 +1,97 @@
+.plan{padding-top: 20px;font-family: arial;background: url(../images/planbg.jpg) repeat-y center top;width: 100%;margin-top: -4px}
+.plan em,.plan i{font-style: normal;}
+.plan table{font-size: 12px;color: #fff;text-align: center;width: 1070px;margin: 0 auto;text-shadow: -1px 1px 0px rgba( 0, 0, 0,0.2 );padding-bottom: 40px;}
+.plan table tr th{background: rgba(255,255,255,0.55);height: 26px;border-right:1px solid rgba(255,255,255,0.58)}
+.plan table tr th:nth-child(even){background: rgba(255,255,255,0.4)}
+.plan table tr th:last-child{border: 0}
+.plan table i,.plan table em{display: block;line-height: 28px}
+.plan tr td{background:rgba(255,255,255,0.3);border-right:1px solid rgba(255,255,255,0.58);border-bottom: 3px solid rgba(255,255,255,0.58) ;height: 70px;}
+.plan tr td:nth-child(even){background: rgba(255,255,255,0.2)}
+.plan tr td:first-child{background: rgba(255,255,255,0.4);width: 82px}
+.plan tr td:last-child{border-right: 0}
+
+.plan3 tr td:nth-child(7),.plan3 tr td:nth-child(2),.plan3 tr td:nth-child(4),.plan3 tr td:nth-child(6){width: 60px}
+
+.plan4 tr td:nth-child(2),.plan4 tr td:nth-child(4),.plan4 tr td:nth-child(7){width: 60px}
+
+.plan5 tr td:nth-child(4),.plan5 tr td:nth-child(7){width: 60px}
+.plan5 tr td:nth-child(6){width: 80px}
+
+.plan42 tr td:nth-child(3),.plan42 tr td:nth-child(7){width: 60px}
+.plan42 tr td:nth-child(6){width: 80px}
+
+.plan6 tr td:nth-child(7){width: 60px}
+.plan6 tr td:nth-child(2){width: 118px}
+.plan6 tr td:nth-child(4){width: 110px}
+.plan6 tr td:nth-child(6){width: 110px}
+
+
+
+.planzou tr td:nth-child(3),.planzou tr td:nth-child(5),.planzou tr td:nth-child(8),.planzou tr td:nth-child(7){width: 60px}
+.planzou tr td i,.planzou tr td em{line-height: 20px;}
+
+.plan tr .dd0705{background: rgba(221,7,5,0.4)}
+.plan tr .ff6602{background: rgba(255,102,2,0.4)}
+.plan tr .fcf304{background: rgba(252,243,4,0.4)}
+.plan tr .ff9901{background: rgba(255,153,1,0.4)}
+/*.plan tr .c75c81b{background: rgba(117,200,27,0.4)}*/
+.plan tr .ffffff{height:100%}
+.planExplain{font-size: 12px;color: #000;padding-top: 6px;width: 970px;margin: 0 auto}
+.planExplain table{width: 500px}
+.planExplain td{padding-left: 4px;}
+.gr{background: #75c81b}
+.ge{background: #ffa200}
+.or{background: #ff6602}
+.ro{background: #dd0705}
+.planExplain p{padding-left: 4px;}
+#tooltip{
+    position:absolute;
+    padding:1px;
+    color:#fff;
+    display:none;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 14px 24px 10px 24px;
+    line-height: 12px;
+}
+.bc6070{border-bottom:3px solid rgba(89,133,10,0.9);background: rgba(121,180,15,0.9);}
+.bc7080{border-bottom:3px solid rgba(184,133,76,0.9);background: rgba(145,93,39,0.9);}
+.bc8090{border-bottom:3px solid rgba(252,129,119,0.9);background: rgba(182,85,76,0.9);}
+.bc9095{border-bottom:3px solid rgba(251,112,0,0.9);background: rgba(193,65,44,0.9);}
+.bcnone{display: none}
+
+
+
+.planbg{padding-top: 20px;font-family: arial;background: url(../images/jhbg.jpg) no-repeat center top;width: 100%;margin-top: -4px;overflow: hidden;min-height: 600px}
+.planbox{display: none;width: 606px;margin: 58px auto;height: auto;border-radius: 5px;background: #db663d;
+background-image: -moz-linear-gradient( 90deg, rgb(184,85,50) 0%, rgb(237,110,66) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(184,85,50) 0%, rgb(237,110,66) 100%);
+background-image: -ms-linear-gradient( 90deg, rgb(184,85,50) 0%, rgb(237,110,66) 100%);
+box-shadow: 2.5px 4.33px 15px 0px rgb( 0, 0, 0 );padding: 0 0 18px 0}
+.planst{color: #e1693f;background: #fff;font-size: 26px;line-height: 26px;background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(232,232,232) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(232,232,232) 100%);
+background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(232,232,232) 100%);
+box-shadow: 1px 1px 0px 0px rgb( 143, 67, 40 ),0px -1px 0px 0px rgb( 255, 255,255 );padding: 33px 0 24px 35px;border-radius: 5px 5px 0 0;}
+.planbox h2{color: #fefefe;font-size: 28px;line-height: 28px;text-shadow: 1.5px 2.598px 5px rgba( 0, 0, 0,0.4 );border-bottom: 1px solid #f6d9ce;padding: 32px 0 10px 5px;margin: 0 30px}
+.planbu{margin: 17px auto;color: #ffffff;font-size: 16px;line-height: 16px;padding: 19px 0 17px 0;border-radius: 5px; background-color: rgb( 251, 117, 64 ); box-shadow: 1.5px 2.598px 5px 0px rgba( 0, 0, 0,0.3 );width: 164px ;text-align: center;cursor: pointer;}
+.planlist li{background: url(../images/planicon.png) no-repeat 59px center;padding:  20px 0 20px 102px;font-size: 20px;color: #fff;text-shadow: 1.5px 2.598px 5px rgba( 0, 0, 0 ,0.4);cursor: pointer;}
+#p1 .planbu{display: none}
+#p1{display: block;}
+
+.planindex .articleh{border: 1px solid #edeef0;background: #fff}
+.planindexbanner{position: relative;text-align: center;}
+.planindexbanner h1{position: absolute;width: 372px;height: 52px;background: rgba(255,255,255,.6);top: 92px;text-align: center;line-height: 52px;color: #85302f;left: 50%;margin-left: -186px}
+
+.planinr{padding: 35px 73px 0 85px;padding-bottom: 100px;}
+.planimtitle{width: 182px;height: 29px;background: #f79118;text-align: center;line-height: 1;font-size: 18px;color: #fff;padding-top: 14px}
+.planinr p{line-height: 26px;color: #808687;font-size: 14px;padding-top: 28px;padding-bottom: 33px}
+.goplanbuttom{width: 227px;height: 36px;background: #87c257;color: #fff;text-align: center;line-height: 1;padding-top: 14px;font-size: 22px;margin: 37px auto;border-radius: 5px}
+.thisplan{padding-left: 13px;overflow: hidden;padding-bottom: 44px;}
+.thisplan h2{font-size: 18px;color: #808687;line-height: 1;padding: 32px 0 17px 0}
+.thisplan i{line-height: 1;font-size: 12px;color: #5a6364;padding: 10px 24px 7px 11px;font-style: normal;background: #f5f5f5;float: left;clear: left;margin-bottom: 6px;}
+.planiaction{clear: both;padding-top: 11px;padding-bottom: 24px;}
+.planiaction em{width: 108px;height: 25px;background: #71ad01;color: #ffffff;text-align: center;border-radius: 3px;padding-top: 6px;margin-right: 20px;display: inline-block;font-size: 14px;cursor: pointer;}
+.thisplan a{color: #1a75ba;text-decoration: underline;line-height: 1}
+.oldiplan{overflow: hidden;}
+.oldiplan a{font-size: 14px;color: #5a6364;border-right: 1px solid #bcc3c4;float: left;width: 258px;padding: 3px 0 3px 12px;margin-top: 26px;text-decoration: none;}
+.oldiplan a:nth-child(3n){border: 0}

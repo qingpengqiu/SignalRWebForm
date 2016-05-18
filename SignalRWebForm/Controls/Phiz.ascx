@@ -1,0 +1,46 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" %>
+<%@ OutputCache Duration="60" VaryByParam="None"%>
+<div class="discuss-icon">
+    <img onclick="EmotionAdd('微笑')" src="/images/emotion/i_f_1.gif" title="微笑">
+    <img onclick="EmotionAdd('大笑')" src="/images/emotion/i_f_2.gif" title="大笑">
+    <img onclick="EmotionAdd('调皮')" src="/images/emotion/i_f_3.gif" title="调皮">
+    <img onclick="EmotionAdd('惊讶')" src="/images/emotion/i_f_4.gif" title="惊讶">
+    <img onclick="EmotionAdd('耍酷')" src="/images/emotion/i_f_5.gif" title="耍酷">
+    <img onclick="EmotionAdd('发火')" src="/images/emotion/i_f_6.gif" title="发火">
+    <img onclick="EmotionAdd('害羞')" src="/images/emotion/i_f_7.gif" title="害羞">
+    <img onclick="EmotionAdd('汗水')" src="/images/emotion/i_f_8.gif" title="汗水">
+    <img onclick="EmotionAdd('大哭')" src="/images/emotion/i_f_9.gif" title="大哭">
+    <img onclick="EmotionAdd('得意')" src="/images/emotion/i_f_10.gif" title="得意">
+    <img onclick="EmotionAdd('鄙视')" src="/images/emotion/i_f_11.gif" title="鄙视">
+    <img onclick="EmotionAdd('困')" src="/images/emotion/i_f_12.gif" title="困">
+    <img onclick="EmotionAdd('夸奖')" src="/images/emotion/i_f_13.gif" title="夸奖">
+    <img onclick="EmotionAdd('晕倒')" src="/images/emotion/i_f_14.gif" title="晕倒">
+    <img onclick="EmotionAdd('疑问')" src="/images/emotion/i_f_15.gif" title="疑问">
+    <img onclick="EmotionAdd('媒婆')" src="/images/emotion/i_f_16.gif" title="媒婆">
+    <img onclick="EmotionAdd('狂吐')" src="/images/emotion/i_f_17.gif" title="狂吐">
+    <img onclick="EmotionAdd('青蛙')" src="/images/emotion/i_f_18.gif" title="青蛙">
+    <img onclick="EmotionAdd('发愁')" src="/images/emotion/i_f_19.gif" title="发愁">
+    <img onclick="EmotionAdd('亲吻')" src="/images/emotion/i_f_20.gif" title="亲吻">
+    <img onclick="EmotionAdd('爱心')" src="/images/emotion/i_f_22.gif" title="爱心">
+    <img onclick="EmotionAdd('心碎')" src="/images/emotion/i_f_23.gif" title="心碎">
+    <img onclick="EmotionAdd('玫瑰')" src="/images/emotion/i_f_24.gif" title="玫瑰">
+    <img onclick="EmotionAdd('礼物')" src="/images/emotion/i_f_25.gif" title="礼物">
+    <img onclick="EmotionAdd('哭')" src="/images/emotion/i_f_26.gif" title="哭">
+    <img onclick="EmotionAdd('坏笑')" src="/images/emotion/i_f_27.gif" title="坏笑">
+    <img onclick="EmotionAdd('可爱')" src="/images/emotion/i_f_28.gif" title="可爱">
+    <img onclick="EmotionAdd('奸笑')" src="/images/emotion/i_f_29.gif" title="奸笑">
+    <img onclick="EmotionAdd('呲牙')" src="/images/emotion/i_f_30.gif" title="呲牙">
+    <img onclick="EmotionAdd('暴汗')" src="/images/emotion/i_f_31.gif" title="暴汗">
+    <img onclick="EmotionAdd('楚楚可怜')" src="/images/emotion/i_f_32.gif" title="楚楚可怜">
+    <img onclick="EmotionAdd('睡了')" src="/images/emotion/i_f_33.gif" title="睡了">
+    <img onclick="EmotionAdd('泪')" src="/images/emotion/i_f_34.gif" title="泪">
+    <img onclick="EmotionAdd('生气')" src="/images/emotion/i_f_35.gif" title="生气">
+    <img onclick="EmotionAdd('吃惊')" src="/images/emotion/i_f_36.gif" title="吃惊">
+    <img onclick="EmotionAdd('灯泡')" src="/images/emotion/i_f_42.gif" title="灯泡">
+    <img onclick="EmotionAdd('咖啡')" src="/images/emotion/i_f_43.gif" title="咖啡">
+    <img onclick="EmotionAdd('蛋糕')" src="/images/emotion/i_f_44.gif" title="蛋糕">
+    <img onclick="EmotionAdd('音乐')" src="/images/emotion/i_f_45.gif" title="音乐">
+    <img onclick="EmotionAdd('爱')" src="/images/emotion/i_f_46.gif" title="爱">
+    <img onclick="EmotionAdd('胜利')" src="/images/emotion/i_f_47.gif" title="胜利">
+    <img onclick="EmotionAdd('赞')" src="/images/emotion/i_f_48.gif" title="赞">
+</div>

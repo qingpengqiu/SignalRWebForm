@@ -1,0 +1,755 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="IE=7" http-equiv="X-UA-Compatible" />
+    <title>UEditor简易配置</title>
+    <link href="Style/Main.css" rel="stylesheet" type="text/css" />
+    <script src="Script/jquery.js" type="text/javascript"></script>
+    <script src="Script/interface.js" type="text/javascript"></script>
+</head>
+<body>
+<form id="configForm"  name="configForm"  method="get">
+        <div class="spage-main-box">
+            <h3>UEditor简易配置 <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F191b44eec0d655214a844c54c8bb1e40' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</h3>
+                <div class="division">
+                     <table border="0"  class="tableForAdd" cellpadding="0" cellspacing="0">
+                        <tr>
+                        <td  class="tdForSelect">&nbsp;
+                                </td>
+                            <th class="thForAdd">
+                                编辑器容器的ID:</th>
+                            <td  class="tdForAdd">
+                               <input type="text" name="EditorID" id="EditorID" value="" /> <span class="GrayWord">（用于渲染的编辑器的容器ID）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="imagePath" />
+                                </td>
+                            <th class="thForAdd">
+                                图片文件夹所在的路径:</th>
+                            <td  class="tdForAdd">
+                               <input type="text" name="imagePath" class="fileInput" id="imagePath" value="" /> <span class="GrayWord">（图片文件夹所在的路径）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="compressSide" />
+                                </td>
+                            <th class="thForAdd">
+                                等比压缩的基准:</th>
+                            <td  class="tdForAdd">
+                            按照 <select name="compressSide" id="compressSide">
+                            <option value="0">最长边</option>
+                            <option value="1">宽度</option>
+                            <option value="2">高度</option>
+                            </select> <span class="GrayWord">（等比压缩的基准，确定maxImageSideLength参数的参照对象）</span>
+                                </td>
+                        </tr>
+                        
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="maxImageSideLength" />
+                                </td>
+                            <th class="thForAdd">
+                                上传图片最大允许的边长:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="maxImageSideLength" id="maxImageSideLength" value="900" /> <span class="GrayWord">（上传图片最大允许的边长，超过会自动等比缩放,不缩放就设置一个比较大的值）</span>
+                                </td>
+                        </tr>
+                        
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="relativePath" />
+                                </td>
+                            <th class="thForAdd">
+                                是否开启相对路径:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="relativePath" id="relativePath" checked="checked" value="true" /> <span class="GrayWord">（开启状态下所有本地图片的路径都将以相对路径形式进行保存.强烈建议开启！）</span>
+                                </td>
+                        </tr>
+                        
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="filePath" />
+                                </td>
+                            <th class="thForAdd">
+                                附件文件夹保存路径:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="filePath"  class="fileInput" id="filePath" value="" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="catchRemoteImageEnable" />
+                                </td>
+                            <th class="thForAdd">
+                                是否开启远程图片抓取:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="catchRemoteImageEnable" checked="checked" id="catchRemoteImageEnable" value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="localDomain" />
+                                </td>
+                            <th class="thForAdd">
+                                本地顶级域名:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="localDomain" id="localDomain" value="baidu.com" /> <span class="GrayWord">（当开启远程图片抓取时，除此之外的所有其它域名下的图片都将被抓取到本地）</span>
+                                </td>
+                        </tr>
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="localDomain" />
+                                </td>
+                            <th class="thForAdd">
+                                webAppKey:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="webAppKey" id="webAppKey" value="" /> <span class="GrayWord">（百度应用的APIkey，每个站长必须首先去百度官网注册一个key后方能正常使用app功能。<a href="http://app.baidu.com/static/cms/getapikey.html">点此到百度应用去申请APIkey</a>）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="toolbars" />
+                                </td>
+                            <th class="thForAdd">
+                                工具栏:</th>
+                            <td  class="tdForAdd">     
+<div id="tab"> 
+    <div class="tab_title"> 
+        <div class="u"> 
+            <ul class="scrol"> 
+                <li class="selected">文本设置</li> 
+                <li>段落格式</li> 
+                <li>插入元素</li> 
+                <li>图片排版</li> 
+                <li>表格</li> 
+                <li>编辑</li> 
+                <li>其它</li>
+            </ul> 
+        </div> 
+    </div> 
+    <div class="tab_content"> 
+        <div>
+            <img title="加粗" alt="加粗" src="images/bold.png" data-actx="bold" />
+            <img title="斜体" alt="斜体" src="images/italic.png" data-actx="italic"/>
+            <img title="下划线" alt="下划线" src="images/underline.png" data-actx="underline"/>
+            <img title="删除线" alt="删除线" src="images/strikethrough.png" data-actx="strikethrough"/>
+            <img title="上标" alt="上标" src="images/superscript.png" data-actx="superscript"/>
+            <img title="下标" alt="下标" src="images/subscript.png" data-actx="subscript"/>
+            <img title="字母大写" alt="字母大写" src="images/touppercase.png" data-actx="touppercase"/>
+            <img title="字母小写" alt="字母小写" src="images/tolowercase.png" data-actx="tolowercase"/>
+            <img title="清除格式" alt="清除格式" src="images/removeformat.png" data-actx="removeformat"/>
+            <img title="格式刷" alt="格式刷" src="images/formatmatch.png" data-actx="formatmatch"/>
+            <img title="自动排版" alt="自动排版" src="images/autotypeset.png" data-actx="autotypeset"/>
+            <img title="文字颜色" alt="文字颜色" src="images/forecolor.png" data-actx="forecolor"/>
+            <img title="背景颜色" alt="背景颜色" src="images/backcolor.png" data-actx="backcolor"/>
+            <img title="字体类型" alt="字体类型" src="images/fontfamily.png" data-actx="fontfamily"/>
+            <img title="字体大小" alt="字体大小" src="images/fontsize.png" data-actx="fontsize"/>
+            <img title="段落格式" alt="段落格式" src="images/paragraph.png" data-actx="paragraph"/>
+            <img title="自定义样式" alt="自定义样式" src="images/customstyle.png" data-actx="customstyle"/>
+    </div> 
+
+    <div class="none">
+        <img title="左向右输入" alt="左向右输入" src="images/directionalityltr.png" data-actx="directionalityltr"/>
+        <img title="右向左输入" alt="右向左输入" src="images/directionalityrtl.png" data-actx="directionalityrtl"/>
+        <img title="段前间距" alt="段前间距" src="images/rowspacingtop.png" data-actx="rowspacingtop"/>
+        <img title="段后间距" alt="段后间距" src="images/rowspacingbottom.png" data-actx="rowspacingbottom"/>
+        <img title="行间距" alt="行间距" src="images/lineheight.png" data-actx="lineheight"/>
+        <img title="居左对齐" alt="居左对齐" src="images/justifyleft.png" data-actx="justifyleft"/>
+        <img title="居中对齐" alt="居中对齐" src="images/justifycenter.png" data-actx="justifycenter"/>
+        <img title="居右对齐" alt="居右对齐" src="images/justifyright.png" data-actx="justifyright"/>
+        <img title="两端对齐" alt="两端对齐" src="images/justifyjustify.png" data-actx="justifyjustify"/>
+        <img title="首行缩进" alt="首行缩进" src="images/indent.png" data-actx="indent"/>
+        <img title="设置为引用" alt="设置为引用" src="images/blockquote.png" data-actx="blockquote"/>    </div> 
+
+    <div class="none">
+        <img title="插入链接" alt="插入链接" src="images/link.png" data-actx="link"/>
+        <img title="取消链接" alt="取消链接" src="images/unlink.png" data-actx="unlink"/>
+        <img title="插入锚点" alt="插入锚点" src="images/anchor.png" data-actx="anchor"/>
+        <img title="插入图片" alt="插入图片" src="images/insertimage.png" data-actx="insertimage"/>
+        <img title="插入涂鸦" alt="插入涂鸦" src="images/scrawl.png" data-actx="scrawl"/>
+        <img title="插入表情" alt="插入表情" src="images/emotion.png" data-actx="emotion"/>
+        <img title="插入视频" alt="插入视频" src="images/insertvideo.png" data-actx="insertvideo"/>
+        <img title="插入百度地图" alt="插入百度地图" src="images/map.png" data-actx="map"/>
+        <img title="插入谷歌地图" alt="插入谷歌地图" src="images/gmap.png" data-actx="gmap"/>
+        <img title="百度应用" alt="百度应用" src="images/webapp.png" data-actx="webapp"/>
+        <img title="嵌入网页" alt="嵌入网页" src="images/insertframe.png" data-actx="insertframe"/>
+        <img title="插入分页符" alt="插入分页符" src="images/pagebreak.png" data-actx="pagebreak"/>
+        <img title="插入源代码" alt="插入源代码" src="images/highlightcode.png" data-actx="highlightcode"/>
+        <img title="插入分割线" alt="插入分割线" src="images/horizontal.png" data-actx="horizontal"/>
+        <img title="插入日期" alt="插入日期" src="images/date.png" data-actx="date"/>
+        <img title="插入时间" alt="插入时间" src="images/time.png" data-actx="time"/>
+        <img title="插入特殊字符" alt="插入特殊字符" src="images/spechars.png" data-actx="spechars"/>
+        <img title="插入附件" alt="插入附件" src="images/attachment.png" data-actx="attachment"/>
+        <img title="插入有序列表" alt="插入有序列表" src="images/insertorderedlist.png" data-actx="insertorderedlist"/>
+        <img title="插入无序列表" alt="插入无序列表" src="images/insertunorderedlist.png" data-actx="insertunorderedlist"/>
+        <img title="截屏" alt="截屏" src="images/snapscreen.png" data-actx="snapscreen"/>
+        <img title="模板" alt="模板" src="images/template.png" data-actx="template"/>
+        <img title="背景" alt="背景" src="images/background.png" data-actx="background"/>
+
+    </div> 
+
+    <div class="none">
+        <img title="默认" alt="默认" src="images/imagenone.png" data-actx="imagenone"/>
+        <img title="图片居左" alt="图片居左" src="images/imageleft.png" data-actx="imageleft"/>
+        <img title="图片居中" alt="图片居中" src="images/imagecenter.png" data-actx="imagecenter"/>
+        <img title="图片居右" alt="图片居右" src="images/imageright.png" data-actx="imageright"/>    </div> 
+
+    <div class="none">
+        <img title="插入表格" alt="插入表格" src="images/inserttable.png" data-actx="inserttable"/>
+        <img title="删除表格" alt="删除表格" src="images/deletetable.png" data-actx="deletetable"/>
+        <img title="表格上方插入行" alt="表格上方插入行" src="images/insertparagraphbeforetable.png" data-actx="insertparagraphbeforetable"/>
+        <img title="插入行" alt="插入行" src="images/insertrow.png" data-actx="insertrow"/>
+        <img title="删除行" alt="删除行" src="images/deleterow.png" data-actx="deleterow"/>
+        <img title="插入列" alt="插入列" src="images/insertcol.png" data-actx="insertcol"/>
+        <img title="删除列" alt="删除列" src="images/deletecol.png" data-actx="deletecol"/>
+        <img title="合并单元格" alt="合并单元格" src="images/mergecells.png" data-actx="mergecells"/>
+        <img title="向右合并单元格" alt="向右合并单元格" src="images/mergeright.png" data-actx="mergeright"/>
+        <img title="向下合并单元格" alt="向下合并单元格" src="images/mergedown.png" data-actx="mergedown"/>
+        <img title="完全拆分单元格" alt="完全拆分单元格" src="images/splittocells.png" data-actx="splittocells"/>
+        <img title="拆分成行" alt="拆分成行" src="images/splittorows.png" data-actx="splittorows"/>
+        <img title="拆分成列" alt="拆分成列" src="images/splittocols.png" data-actx="splittocols"/>    </div> 
+
+    <div class="none">
+        <img title="全选" alt="全选" src="images/selectall.png" data-actx="selectall"/>
+        <img title="清空文档" alt="清空文档" src="images/cleardoc.png" data-actx="cleardoc"/>
+        <img title="查找替换" alt="查找替换" src="images/searchreplace.png" data-actx="searchreplace"/>
+        <img title="撤销" alt="撤销" src="images/undo.png" data-actx="undo"/>
+        <img title="重做" alt="重做" src="images/redo.png" data-actx="redo"/>
+
+    </div> 
+
+    <div class="none">
+        <img title="预览" alt="预览" src="images/preview.png" data-actx="preview"/>
+        <img title="纯文本粘贴" alt="纯文本粘贴" src="images/pasteplain.png" data-actx="pasteplain"/>
+        <img title="切换源码" alt="切换源码" src="images/source.png" data-actx="source"/>
+        <img title="打印" alt="打印" src="images/print.png" data-actx="print"/>
+        <img title="全屏" alt="全屏" src="images/fullscreen.png" data-actx="fullscreen"/>
+        <img title="图片转存" alt="图片转存" src="images/wordimage.png" data-actx="wordimage"/>
+        <img title="帮助" alt="帮助" src="images/help.png" data-actx="help"/>
+     </div>
+ </div>
+</div>
+<div id="toolbars" ></div>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="sourceEditorFirst" />
+                                </td>
+                            <th class="thForAdd">
+                                控制编辑器初始化时是否显示成源码模式:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="sourceEditorFirst" id="sourceEditorFirst"  value="true" /> <span class="GrayWord">（注意：控制编辑器初始化时是否显示成源码模式，默认为false）</span>
+                                </td>
+                        </tr>
+                         <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="sourceEditorFirst" />
+                                </td>
+                            <th class="thForAdd">
+                                是否自动清除编辑器初始内容:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="autoClearinitialContent" id="autoClearinitialContent"  value="true" /> <span class="GrayWord">（注意：如果focus属性设置为true,这个也为真，那么编辑器一上来就会触发导致初始化的内容看不到了）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="iframeCssUrl" />
+                                </td>
+                            <th class="thForAdd">
+                                要引入css的url:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="iframeCssUrl" class="fileInput" id="iframeCssUrl" value="themes/default/iframe.css" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="initialFrameWidth" />
+                                </td>
+                            <th class="thForAdd">
+                                初始化编辑器宽度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="initialFrameWidth" class="fileInput" id="initialFrameWidth" value="1000" /><span class="GrayWord">初始化编辑器宽度,默认1000</span>
+                                </td>
+                        </tr>
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="initialFrameHeight" />
+                                </td>
+                            <th class="thForAdd">
+                                初始化编辑器高度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="initialFrameHeight" class="fileInput" id="initialFrameHeight" value="320" /><span class="GrayWord">初始化编辑器高度,默认320</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="topOffset" />
+                                </td>
+                            <th class="thForAdd">
+                                浮动时工具栏距离浏览器顶部的高度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="topOffset" class="fileInput" id="topOffset" value="30" /><span class="GrayWord">浮动时工具栏距离浏览器顶部的高度，用于某些具有固定头部的页面</span>
+                                </td>
+                        </tr>
+
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="removeFormatTags" />
+                                </td>
+                            <th class="thForAdd">
+                                清除格式删除的标签:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" class="fileInput" name="removeFormatTags" id="removeFormatTags" value="b,big,code,del,dfn,em,font,i,ins,kbd,q,samp,small,span,strike,strong,sub,sup,tt,u,var" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="removeFormatAttributes" />
+                                </td>
+                            <th class="thForAdd">
+                                清除格式删除的属性:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" class="fileInput" name="removeFormatAttributes" id="removeFormatAttributes" value="class,style,lang,width,height,align,hspace,valign" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="enterTag" />
+                                </td>
+                            <th class="thForAdd">
+                                编辑器回车标签:</th>
+                            <td  class="tdForAdd"> <select name="enterTag" id="enterTag">
+                            <option value="p">p</option>
+                            <option value="br">br</option>
+                            </select>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="maxUndoCount" />
+                                </td>
+                            <th class="thForAdd">
+                                最多可以回退的次数:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="maxUndoCount" id="maxUndoCount" value="20" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="maxInputCount" />
+                                </td>
+                            <th class="thForAdd">
+                                当输入的字符数超过该值时，保存一次现场:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="maxInputCount" id="maxInputCount" value="20" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="selectedTdClass" />
+                                </td>
+                            <th class="thForAdd">
+                                设定选中td的样式名称:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="selectedTdClass" id="selectedTdClass" value="selectTdClass" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="pasteplain" />
+                                </td>
+                            <th class="thForAdd">
+                                是否纯文本粘贴:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="pasteplain" id="pasteplain"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="pasteplain" />
+                                </td>
+                            <th class="thForAdd">
+                                编辑器只读:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="readonly" id="readonly"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="pasteplain" />
+                                </td>
+                            <th class="thForAdd">
+                                是否删除空的inlineElement节点:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="autoClearEmptyNode" id="autoClearEmptyNode"  value="true" /><span class="GrayWord">（ getContent时，是否删除空的inlineElement节点。包括嵌套的情况）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="textarea" />
+                                </td>
+                            <th class="thForAdd">
+                                容器控件name:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="textarea" id="textarea" value="editorcontent" /> <span class="GrayWord">（提交表单时，服务器获取编辑器提交内容的所用的参数，多实例时可以给容器name属性，会将name给定的值最为每个实例的键值，不用每次实例化的时候都设置这个值）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="focus" />
+                                </td>
+                            <th class="thForAdd">
+                                初始化时，是否让编辑器获得焦点:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="focus" id="pasfocusteplain"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="indentValue" />
+                                </td>
+                            <th class="thForAdd">
+                                初始化时，首行缩进距离:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="indentValue" id="indentValue" value="2em" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="pageBreakTag" />
+                                </td>
+                            <th class="thForAdd">
+                                分页符:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="pageBreakTag" id="pageBreakTag" value="_baidu_page_break_tag_" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="autoHeightEnabled" />
+                                </td>
+                            <th class="thForAdd">
+                                是否自动长高:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="autoHeightEnabled" id="autoHeightEnabled"  value="true" />
+                                </td>
+                        </tr>
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="scaleEnabled" />
+                                </td>
+                            <th class="thForAdd">
+                                是否可以拉伸长高:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="scaleEnabled" id="scaleEnabled"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="minFrameWidth" />
+                                </td>
+                            <th class="thForAdd">
+                                编辑器拖动时最小宽度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="minFrameWidth" class="fileInput" id="minFrameWidth" value="800" /><span class="GrayWord">编辑器拖动时最小宽度,默认800</span>
+                                </td>
+                        </tr>
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="minFrameHeight" />
+                                </td>
+                            <th class="thForAdd">
+                                编辑器拖动时最小高度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="minFrameHeight" class="fileInput" id="minFrameHeight" value="220" /><span class="GrayWord">编辑器拖动时最小高度,默认220</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="autoFloatEnabled" />
+                                </td>
+                            <th class="thForAdd">
+                                是否保持toolbar的位置不动:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="autoFloatEnabled" id="autoFloatEnabled"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="elementPathEnabled" />
+                                </td>
+                            <th class="thForAdd">
+                                是否启用elementPath:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="elementPathEnabled" checked="checked" id="elementPathEnabled"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="wordCount" />
+                                </td>
+                            <th class="thForAdd">
+                                是否开启字数统计:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="wordCount"  checked="checked" id="wordCount"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="maximumWords" />
+                                </td>
+                            <th class="thForAdd">
+                                允许的最大字符数:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="maximumWords" id="maximumWords" value="10000" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="tabSize" />
+                                </td>
+                            <th class="thForAdd">
+                                tab的宽度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="tabSize" id="tabSize" value="4" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="tabNode" />
+                                </td>
+                            <th class="thForAdd">
+                                tab时的单一字符:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="tabNode" id="tabNode" value="&nbsp;" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="imagePopup" />
+                                </td>
+                            <th class="thForAdd">
+                                开启图片操作的浮层:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="imagePopup" id="imagePopup"  checked="checked"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="emotionLocalization" />
+                                </td>
+                            <th class="thForAdd">
+                                是否开启表情本地化:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="emotionLocalization" id="emotionLocalization"  value="true" /> <span class="GrayWord">（若要开启请确保emotion文件夹下包含官网提供的images表情文件夹）</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="sourceEditor" />
+                                </td>
+                            <th class="thForAdd">
+                                源码的查看方式:</th>
+                            <td  class="tdForAdd"> <select name="sourceEditor" id="sourceEditor">
+                            <option value="codemirror">代码高亮</option>
+                            <option value="textarea">文本框</option>
+                            </select>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="theme" />
+                                </td>
+                            <th class="thForAdd">
+                                主题配置项:</th>
+                            <td  class="tdForAdd"> <select name="theme" id="theme">
+                            <option value="default">default</option>
+                            <option value="modern">modern</option>
+                            <option value="gorgeous">gorgeous</option>
+                            </select> <span class="GrayWord">主题配置项,默认是default。有需要的话也可以使用如下这样的方式来自动多主题切换，当然，前提条件是themes文件夹下存在对应的主题文件：现有如下皮肤:default,modern,gorgeous</span>
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="tdHeight" />
+                                </td>
+                            <th class="thForAdd">
+                                单元格的默认高度:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="tdHeight" id="tdHeight" value="20" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="zIndex" />
+                                </td>
+                            <th class="thForAdd">
+                                编辑器z-index的基数:</th>
+                            <td  class="tdForAdd">
+                            <input type="text" name="zIndex" id="zIndex" value="999" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">
+                               <input type="checkbox" name="select"  value="fullscreen" />
+                                </td>
+                            <th class="thForAdd">
+                                是否上来就是全屏:</th>
+                            <td  class="tdForAdd">
+                            <input type="checkbox" name="fullscreen" id="fullscreen"  value="true" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">&nbsp;
+                                </td>
+                            <th class="thForAdd">
+                                &nbsp;</th>
+                            <td  class="tdForAdd">
+                            <input type="button" id="getConfigBtn" class="btn"  value="生成配置" />
+                                </td>
+                        </tr>
+
+                        <tr>
+                        <td  class="tdForSelect">&nbsp;
+                                </td>
+                            <th class="thForAdd">
+                                生成的配置:</th>
+                            <td  class="tdForAdd">
+                             <textarea name="configString" id="configString" rows="15" cols="70" ></textarea>
+                                </td>
+                        </tr>
+                    </table>
+                    </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#getConfigBtn").click(GetConfig);
+
+            //选项卡
+            var index = 0;   
+            $(".tab_title ul li").click(function(){ 
+                index = $(".tab_title ul li").index(this); 
+                $(this).addClass("selected").siblings().removeClass("selected");
+                $(".tab_content div").eq(index).show().siblings().hide(); 
+            });
+
+            $(".tab_content img").click(function (){
+                if ($(this).attr("class") == "selected") {
+                    $(this).removeClass("selected");
+                        $("#" + $(this).attr("data-actx")).remove();
+                        ResetDrag();
+                    }
+                    else {
+                        $(this).addClass("selected");
+                        $("#toolbars").append("<img src=\"" + $(this).attr("src") + "\" class=\"sortableitem\" id=\"" + $(this).attr("data-actx") + "\">");
+                        ResetDrag();
+                    }
+            });
+        });
+        
+        function ResetDrag()
+        {
+            $('#toolbars').Sortable(
+　　　　　　        {
+            accept: 'sortableitem',　 //拖拽元素class名
+            helperclass: 'sorthelper',　　 //拖拽时投放位置的样式　
+            activeclass: 'sortableactive', //拖拽时悬空时class
+            hoverclass: 'sortablehover',　//拖拽时经过时class
+            opacity: 0.5,　　　　　　　//拖拽时透明度　　
+            fx: 200,　　　　　　　//拖拽时回位速度
+            revert: true,
+            floats: true,
+            tolerance: 'pointer'
+        }
+　　　　        );
+        }
+
+        function GetConfig() {
+            if ($("#EditorID").val() == "") {
+                alert("请输入编辑器容器的ID");
+                $("#EditorID").focus();
+            }
+            var c = "";
+            $("input[name=select]:checked").each(
+            function () {
+                c += $(this).val() + ":";
+                var cTag = "#" + $(this).val();
+                if ($(cTag).attr("type") == "checkbox") {
+                    if ($(cTag).checked) {
+                        c += "true,";
+                    }
+                    else {
+                        c += "false,";
+                    }
+                }
+                else if($(cTag).selector == "#toolbars")
+                {
+                    var s="";
+                    $("#toolbars img").each(function () {
+                        s += "'"+$(this).attr("id")+"',";
+                    });
+                    c+="[["+s.substring(0, s.lastIndexOf(","))+"]],";
+                }
+                else if (!isNaN($(cTag).val())) {
+                    c += "" + $(cTag).val() + ",";
+                }
+                else {
+                    c += "'" + $(cTag).val() + "',";
+                }
+            });
+            c = "<script type=\"text/javascript\"> \r\n var editorOption = {" + c.substring(0, c.lastIndexOf(",")) + "}; \r\n var editor = new baidu.editor.ui.Editor(editorOption);\r\n editor.render(\"" + $("#EditorID").val() + "\");\r\n <\/script>";
+            $("#configString").val(c);
+        }
+    </script>
+</body>
+</html>

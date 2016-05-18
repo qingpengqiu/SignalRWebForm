@@ -1,0 +1,7 @@
+ul, li {margin:0; padding:0;list-style:none}
+.wp { position: relative; width: 294px; height: 506px; overflow: hidden; border: 1px solid #EEEEEE; background: #fff; }
+.slider {  position: absolute; width: 256px; padding: 0 20px; left:0; top: 0; }
+.fl {float:left}
+.slider img {display:block; padding: 2px; border: 1px solid #ccc}
+.slider li {padding: 20px 0; border-bottom: 1px dashed #ccc;overflow:hidden;width:100%}
+.slider p {font-size: 12px;margin:0;padding-left:68px;color:#333;line-height:20px;}

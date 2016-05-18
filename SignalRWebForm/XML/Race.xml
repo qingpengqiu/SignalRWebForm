@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<textlist>
+  <language>
+    <value>en</value>
+  </language>
+  <text>
+    <id>1</id>
+    <cn>以下信息为必填项，请认真填写;凡在线报名过的用户我们将自动为您填写部分信息,若您需要修改信息，请直接修改表单内容即可;若您帮朋友报名，请&lt;a href='/Member/Register.aspx' target='_blank'&gt;注册&lt;/a&gt;新的账号再进行报名</cn>
+    <en>Please fill the entry form about registration with caution, and modify it directly. Some of the blanks are filled automatically for online &lt;a href='/Member/Register.aspx' target='_blank'&gt;registrators&lt;/a&gt;and to be modified manually. All the Content below is compulsory.</en>
+  </text>
+  <text>
+    <id>2</id>
+    <cn>可选比赛项目及说明：</cn>
+    <en>Disciplines&amp;Descriptions：</en>
+  </text>
+  <text>
+    <id>3</id>
+    <cn>可附选产品：</cn>
+    <en>Others：</en>
+  </text>
+  <text>
+    <id>4</id>
+    <cn>
+      我已仔细阅读并接受&lt;a class='aracetip' href='#racetip' &gt;《报名须知》&lt;/a&gt;&lt;a class='aracetipm' href='#racetip'&gt;《报名须知》&lt;/a&gt;
+    </cn>
+    <en>I have read and accept the terms of &lt;a class='aracetip' href='#racetip'&gt; "Rules&amp;Regulation"&lt;/a&gt; &lt;a class='aracetipm' href='#racetip'&gt; "Rules&amp;Regulation"&lt;/a&gt;</en>
+  </text>
+  <text>
+    <id>5</id>
+    <cn>您选择的比赛项目：</cn>
+    <en>Discipline：</en>
+  </text>
+  <text>
+    <id>6</id>
+    <cn>共计：</cn>
+    <en>Total：</en>   
+  </text>
+  <text>
+    <id>7</id>
+    <cn>姓名：</cn>
+    <en>Full Name：</en>
+  </text>
+  <text>
+    <id>8</id>
+    <cn>性别：</cn>
+    <en>Gender：</en>
+  </text>
+  <text>
+    <id>9</id>
+    <cn>血型：</cn>
+    <en>Blood Type：</en>
+  </text>
+  <text>
+    <id>10</id>
+    <cn>出生年月：</cn>
+    <en>Date of Birth：</en>
+  </text>
+  <text>
+    <id>11</id>
+    <cn>学历：</cn>
+    <en>Education Level：</en>
+  </text>
+  <text>
+    <id>12</id>
+    <cn>职业：</cn>
+    <en>Occupation：</en>
+  </text>
+  <text>
+    <id>13</id>
+    <cn>国籍：</cn>
+    <en>Nationality：</en>
+  </text>
+  <text>
+    <id>14</id>
+    <cn>证件类型：</cn>
+    <en>ID Type：</en>
+  </text>
+  <text>
+    <id>15</id>
+    <cn>手机：</cn>
+    <en>Cellphone：</en>
+  </text>
+  <text>
+    <id>16</id>
+    <cn>电子邮箱：</cn>
+    <en>E-mail：</en>
+  </text>
+  <text>
+    <id>17</id>
+    <cn>地址：</cn>
+    <en>Address：</en>
+  </text>
+  <text>
+    <id>18</id>
+    <cn>邮编：</cn>
+    <en>Zip Code：</en>
+  </text>
+  <text>
+    <id>19</id>
+    <cn>紧急联系人：</cn>
+    <en>Emergency Contact：</en>
+  </text>
+  <text>
+    <id>20</id>
+    <cn>紧急联系电话：</cn>
+    <en>Emergency Contact Phone：</en>
+  </text>
+  <text>
+    <id>21</id>
+    <cn>纪念衫尺码：</cn>
+    <en>T-shirt Size：</en>
+  </text>
+  <text>
+    <id>22</id>
+    <cn>鞋子尺码：</cn>
+    <en>Shoe Size：</en>
+  </text>
+  <text>
+    <id>23</id>
+    <cn>体检证明或成绩证书：</cn>
+    <en>Medical Certificate or Race Results ：</en>
+  </text>
+  <text>
+    <id>24</id>
+    <cn>前往比赛地交通方式：</cn>
+    <en>Traffic：</en>
+  </text>
+  <text>
+    <id>25</id>
+    <cn>成绩证书：</cn>
+    <en>Race Results：</en>
+  </text>
+  <text>
+    <id>26</id>
+    <cn>体检证明：</cn>
+    <en>Medical Certificate：</en>
+  </text>
+</textlist>

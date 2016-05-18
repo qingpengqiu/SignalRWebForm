@@ -1,0 +1,67 @@
+@charset "gb2312";
+body{position: relative;background: #57b3ba}
+.nav{display: none}
+
+footer{width: 960px;text-align: center;clear: both;margin: 0 auto;line-height: 24px;color: #fff;padding: 10px 0 20px}
+footer a{color: #fff}
+
+header{height: 50px;background-color: hsla(0,0%,95%,0.9) ; *+background:#fff;width: 100%;position: relative;z-index: 10;position: fixed;top: 0;left: 0}
+article{width: 970px;margin: 0 auto}
+nav{float: left;width: 94px;height: 30px;background: #fff;border: 1px solid #dddddd;font-size: 12px;color: #888;line-height: 30px;text-align: center;margin:10px 0 0 10px}
+nav:hover{cursor: pointer;}
+nav:hover ul{display: block;}
+img[alt=erunlogo]{float: left;margin-top: -5px;}
+nav ul{display: none;border: 1px solid #dddddd;width: 94px;margin-left: -1px;background: #fff}
+nav a{color: #888;display: inherit;}
+nav li{line-height: 30px;}
+nav ul li:hover{background: #f3f3f3}
+nav ul li:hover a{color: #ff6600;}
+nav ul a{color: #888}
+a:focus { outline: none; } 
+.username1, .username2 { color: #333333; float: right; line-height: 50px; margin-right: 15px;}
+.username{float: left;font-size: 14px;color: #900;font-weight: bold;line-height: 50px;text-align: right;width: 450px;padding-right: 6px;font-weight: bold;position: relative;}
+.username:hover{color: #900}
+.username a{font-weight: 100;color: #333;margin-right: -70px;position: absolute;zoom:1;z-index: 1000 ;}
+.username1{right: -106px;}
+.username2{right: -70px;}
+.topr{height: 30px;border: 1px solid #dddddd;line-height: 30px;text-align: center;float: left;margin: 10px 0 0 6px;position: relative;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;box-shadow:2px 2px 0 #E6E6E6;}
+.topr a{color: #999;display: inline-block;}
+.topr a:hover{color: #ff6600}
+.topr span{color: #999;display: block;padding: 0 18px 0 14px;background: url(../images/jtx.png) no-repeat right 12px #F8F8F8;height: 100%;position: relative;z-index: 10;}
+.topr span:hover{background: url(../images/jtx2.png) no-repeat right 12px #F8F8F8; }
+.topr ul{width: 326px; border: 1px solid #ddd;position: absolute;top: 34px;right: -1px;background: #F8F8F8;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;box-shadow:2px 2px 0 #E6E6E6;padding: 13px 0 0 0;display: none;}
+.topr ul img{padding: 2px; border: 1px solid #ddd;display: block;}
+.topr:hover{cursor: pointer;color: #990000;height: 36px;border-bottom: 0;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;
+	box-shadow:2px 0px 0 #E6E6E6;}
+.toprb{cursor: pointer;color: #990000;height: 36px;border-bottom: 0;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;
+	box-shadow:2px 0px 0 #E6E6E6;}
+.toprb span{background: url(../images/jtx2.png) no-repeat right 12px #F8F8F8;color: #990000 }
+.toprb ul{display: block;}
+
+.topr:hover ul{display: block;}	
+.topr:hover span{color: #990000}
+.topr ul li{float: left;margin-left: 20px;width: 82px;line-height: 30px;}
+.vertical ul{width: 100%;padding-top: 0;top: 29px;}
+.vertical ul li{margin: 0;text-align: left;padding-left: 14px;}
+.imgcach{width: 1px;height: 1px;overflow: hidden;}
+.msgshowa,.msgshowl,.msgshowb,.msgshowf,.msgshowpl{position: relative;}
+.msgshowa em,.msgshowl em,.msgshowb em,.msgshowf em,.msgshowpl em{position: absolute;display: inline-block;background: #fb9100;width: 16px;height: 16px;border-radius: 8px;top:-4px;line-height: 16px;color: #fff;text-align: center;font-size: 10px;}
+
+
+.peaktop{width: 100%;height: 380px;background: url(../images/peak.jpg) no-repeat center top;margin-top: 50px;}
+.mouth{width: 970px;margin: 15px auto;background: #ebedeb;padding-top: 66px;}
+.mzhou{border-left: 2px solid #b3c5c9;margin: 0px 0 0 33px;padding-right: 4px;margin-bottom: 71px;position: relative;}
+.foot1{position: absolute;width: 130px;height: 81px;background: url(../images/x1.jpg);top: -81px;left: 162px}
+.foot2{position: absolute;width: 86px;height: 81px;background: url(../images/x2.jpg);top: -81px;right: 32px}
+.mbox{border: 1px solid #c9d7da;background: #dae1e1;margin: 0 0 0 22px;padding: 21px 0px 21px 20px;position: relative;margin-bottom: 71px}
+.mobox{width: 42px;height: 42px;background: #b3c5c9;color: #fff;font-size: 14px;line-height: 42px;text-align: center;border-radius: 42px;position: absolute;top: -44px;left: -44px;}
+.mbox .this{text-decoration: underline;}
+.imgtit{overflow: hidden;}
+.imgtit a{float: left;margin-right: 17px;width: 204px;font-size: 14px;color: #7d9398;line-height: 21px;text-align: center;}
+.imgtit a img{max-width: 100%;}
+.clearbox{clear: both;width: 100%;height: 1px;}
+.borders{width: 0;height: 0;border-top: 11px solid transparent;border-right: 11px solid #dae1e1;border-bottom: 11px solid transparent;position: absolute;left: -11px;top: 34px}
+.jlist{overflow: hidden;}
+.jlist li{float: left;width: 24%;padding-left: 1%;}
+.jlist a{display: block;color: #7d9398;height: 24px;line-height: 24px;}
+.jlist em{display: block;color: #5e6e72;height: 24px;line-height: 24px;padding: 10px 0 0px 0}

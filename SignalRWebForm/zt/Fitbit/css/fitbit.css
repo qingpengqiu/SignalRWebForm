@@ -1,0 +1,73 @@
+@charset "gb2312";
+/*mini header css star*/
+.header{height: 50px;background:  #fff ;background:hsla(0,0%,95%,0.9) ;width: 100%;position: relative;z-index: 10;position: fixed;}
+.header{padding: 0}
+.nav{float: left;width: 94px;height: 30px;background: #fff;border: 1px solid #dddddd;font-size: 12px;color: #888;line-height: 30px;text-align: center;margin:10px 0 0 10px;padding: 0;display: block;overflow: hidden;}
+.nav li{float: none;line-height: 30px;height: auto;background: #fff;padding: 0;font-size: 14px;width: 94px;position: inherit;display: block;}
+.nav img{display: none}
+.nav dl{display: inline-block;padding: 0;position: relative;border: 0;width: 100%;z-index: 1;top: 0;left: 0}
+.nav:hover{cursor: pointer;overflow: visible;}
+.nav:hover ul{display: block;}
+.nav ul{display: none;border: 1px solid #dddddd;width: 94px;margin-left: -1px;background: #fff}
+.nav a{color: #888;display: inherit;}
+.nav ul li:hover{background: #f3f3f3}
+.nav ul li:hover a{color: #ff6600;}
+.nav ul a{color: #888}
+.nav li em{display: none}
+.nav li a{color: #999}
+.nav dl dt{line-height: 30px;height: auto;padding: 0;width: 100%;display: inline-block;}
+.nav li a i{display: none}
+.nav dl a{font-size: 14px;}
+.nav li:last-child{background: #fff}
+.nav li:first-child em{display: block;color: #999;height: auto;}
+/*mini header css end*/
+body{position: relative;background: #f2f3f3}
+.fitbitBanner{width: 100%;height: 435px;background: url(../images/fitbit1.jpg) no-repeat center top;margin: 50px 0 0 0;border-top: 9px solid #d4d4d4;border-bottom: 4px solid #4ebfc0}
+.fitbitAbout{height: 431px;width: 100%;background: url(../images/fitbitAbout.jpg) no-repeat center top;border-bottom: 1px solid #d2d2d2}
+.FACont{line-height: 24px;font-size: 14px;color: #333;width: 446px;padding: 11px 13px 0 511px;margin: 0 auto;}
+.FACont h4{font-size: 28px;height: 80px;line-height: 80px;}
+.FACont a{float: right;margin: 40px 6px 0 0}
+.ExplainTitle{height: 70px;background: #ebebeb;width: 100%;overflow: hidden;border-top: 1px solid #fbfbfb;border-bottom: 1px solid #fbfbfb}
+.ExplainTitle span{font-size: 28px;color: #333;display: block;width: 840px;margin: 0 auto;background: url(../images/fitbiticon.png) no-repeat 6px top;padding-left: 130px;line-height: 76px;}
+.fitbitExplain{overflow: hidden;position: relative;border-bottom: 7px solid #fff}
+.ExplainBgLT{height: 243px;float: left;width: 50%;background: #4ebfc0;}
+.ExplainBgRT{height: 243px;float: right;width: 50%;background: #3fa3a7;}
+.ExplainBgLB{height: 240px;float: left;width: 50%;background: #3fa3a7;}
+.ExplainBgRB{height: 240px;float: right;width: 50%;background: #4ebfc0;}
+.ExplainCenter{width: 968px;position: absolute; top: 0;z-index: 9;left: 50%;margin-left: -485px;height: 483px;padding: 0 1px}
+.ExplainCenter a{float: left;font-size: 0;}
+.fitbitN{width: 970px;margin: 15px auto;display: table;padding-bottom: 10px;}
+.fitbitN .title{height: 60px;color: #fff;font-size: 24px;line-height: 60px;padding-left: 12px;position: relative;}
+.fitbitTnf{float: left;width: 49%;background: #fff;box-shadow: 0px 0px 10px #ccc;height: 448px;}
+.fitbitTnf .title{background: #4ebfc0}
+.fitbitTnf .title span{width:0px;height:0px;border-width:10px;border-style:solid;border-color:#4ebfc0 #fff #fff #fff;display: block;position: absolute;left: 24px;bottom: -20px;}
+.fitbitNews{float: right;width: 49%;background: #fff;box-shadow: 0px 0px 10px #ccc;height: 448px;}
+.fitbitNews .title{background: #ee7e4a;}
+.fitbitNews .title span{width:0px;height:0px;border-width:10px;border-style:solid;border-color:#ee7e4a #fff #fff #fff;display: block;position: absolute;left: 24px;bottom: -20px;}
+.fitbitN ul{padding: 18px 0 10px 44px}
+.fitbitN li{line-height: 30px;height: 30px;color: #666;list-style-type: disc;font-size: 14px}
+.fitbitN li a{color: #666}
+.fitbitN li a:hover{color: #438DC3}
+.mnav{display: none;}
+
+body{overflow: hidden;}
+.header{position: absolute;top: 0;width: 100%;background: rgba(255,255,255,0.55)}
+.erunlogo{float: left;margin-top: -5px;}
+.mediaLogin{width: 100%;}
+.mediaLogin .ml2{float: right;line-height: 54px;padding: 0 5px 0 4px;color: #990000;font-size: 14px;}
+.mediaLogin .ml3{height: 30px;border: 1px solid #dddddd;line-height: 30px;text-align: center;float: right;margin: 10px 0 0 6px;position: relative;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;box-shadow:2px 2px 0 #E6E6E6;font-size: 12px;color: #999;padding: 0 18px 0 14px;background: url(../images/jtx.png) no-repeat right 12px #F8F8F8;height: 100%;position: relative;z-index: 10;position: relative;width: 52px;}
+.mediaLogin .ml3:hover{color: #990000;cursor: pointer;height: 36px;border-bottom: 0;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;
+    box-shadow:2px 0px 0 #E6E6E6;}
+
+.mediaLogin .uname{background: none;color: #900;font-size: 14px;border: 0;box-shadow:none;width: auto;}
+.mediaLogin input{display: none}
+.mediaLogin input+ul{display: none;width: 100%; border: 1px solid #ddd;position: absolute;top: 29px;right: -1px;background: #F8F8F8;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;box-shadow:2px 2px 0 #E6E6E6;z-index:9999;}
+
+.mediaLogin input+ul li{width: 82px;line-height: 30px;text-align: left;padding-left: 14px;position: relative;}
+.mediaLogin input+ul li:last-child{border-bottom: 0;}
+.mediaLogin .ml3 input+ul li i{display: none}
+.mediaLogin a{color: #999}
+.meidlogin{display: none}
+@media screen and (min-width:801px) {
+.mediaLogin .ml3:hover ul{display: block;}
+}

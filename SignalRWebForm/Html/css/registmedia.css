@@ -1,0 +1,65 @@
+@media screen and (min-width:100px) and (max-width:800px) {
+	body{background: url(../images/registmediabg.jpg) no-repeat center top / 100% auto;}
+	.rebox{width: 100%;height: 100%;margin: 0;padding: 0;background: none;}
+	.refi{padding: 0}
+	.footer{display: none;}
+	.rlogo{margin: 15px 20px 0 6px;float: right;}
+	.rlogo img{width:110px;}
+	.retop{overflow: hidden;height: auto;padding-bottom: 10px;border: 0}
+	.retop span{display: none;}
+	.newregist{padding: 20px 0 0  0;width: 82%;border-bottom: 1px solid rgba(241,241,241,.7);margin: 0 auto;font-size: 16px;overflow: hidden;}
+	.refrome .newregist input{background: none;color: #333;box-shadow: none;border: 0;border-radius: 0;padding-left: 10px;}
+	.refrome .newregist input::-webkit-input-placeholder { color:#5e5e5e; }
+	.Validform_checktip{display: none;}
+	.reok h1{font-size: 25px;padding: 20px 0;color: #92c55a}
+	.reok h3{padding: 0 16px;}
+	.refrome .refrometr .refrometd:first-child{width: 70px;}
+	.recard .refrometr .refrometd{width: 100%;padding-left: 10%;}
+	.recard .refrometr #runidcard{padding-left: 10px;}
+	.recard .refrometr .refrometd:first-child{width: 100%;text-align: left;}
+	.uicon .newicon{display: none;}
+	.rebutton span{display: block;}
+	.rebutton .refrometd{padding-top: 0;}
+	.registnbg{background: none}
+	.refrome .newregist .m80{width: 170px;}
+	.getmsgcode{font-size: 12px;border-radius: 0;margin-bottom: 3px;float: right;margin-left: -40px;}
+	.gomsgcode{background: #8a6851;}
+	.rcodebox{float: right;margin-left: -60px;}
+	.rloadcode{font-size: 10px;color: #fff;float: right;text-align: center;margin: -4px 0 2px 0}
+	.rloadcode i{display: block;}
+	.rloadcode:hover{color: #fff;}
+	.rloadcode:before{content: "\e60b";font-family:"iconfont" !important;
+  font-size:18px;display: inline-block;color: #fff;
+  font-style:normal;background: #b44931;border-radius: 50%;width: 26px;height: 26px;line-height: 26px;margin-bottom: 2px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+	.vimg{margin-bottom: 3px;}
+	.toast{top: 200px;}
+	.agnewregist label{color: #5e5e5e;border-bottom: 1px solid #5e5e5e;padding-bottom: 1px}
+	.agnewregist label a{color: #5e5e5e;text-decoration: none;}
+	#register{width: 85%;height: 40px;border-radius: 0;margin-top: 20px;background: #f48c1c;font-size: 16px;}
+	.agnewregist{border: 0}
+	.registtoptip{display: block;font-size: 24px;color: #4b433c;width: 85%;margin: 0 auto}
+	.mediatip{display: block;text-align: center;}
+	.refrome h3{padding: 0 16px;}
+	.refrome h3 span{font-size: 14px;}
+	.bmfrome .refrometable{width: 100%;}
+	.refrome label{font-size: 12px;}
+	#agree{margin-top: 4px;border: 1px solid #756f7b;padding-bottom: 2px;}
+	.upimg{padding-left: 10px;}
+	#address{display: block;}
+	.bottom{padding: 20px 0 30px 0;text-align: center;}
+	.repshow{padding: 0;}
+	.repepple,.py-data{background: none}
+	.retju h3{padding: 0 16px;}
+	.retjtitle{padding: 8px;background-position: 8px center}
+	.focus li{width: 100%;margin: 0 0 8px 0}
+	.focus li:nth-child(even){margin: 0}
+	.focus li .registly{display: none;}
+	.retju .bottom{padding: 20px 0}
+
+	.zclxa{padding: 0 28px;}
+	.oldcheckpasswd{padding-bottom: 20px;}
+	.oldsavepasswd .newregist{padding: 20px 0 0 0}
+}

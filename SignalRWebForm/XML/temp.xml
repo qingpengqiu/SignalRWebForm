@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312"?><chart useRoundEdges='0' bgColor='f6f6f6,FFFFFF' showBorder='0' showPlotBorder="0" bgAlpha="100" canvasBorderColor='b4d179' canvasbgColor="" canvasbgAlpha="0" yAxisName="距离 KM" outCnvbaseFont="微软雅黑" plotGradientColor="" baseFontSize="11" baseFontColor="76930e" canvasBorderThickness="1" numDivLines="0" labelDisplay='Rotate' slantLabels='1' showValues="0" chartBottomMargin="0" xAxisNamePadding="0"> 
+
+
+<set label='01/04' color="add125,9bc12d" value='33'  />
+<set label='01/03' color="add125,9bc12d" value='11' />
+<set label='01/02' color="add125,9bc12d" value='10' />
+<set label='01/01' color="add125,9bc12d" value='44' />
+<set label='01/04' color="add125,9bc12d" value='33'  />
+<set label='01/03' color="add125,9bc12d" value='11' />
+<set label='01/02' color="add125,9bc12d" value='10' />
+<set label='01/01' color="add125,9bc12d" value='44' />
+<set label='01/04' color="add125,9bc12d" value='33'  />
+<set label='01/03' color="add125,9bc12d" value='11' />
+<set label='01/02' color="add125,9bc12d" value='10' />
+<set label='01/01' color="add125,9bc12d" value='44' />
+
+</chart>

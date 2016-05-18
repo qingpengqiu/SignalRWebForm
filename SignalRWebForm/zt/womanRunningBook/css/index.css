@@ -1,0 +1,53 @@
+@charset "gb2312";
+/*mini header css star*/
+.header{height: 50px;background:  #fff ;background:hsla(0,0%,95%,0.9) ;width: 100%;position: relative;z-index: 10;position: fixed;}
+.header{padding: 0}
+.nav{float: left;width: 94px;height: 30px;background: #fff;border: 1px solid #dddddd;font-size: 12px;color: #888;line-height: 30px;text-align: center;margin:10px 0 0 10px;padding: 0;display: block;overflow: hidden;}
+.nav li{float: none;line-height: 30px;height: auto;background: #fff;padding: 0;font-size: 14px;width: 94px;position: inherit;display: block;}
+.nav img{display: none}
+.nav dl{display: inline-block;padding: 0;position: relative;border: 0;width: 100%;z-index: 1;top: 0;left: 0}
+.nav:hover{cursor: pointer;overflow: visible;}
+.nav:hover ul{display: block;}
+.nav ul{display: none;border: 1px solid #dddddd;width: 94px;margin-left: -1px;background: #fff}
+.nav a{color: #888;display: inherit;}
+.nav ul li:hover{background: #f3f3f3}
+.nav ul li:hover a{color: #ff6600;}
+.nav ul a{color: #888}
+.nav li em{display: none}
+.nav li a{color: #999}
+.nav dl dt{line-height: 30px;height: auto;padding: 0;width: 100%;display: inline-block;}
+.nav li a i{display: none}
+.nav dl a{font-size: 14px;}
+.nav li:last-child{background: #fff}
+.nav li:first-child em{display: block;color: #999;height: auto;}
+/*mini header css end*/
+@media screen and (min-width:801px) {
+.mediaLogin .ml3:hover ul{display: block;}
+}
+body{background: url(../images/bg.jpg) no-repeat fixed top center;position: relative;}
+.cbook{width: 1200px;margin: 70px auto 5px;}
+.booktop{height: 214px;background: url(../images/topbg.jpg);padding: 46px 0 0 80px;color: #f0905b;font-size: 14px;line-height: 21px;position: relative;}
+.booktop h1{font-size: 60px;line-height: 60px;}
+.booktop h2{font-size: 28px; font-weight: 100;line-height: 70px;margin-left: -14px;}
+.bookbuy{position: absolute;top: -2px;right: 252px}
+.bookshow{height: 413px;background: url(../images/bg2.jpg);margin: 6px 0;padding: 5px}
+.bookshow img{float: left;}
+.booknr{float: left;width: 298px;padding: 14px 34px 0;font-size: 12px;color:#f0905b;line-height: 21px; }
+.booknr h3{font-size: 18px;line-height: 36px;margin-left: -10px;}
+.booknr a{color: #f0905b;float: right;margin-top: 18px;}
+.book2{margin: -5px 7px 0 0}
+.bookshow2{height: 298px;color: #f0905b;line-height: 21px;}
+.books2l{float: left;width: 498px;background: url(../images/bg2.jpg);padding: 21px 14px}
+.books2r{float: left;width: 639px;background: url(../images/bg2.jpg);margin-left: 5px;padding: 5px 25px 5px 5px}
+.books2limg{width: 166px;float: left;margin-right: 30px;line-height: 16px}
+.books2limg span{font-weight: bold;line-height: 26px}
+.books2l p{font-size: 18px;font-weight: bold;line-height: 40px;}
+.books2l a{color: #f0905b;float: right;margin: 12px 0 -6px;}
+.books2r img{float: left;margin:-1px 26px 0 0}
+.books2r span{font-size: 18px;font-weight: bold;line-height: 48px;}
+.books2r a{color: #f0905b;float: right;margin: 18px 0 -6px;}
+
+.nav{display: none}
+.bt1{background: url(../images/bt1.png) no-repeat 44px 30px;padding-top: 76px}
+.bt2{background: url(../images/bt2.png) no-repeat 36px 30px;width: 256px;padding: 100px 28px 0;}
+ .rbkb{border: 5px solid #fff}

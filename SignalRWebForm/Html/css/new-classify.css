@@ -1,0 +1,19 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,th,td{margin:0;padding:0}body,button,input,select,textarea{font:12px/1 Tahoma,Helvetica,Arial,\5FAE\8F6F\96C5\9ED1,sans-serif}h1{font-size:18px}h2{font-size:16px}h3{font-size:14px}h4,h5,h6{font-size:100%}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace}small{font-size:12px}ul,ol{list-style:none}a{text-decoration:none}a:hover{text-decoration:none}abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}q:before,q:after{content:''}legend{color:#000}fieldset,img{border:0}button,input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}hr{border:0;height:1px}
+body{background: url(../images/new-classify.jpg) no-repeat center top #fff;padding-top: 80px;}
+table{width: 100%;text-align: center;margin: 0 auto}
+table tr{border-top: 1px solid #eee;height: 36px;}
+table thead tr{border: 0;}
+table th{color: #669900;font-weight: bold;}
+.newclassify{width: 78%;height: 42px;margin: 14px auto;background: #f4f4f4;padding:14px 0 0 38px;}
+.newclassify label{display: inline-block;margin-right: 4px;}
+.newclassify .input-xlarge{margin-bottom: 4px;}
+.newclassify .btn{border: 0;width: 71px;height: 31px;background: url(../images/grbot.png);text-indent: -999em;margin-bottom: 3px}
+.newclassify .btn:hover{background: url(../images/grbot.png) 0 0;}
+#UpdatePanel1{margin: 0 auto;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-left: 3%;
+    padding-right: 1%;
+    width: 86%;}
+#UpdatePanel2{float: right;line-height: 28px;}
+#cTitle{width: 255px;}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<paylist>
+  <pay>
+    <id>Competetion</id>
+    <show_url>http://119.2.5.59:8080/channels/competetion/RaceList.aspx</show_url>
+    <notify_url>http://119.2.5.59:8080/Pay/Alipay/notify_url.aspx</notify_url>
+    <return_url>http://119.2.5.59:8080/Pay/Alipay/return_url.aspx</return_url>
+    <wapnotify_url>http://119.2.5.59:8080/Pay/Alipay/wap/notify_url.aspx</wapnotify_url>
+    <wapcall_back_url>http://119.2.5.59:8080/Pay/Alipay/wap/call_back_url.aspx</wapcall_back_url>
+  </pay>
+  <pay>
+    <id>Race</id>
+    <show_url>http://119.2.5.59:8080/infocenter/ClubSearch.aspx</show_url>
+    <notify_url>http://119.2.5.59:8080/Pay/Race/notify_url.aspx</notify_url>
+    <return_url>http://119.2.5.59:8080/Pay/Race/return_url.aspx</return_url>
+    <wapnotify_url>http://119.2.5.59:8080/Pay/Race/wap/notify_url.aspx</wapnotify_url>
+    <wapcall_back_url>http://119.2.5.59:8080/Pay/Race/wap/call_back_url.aspx</wapcall_back_url>
+  </pay>
+  <pay>
+    <id>Score</id>
+    <show_url>http://119.2.5.59:8080/infocenter/ClubSearch.aspx</show_url>
+    <notify_url>http://119.2.5.59:8080/Pay/Score/notify_url.aspx</notify_url>
+    <return_url>http://119.2.5.59:8080/Pay/Score/return_url.aspx</return_url>
+    <wapnotify_url>http://119.2.5.59:8080/Pay/Score/wap/notify_url.aspx</wapnotify_url>
+    <wapcall_back_url>http://119.2.5.59:8080/Pay/Score/wap/call_back_url.aspx</wapcall_back_url>
+  </pay>
+  <pay>
+    <id>Tour</id>
+    <show_url>http://119.2.5.59:8080/infocenter/ClubSearch.aspx</show_url>
+    <notify_url>http://119.2.5.59:8080/Pay/Tour/notify_url.aspx</notify_url>
+    <return_url>http://119.2.5.59:8080/Pay/Tour/return_url.aspx</return_url>
+    <wapnotify_url>http://119.2.5.59:8080/Pay/Tour/wap/notify_url.aspx</wapnotify_url>
+    <wapcall_back_url>http://119.2.5.59:8080/Pay/Tour/wap/call_back_url.aspx</wapcall_back_url>
+  </pay>
+  <pay>
+    <id>Flight</id>
+    <show_url>http://119.2.5.59:8080/Flight/Flight_Search.aspx</show_url>
+    <notify_url>http://119.2.5.59:8080/Pay/Flight/notify_url.aspx</notify_url>
+    <return_url>http://119.2.5.59:8080/Pay/Flight/return_url.aspx</return_url>
+    <wapnotify_url>http://119.2.5.59:8080/Pay/Flight/wap/notify_url.aspx</wapnotify_url>
+    <wapcall_back_url>http://119.2.5.59:8080/Pay/Flight/wap/call_back_url.aspx</wapcall_back_url>
+  </pay>
+</paylist>

@@ -1,0 +1,724 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 益跑赛事APP </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<style type="text/css">
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video { margin: 0; padding: 0; outline: 0; border: 0; }
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { -webkit-text-size-adjust: none; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { display: block; block;
+clear: all; }
+body { min-width: 320px; background: #FFF; color: #1a1a1a; font: 16px/1.5  'Microsoft Yahei', 'helvetica', 'arial'; -webkit-text-size-adjust: none; -webkit-text-size-adjust: none; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-size: 100%; }
+form { display: inline; }
+ul,
+ol { list-style: none; }
+a { color: #000; text-decoration: none; }
+a:hover { color: #1c5aa2; text-decoration: none; }
+img { border: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+button,
+input,
+select,
+textarea { outline: 0; vertical-align: middle; font-size: 100%; font-family: 'Microsoft Yahei', 'helvetica', 'arial'; }
+textarea { resize: none; }
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] { cursor: pointer; -webkit-appearance: button; -moz-appearance: button; }
+ input:focus:-moz-placeholder, input:focus::-webkit-input-placeholder {
+ color: transparent;
+}
+ button::-moz-focus-inner, input::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+/*
+    Name:           mod_float
+    Explain:        .z/.y 浮动 left/right
+*/
+.z { float: left; }
+.y { float: right; }
+/*
+    Name:           mod_clearfix
+    Explain:        Clearfix,避免因子元素浮动而导致的父元素高度缺失能问题
+*/
+.cl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.cl { zoom: 1; }
+.clear { clear: both; height: 1px; margin-top: -1px; overflow: hidden; }
+/* 文本属性：字号、颜色、粗细 */ 
+/*   
+    Name:           mod_text_size
+    Explain:        文字字号，分为x个级别
+*/
+.xs0 { font-family: Tahoma, Helvetica, sans-serif; font-size: 0.83em; -webkit-text-size-adjust: none; }
+.xs1 { font-size: 12px !important; }
+.xs2 { font-size: 14px !important; }
+.xs3 { font-size: 16px !important; }
+.xs4 { font-size: 18px !important; }
+.xs5 { font-size: 20px !important; }
+.xs6 { font-size: 22px !important; }
+.xs7 { font-size: 24px !important; }
+.xs8 { font-size: 26px !important; }
+.xs9 { font-size: 28px !important; }
+.xs10 { font-size: 30px !important; }
+.xs11 { font-size: 32px !important; }
+.xs12 { font-size: 34px !important; }
+.xs13 { font-size: 36px !important; }
+/*
+    Name:           mod_text_weight_level
+    Explain:        文字字号，分为二个级别
+*/
+
+.xw0 { font-weight: 400; }
+.xw1 { font-weight: 700; }
+/*
+    Name:           mod_
+    Explain:        通用样式
+*/
+.tal { text-align: left; }
+.tar { text-align: right; }
+.tac { text-align: center; }
+.ti-9999 { text-indent: -9999em; }
+.disNo { display: none; }
+.disblk { display: block; }
+.c-ec4949 { color: #ec4949; }
+.c-b3 { color: #b3b3b3; }
+.mt30 { margin-top: 30px; }
+.mt86 { margin-top: 86px; }
+.mb30 { margin-bottom: 30px; }
+.pl40 { padding-left: 40px; }
+.pr40 { padding-right: 40px; }
+/* ------------------------------------------------------------------------ 页面布局 */
+/* 通用容器，定义页面宽度 */ .wp { margin: 0 auto; max-width: 640px; }
+#wp .wp { width: 320px; }
+.bodyBg { background-color: #FFF; }
+body { background-color:transparent;}
+/* 页面主区域 */
+/* 页头 */
+.header { height: 90px; line-height: 90px; border-bottom: 1px solid #c8c8c8; position: relative; }
+.header .back { position: absolute; left: 30px; }
+.header .share { position: absolute; right: 30px; }
+/* 主体 */#main { }
+.show { width: 100%; height:100%; background-repeat: no-repeat; background-size: 100% auto; }
+.show-1 { position:relative;}
+.bg-1 { background:url(erunevent_img/page1.png) center top no-repeat;background-size: 100%;}
+.box { }
+.box-1 { margin:80px 0 80px;margin: 15% 0 15%; font-size:36px; color:#272727; line-height:20px;}
+.box-2 { padding-top:150px; padding-bottom:10px; font-size:26px; color:#272727; line-height:30px;}
+.box-3 { padding-top:0px;}
+.icon-logo { padding-top:164px;}
+.pt { width:368px; height:70px; line-height:70px; border:1px solid #000;}
+.btn { margin-top:25px; width:370px; height:70px; line-height:70px; border:none; background-color:#ed4949; color:#FFF;}
+.box-layer { width:100%; height:90px; line-height:90px; font-size:48px; color:#FFF; position:fixed; bottom:0; left:0;}
+.up { position:absolute; top:1033px; top:90%; left:284px; left:43%;}
+
+
+html,body{width:100%;height:100%;background: #fff;}
+
+/*parts*/
+.parts{position: absolute;width: 100%;height: 100%;overflow: hidden;}
+.part{-webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate3d(0px, 100%, 0px);
+    transform: translate3d(0px, 100%, 0px);
+    width: 100%;height: 100%;position: absolute;top:0;left:0;overflow: hidden;}
+/*animation*/
+.moving {
+    -webkit-transition: none 0 step-start;
+    -o-transition: none 0 step-start;
+    transition: none 0 step-start; }
+</style>
+
+
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script>
+  var phoneWidth = parseInt(window.screen.width);
+  var phoneScale = phoneWidth / 640;
+  var ua = navigator.userAgent;
+  var vp;
+  if (/Android/.test(ua)) {
+      vp = 'width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi';
+  } else {
+      vp = 'width=640, user-scalable=no, target-densitydpi=device-dpi';
+  }
+  $('meta[name=viewport]').attr('content', vp);
+</script>
+</head>
+<body>
+<div style="display:none" ><img src="erunevent_img/wx_logo.png"/></div>
+
+<section id="main" class="parts">
+<!-- S 立即领券  -->
+<figure class="part show show-1 img_bg bg-1">
+<div class="icon-logo tac"><img src="erunevent_img/logo.png" width="198" /></div>
+<div class="box-1 tac">跑者训练、参赛利器</div>
+<div class="box-3 tac"><input type="submit" class="btn xs11" style="margin-top: 10px;" onclick="window.location.href='erunevent_down.html'" value="下载益跑赛事APP"></div>
+<!-- S 返回顶部 -->
+<div class="up">
+<img src="erunevent_img/goup.png" width="71" />
+</div>
+<!-- E 返回顶部 -->
+</figure>
+<!-- E 立即领券  -->
+<!-- S 2  -->
+<figure class="part show show-1 img_bg">
+<img src="erunevent_img/page2.png" width="100%" />
+<div class="up">
+<img src="erunevent_img/goup.png" width="71" />
+</div>
+</figure>
+<!-- S 2  -->
+<!-- S 3  -->
+<figure class="part show show-1 img_bg">
+<img src="erunevent_img/page3.jpg" width="100%" />
+<div class="up">
+<img src="erunevent_img/goup.png" width="71" />
+</div>
+</figure>
+<!-- S 3  -->
+<figure class="part show show-1 img_bg">
+<img src="erunevent_img/page4.jpg" width="100%" />
+<div class="up">
+<img src="erunevent_img/goup.png" width="71" />
+</div>
+</figure>
+<!-- S 3  -->
+<!-- S 4 下载APP  -->
+<figure class="part show show-1 img_bg">
+<div class="icon-logo tac"><img src="erunevent_img/logo.png" width="198" /></div>
+<div class="box-2 tac">体验贴心专业的马拉松赛事</div>
+<div class="box-3 tac"><input type="submit" class="btn xs11" style="margin-top: 10px;" onclick="window.location.href='erunevent_down.html'" value="下载益跑赛事APP"></div>
+<!-- S 返回顶部 -->
+</figure>
+<!-- E 下载APP -->
+</section>
+<script type="text/javascript" src="erunevent_img/do.all.src.js"></script>
+<script>
+window.onload = function() {
+    pages = new PageSlide($('.parts'), 'Y');
+    resize();
+}
+</script>
+
+
+
+<script type="text/javascript">
+//normal function
+function $(selector) {
+    return document.querySelector(selector)
+}
+function removeClassName(el,className){
+    var classList = el.className;
+    if(el.classList){
+        el.classList.remove(className);
+    }else{
+        el.className = el.className.replace(className,'');
+    }
+}
+function addClassName(el,className){
+    var classList = el.className;
+    if(el.classList){
+        el.classList.add(className);
+    }else{
+        el.className = el.className + ' ' + className;
+    }
+}
+// PageSlide
+var PageSlide = function(el, swipe, options) {
+    this.options = options || {}
+    this.current = 0
+    this.pageX
+    this.pageY
+    this.height
+    this.width
+    this.flag
+    this.move
+
+    this.$el = el
+    this.swipe = swipe || 'X'
+    this.resize().init().bindEvents()
+}
+
+PageSlide.prototype.init = function(i) {
+    var current = i ? this.$el.children[i] : this.$el.firstElementChild
+    //alert(1)
+    if (!current) throw 'ERROR';
+
+    addClassName(current,'moving')
+    current.style.webkitTransform = current.style.msTransform = current.style.transform = 'translate3d(0,0,0)'
+    setTimeout(function() {
+        removeClassName(current,'moving')
+        addClassName(current,'play')
+    }, 3e2)
+   Do(function(){
+   var imgW = 640,
+         imgH = 1136,
+       // screenW = window.screen.width,
+        // screenH = window.screen.height,
+      screenW = $('.img_bg').parent().width(),
+        screenH = $('.img_bg').parent().height(),
+       n = imgW/imgH;
+  //alert('n:'+n+'\nscreenW:'+screenW+'\nscreenH'+screenH+'\nscreenW/screenH'+screenW/screenH);
+     if(screenW/screenH>=n){
+    //屏幕比图片宽
+     var newW = parseInt(n*screenH);
+       $('.img_bg').css('width',newW);
+       $('.img_bg').css('left',(screenW-newW)/2);
+        $('.img_bg').css('height','100%');
+   }else{
+      //屏幕比图片窄
+        var newH = parseInt(screenW/n);
+       $('.img_bg').css('width','100%');
+         $('.img_bg').css('height',newH);
+     }
+});
+    return this
+}
+
+PageSlide.prototype.bindEvents = function() {
+    var self = this
+    var eventsList = 'touchstart touchmove touchend touchcancel MSPointerDown MSPointerMove MSPointerCancel MSPointerUp pointerdown pointermove pointercancel pointerup'
+    //alert(1)
+//    window.addEventListener('resize orientationchange', this.resize.bind(this), false)
+
+    eventsList.split(' ').forEach(function(evn) {
+        self.$el.addEventListener(evn, self[evn].bind(self), false)
+    })
+}
+
+PageSlide.prototype.getCurrent = function() {
+    return this.$el.children[this.current]
+}
+
+PageSlide.prototype.resize = function() {
+    this.width = this.$el.parentNode.clientWidth
+    this.height = this.$el.parentNode.clientHeight
+    //alert(this.height)
+    return this
+}
+
+PageSlide.prototype.random = function() {
+    var count = this.$el.children.length
+    var current = this.current
+    var arr = []
+    var num
+
+    for (var i = 0; i < count; i++) {
+        if (i !== current) arr.push(i.toString())
+    }
+
+    num = Math.floor(Math.random() * arr.length)
+    this.go(+arr[num])
+}
+
+PageSlide.prototype.touchstart = PageSlide.prototype.pointerdown = PageSlide.prototype.MSPointerDown = PageSlide.prototype.mousedown =  function(e) {
+    if(e.target.getAttribute('class') == 'nomove') return false;
+    var touches = null;
+    if (e.touches) {
+        touches = e.touches[0];
+    }
+
+    //touch start initializing
+    this.flag = null
+    this.move = 0
+
+    //record coordinates
+    this.pageX = touches ? touches.pageX : e.x
+    this.pageY = touches ? touches.pageY : e.y
+}
+
+PageSlide.prototype.touchmove = PageSlide.prototype.pointermove = PageSlide.prototype.MSPointerMove = PageSlide.prototype.mousemove =  function(e) {
+    if(e.target.getAttribute('class') == 'nomove') return false;
+    var touches = null;
+    if (e.touches) {
+        touches = e.touches[0];
+    }
+    var X = (touches ? touches.pageX : e.x) - this.pageX
+    var Y = (touches ? touches.pageY : e.y) - this.pageY
+
+    var current = this.getCurrent()
+    var next = current.nextElementSibling
+    var prev = current.previousElementSibling
+
+    //add moving styled
+
+    if (!this.flag) {
+        this.flag = Math.abs(X) > Math.abs(Y) ? 'X' : 'Y'
+
+        if (this.flag === this.swipe) {
+//            current.classList.add('moving')
+//            next && next.classList.add('moving')
+//            prev && prev.classList.add('moving')
+            addClassName(current,'moving')
+            next && addClassName(next,'moving')
+            prev && addClassName(prev,'moving')
+        }
+    }
+
+    if (this.flag === this.swipe) {
+        e.preventDefault()
+        e.stopPropagation()
+
+        switch (this.swipe) {
+            case 'X': //swipe horizontal
+                this.move = X
+
+                this.setX(current, X)
+                next && (this.setX(next, X + this.width))
+                prev && (this.setX(prev, X - this.width))
+                break;
+            case 'Y': //swipe vertical
+                this.move = Y
+
+                this.setY(current, Y)
+                next && (this.setY(next, Y + this.height))
+                prev && (this.setY(prev, Y - this.height))
+                break;
+        }
+    }
+}
+
+PageSlide.prototype.touchend = PageSlide.prototype.pointerup = PageSlide.prototype.MSPointerUp = PageSlide.prototype.mouseup = function(e) {
+    if(e.target.getAttribute('class') == 'nomove') return false;
+    var minRange = 50
+    var move = this.move
+    var current = this.getCurrent()
+    var next = current.nextElementSibling
+    var prev = current.previousElementSibling
+//    current.classList.remove('moving')
+//    next && next.classList.remove('moving')
+//    prev && prev.classList.remove('moving')
+    removeClassName(current,'moving')
+    next && removeClassName(next,'moving')
+    prev && removeClassName(prev,'moving')
+
+    if (!this.flag) return
+
+    e.preventDefault()
+
+    if (move < -minRange && next) return this.next()
+    if (move > minRange && prev) return this.prev()
+    this.reset()
+}
+
+PageSlide.prototype.touchcancel = PageSlide.prototype.pointercancel = PageSlide.prototype.MSPointerCancel = function(e) {
+    var current = this.getCurrent()
+    var next = current.nextElementSibling
+    var prev = current.previousElementSibling
+
+//    current.classList.remove('moving')
+//    next && next.classList.remove('moving')
+//    prev && prev.classList.remove('moving')
+    removeClassName(current,'moving')
+    next && removeClassName(next,'moving')
+    prev && removeClassName(prev,'moving')
+    this.reset()
+}
+
+
+PageSlide.prototype.setX = function(el, x, unit) {
+    el && (el.style.webkitTransform = el.style.msTransform = el.style.transform = 'translate3d(' + x + (unit || 'px') + ',0,0)')
+}
+
+PageSlide.prototype.setY = function(el, y, unit) {
+    el && (el.style.webkitTransform = el.style.msTransform = el.style.transform = 'translate3d(0,' + y + (unit || 'px') + ',0)')
+}
+
+PageSlide.prototype.setCurrent = function(el, i) {
+    el && (el.style.webkitTransform = el.style.msTransform = el.style.transform = 'translate3d(0,0,0)')
+
+    if (i) {
+        this.current = i
+        this.$current = this.$el.children[i]
+    }
+}
+
+PageSlide.prototype.next = function() {
+    this.go(this.current + 1)
+}
+
+PageSlide.prototype.prev = function() {
+    this.go(this.current - 1)
+}
+
+PageSlide.prototype.reset = function() {
+    var width = this.width
+    var height = this.height
+    var swipe = this.swipe
+    var current = this.getCurrent()
+    var prev = current.previousElementSibling
+    var next = current.nextElementSibling
+
+    this.setCurrent(current)
+    prev && (this['set' + swipe](prev, -(swipe === 'X' ? width : height)))
+    next && (this['set' + swipe](next, swipe === 'X' ? width : height))
+}
+
+PageSlide.prototype.go = function(i) {
+    var current = this.getCurrent()
+    var total = this.$el.childElementCount
+    var target = this.$el.children[i]
+    var d = i < this.current ? -1 : 1
+
+
+    if (i === this.current || i < 0 || i >= total) return
+    this.current = i
+
+    this['set' + this.swipe](current, -d * (this.swipe === 'X' ? this.width : this.height))
+    this.setCurrent(target, i)
+    this.finish(current, target,i)
+}
+
+PageSlide.prototype.finish = function(curr, target,i) {
+    this.flag = null
+    var onFinish = this.options.onFinish
+    setTimeout(function() {
+//        curr && curr.classList.remove('play')
+//        target && target.classList.add('play')
+        curr && removeClassName(curr,'play')
+        target && addClassName(target,'play')
+        if (onFinish && (typeof onFinish === 'function')) onFinish.call(this, i)
+    }, 3e2)
+}
+// 横屏提示
+function resize() {
+    var STYLESHEET = function() {
+        var styleSheet = function() {
+            //创建一个styleSheet,避免跨域问题
+            var head = document.getElementsByTagName("head")[0];
+            var style = document.createElement("style");
+            style.type = "text/css";
+            head.appendChild(style);
+            return document.styleSheets[document.styleSheets.length - 1];
+        }();
+
+        function addStyleSheet(cssText) { /*动态添加css样式*/
+            var oCss = styleSheet,
+                cssRules = cssText.split('\r\n');
+            var len = !!oCss.cssRules ? oCss.cssRules.length : 0; //不直接使用oCss.cssRules.length是因为跨域时返回null，所以用len避免错误
+            for (var i = 0; i < cssRules.length; ++i) {
+                oCss.insertRule(cssRules[i], len++);
+            };
+            return len;
+        }
+        return {
+            add: addStyleSheet
+        };
+    }();
+
+    var webkit = function() {
+        //浏览器特有css样式的
+        var css3_div = document.createElement("div");
+        css3_div.style.cssText = '-webkit-transition:all .1s; -moz-transition:all .1s; -o-transition:all .1s; -ms-transition:all .1s; transition:all .1s;';
+        if (css3_div.style.webkitTransition) {
+            return '-webkit-';
+        } else if (css3_div.style.mozTransition) {
+            return '-moz-';
+        } else if (css3_div.style.oTransition) {
+            return '-o-';
+        } else if (css3_div.style.msTransition) {
+            return '-ms-';
+        } else {
+            return '';
+        }
+    }();
+
+    //横屏警告
+    var warn = function() {
+        var _warn = document.createElement("div"),
+            _warn_wrp = document.createElement('div');
+        _warn_wrp.style.cssText = 'position:absolute; width:200%; height:200%; overflow:hidden; left:0; top:0; z-index:9999; background-color:#005399; display:none;',
+            _warn.style.cssText = 'position:absolute; left:25%; top:25%; width:250px; height:150px; margin:-75px 0 0 -125px; text-align:center; color:#ffffff;';
+        document.body.appendChild(_warn_wrp),
+            _warn_wrp.appendChild(_warn);
+        var _warn_text = document.createTextNode('为了更好的体验，请使用竖屏浏览');
+        _warn.appendChild(document.createElement('br')),
+            _warn.appendChild(_warn_text);
+
+        var setCssText = function(wrp, icon, text) {
+            //设置warn的样式
+            if (typeof(wrp) == 'string') _warn.style.cssText = wrp;
+            if (typeof(text) == 'string') _warn_text.nodeValue = text;
+        }
+        var show = function() {
+            _warn_wrp.style.display = 'block';
+        }
+        var hide = function() {
+            _warn_wrp.style.display = 'none';
+        }
+        return {
+            show: show,
+            hide: hide,
+            setCssText: setCssText
+        };
+    }();
+    var need_watch = 'onorientationchange' in window;
+    var clientHeight = document.documentElement.clientHeight,
+        clientWidth = document.documentElement.clientWidth;
+    if (need_watch) {
+        if (window.orientation != '0') warn.show();
+        window.addEventListener('orientationchange', function() {
+            if (window.orientation != '0') {
+                warn.show();
+            } else {
+                warn.hide();
+            }
+        }, false);
+    } else {
+        if (clientHeight < clientWidth) warn.show();
+    }
+    //监听窗口变化
+    window.addEventListener('resize', function() {
+
+        clientHeight = document.documentElement.clientHeight, clientWidth = document.documentElement.clientWidth;
+        if (pages){
+            pages.width = clientWidth;
+            pages.height = clientHeight;
+
+            Do(function(){
+                var imgW = 640,
+                    imgH = 1136,
+                     screenW = window.screen.width,
+                     screenH = window.screen.height,
+                    screenW = $('.img_bg').parent().width(),
+                    screenH = $('.img_bg').parent().height(),
+                    n = imgW/imgH;
+
+                //alert('n:'+n+'\nscreenW:'+screenW+'\nscreenH'+screenH+'\nscreenW/screenH'+screenW/screenH);
+                if(screenW/screenH>=n){
+                    //宽
+                    var newW = parseInt(n*screenH);
+                    $('.img_bg').css('width',newW);
+                    $('.img_bg').css('left',(screenW-newW)/2);
+                    $('.img_bg').css('height','100%');
+                }else{
+                    //高
+                    var newH = parseInt(screenw/n);
+                    $('.img_bg').css('width','100%');
+                    $('.img_bg').css('height',newH);
+                }
+            });
+        }
+        if (!need_watch) { //没办监听orientationchange，用resize代替
+            if (clientHeight < clientWidth) {
+                warn.show();
+            } else {
+                warn.hide();
+            }
+        }
+    }, false);
+}
+</script>
+</body>
+</html> 

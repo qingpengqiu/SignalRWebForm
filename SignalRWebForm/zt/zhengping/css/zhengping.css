@@ -1,0 +1,31 @@
+@charset "gb2312";
+body{background: url(../images/bedge_grunge.png); color:#411717;line-height:24px;}
+a{ color:#411717}
+p{ text-indent:2em; margin:0}
+.b_w{width: 950px; margin: 0 auto;  position:relative;}
+.c_w{ width:100%; overflow:hidden; padding-bottom:15px;}
+.t_w{width: 950px; margin: 0 auto;  position:relative;box-shadow: 0px 0px 10px #969696; background: url(../images/bj3.png) no-repeat center 609px #fff}
+.footer_w{ text-align:center; font-size:12px; line-height:25px; padding: 15px 0 35px 0}
+.head_2{ height:40px; background:url(../images/topbj.png) repeat-x; overflow:hidden ; line-height:40px;}
+.head_2 ul{ float:right; margin:0}
+.head_2 ul li{ float:left; margin-right:10px; background:url(../images/shu.png) no-repeat left center; padding-left:10px;}
+.head_2 ul li.name_w{ color:#990000; background:none}
+.banner_w{display:block; height:348px; overflow:hidden}
+.zpdh_w{ color:#b12a00; line-height:26px; padding: 5px 57px 38px 68px; background:url(../images/bj2.png) no-repeat bottom; text-indent:2em; height:218px;}
+.zpdh_w em{ font-style:normal; font-size:30px; font-weight: bold}
+.zpdh_w p{ text-align:right; padding-right:46px;}
+.zplg_w{ padding:88px 425px 12px 63px; text-indent:2em; color:#666666; position:relative}
+.zplg_w embed{ position:absolute; right:60px; top:90px}
+.zplg_w p a{float:right; color:#666}
+.skyy_w{ padding:115px 411px 96px 65px; text-indent:2em;  color:#666666; position:relative}
+.skyy_w a{float:right; color:#666}
+.skyy_w img{position:absolute; right:60px; top:122px}
+.pawj_w{ background:url(../images/pawj.png) no-repeat left top;position:relative}
+.pawj_w ul{ width:480px; margin:0; padding-top:77px; padding-left:43px; }
+.pawj_w ul li{ border-bottom:1px dashed #e7e7e7; padding:15px 0 15px 0; overflow:hidden}
+.pawj_w em{ font-style:normal; color:#8b2100; font-size:15px; font-weight:bold}
+.pawj_w a{float:right}
+.pawj_w img{position:absolute; right:50px; top:55px;box-shadow: 0px 0px 10px #969696;}
+.gdld_w{background:url(../images/bbj.jpg) no-repeat top; overflow:hidden; width:100%; overflow:hidden;padding-top: 62px;height:367px;}
+.gdld_w ul{ width:190px; margin:0; padding:77px 0 73px 93px; float:left}
+.gdld_w li{background:url(../images/pd3.png) no-repeat center left; padding-left:14px; line-height:30px;}

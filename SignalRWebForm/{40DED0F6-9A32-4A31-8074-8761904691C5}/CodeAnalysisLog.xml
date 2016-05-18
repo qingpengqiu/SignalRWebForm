@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="e:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="SMS" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HttpGet(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="SMS.cs" Line="82">可以在方法 'SMS.HttpGet(string, string)' 中多次释放对象 'myResponseStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 82</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HttpPost(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="SMS.cs" Line="67">可以在方法 'SMS.HttpPost(string, string)' 中多次释放对象 'myResponseStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 67</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SQLHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ExecuteReader(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="C.SQLHelper.cs" Line="74">'SQLHelper.ExecuteReader(string)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="C.SQLHelper.cs" Line="66">传递给 'SQLHelper.ExecuteReader(string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'strSQL'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSql(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="C.SQLHelper.cs" Line="49">'SQLHelper.ExecuteSql(string)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="C.SQLHelper.cs" Line="52">可以在方法 'SQLHelper.ExecuteSql(string)' 中多次释放对象 'connection'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 52</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="C.SQLHelper.cs" Line="39">传递给 'SQLHelper.ExecuteSql(string)' 中的 'SqlCommand.SqlCommand(string, SqlConnection)' 的查询字符串可能包含以下变量 'SQLString'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteSqlTran(System.Collections.ArrayList)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="C.SQLHelper.cs" Line="101">传递给 'SQLHelper.ExecuteSqlTran(ArrayList)' 中的 'SqlCommand.CommandText.set(string)' 的查询字符串可能包含以下变量 'SQLStringList[n]'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Thumbs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ToThumbnail(System.String,System.String,System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="B.Thumbs.cs" Line="231">'Thumbs.ToThumbnail(string, string, int, int)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="ImageProcess">
+       <Types>
+        <Type Name="ImageThumbnail" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#MakeThumbnail(System.String,System.String,System.Int32,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="ImageThumbnail.cs" Line="96">'ImageThumbnail.MakeThumbnail(string, string, int, int, string)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Legalsoft.Basic">
+       <Types>
+        <Type Name="ReModuler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#System.Web.IHttpModule.Dispose()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="B.HttpModuler.cs" Line="19">将 'ReModuler' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IHttpModule.Dispose()' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#System.Web.IHttpModule.Init(System.Web.HttpApplication)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="B.HttpModuler.cs" Line="22">将 'ReModuler' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IHttpModule.Init(HttpApplication)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Xfrog.Net">
+       <Types>
+        <Type Name="JsonProperty" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="JsonObject.cs" Line="286">'JsonProperty.JsonProperty(object)' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;JsonProperty..ctor(Object)&#xD;&#xA;JsonProperty.SetValue(Object):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Qiu\ErunRelease\www.erun360.com\App_Code" File="JsonObject.cs" Line="292">'JsonProperty.JsonProperty(string)' 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: &#xD;&#xA;&#xD;&#xA;JsonProperty..ctor(String)&#xD;&#xA;JsonProperty.Parse(String&amp;):Void&#xD;&#xA;JsonProperty.SetValue(Object):Void。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_3rlraee2.dll">
+   <Modules>
+    <Module Name="app_web_3rlraee2.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Crop" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CropImg(System.String,System.Int32,System.Int32,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Qiu\ErunRelease\www.erun360.com\action" File="Crop.ashx" Line="66">'Crop.CropImg(string, int, int, int, int)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Flight" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\action" File="Flight.ashx" Line="619">可以在方法 'Flight.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 619</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_a5bc51yz.dll">
+   <Modules>
+    <Module Name="app_web_a5bc51yz.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="TrainingPlan_PlanIndex" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="为格式化方法提高正确的参数" Category="Microsoft.Usage" CheckId="CA2241" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\TrainingPlan" File="PlanIndex.aspx.cs" Line="60">方法 'TrainingPlan_PlanIndex.Page_Load(object, EventArgs)' 调用 'string.Format(string, params object[])' 并且不为参数 "5" 提供格式项。提供的格式字符串为:“"&lt;div class=\"thisplan\"&gt;&lt;h2&gt;{0}公里{2}{3}周训练计划 [第{5}周]&lt;br/&gt; &lt;br/&gt; 开始时间:{1}&lt;/h2&gt;&lt;/d..."”</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_cvddp4f4.dll">
+   <Modules>
+    <Module Name="app_web_cvddp4f4.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="weixinpay_pallNotifyUrl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\weixinpay" File="pallNotifyUrl.aspx.cs" Line="540">可以在方法 'weixinpay_pallNotifyUrl.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 540</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="weixinpay_payallresult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\weixinpay" File="payallresult.aspx.cs" Line="572">可以在方法 'weixinpay_payallresult.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 572</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_ejoczdw3.dll">
+   <Modules>
+    <Module Name="app_web_ejoczdw3.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Admin_RaceJion" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAllEcexl_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Admin" File="RaceJion.aspx.cs" Line="854">传递给 'Admin_RaceJion.btnAllEcexl_Click(object, EventArgs)' 中的 'OleDbCommand.OleDbCommand(string, OleDbConnection)' 的查询字符串可能包含以下变量 'sbcn', 'sben'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnExecl_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Admin" File="RaceJion.aspx.cs" Line="562">传递给 'Admin_RaceJion.btnExecl_Click(object, EventArgs)' 中的 'OleDbCommand.OleDbCommand(string, OleDbConnection)' 的查询字符串可能包含以下变量 'sbcn', 'sben'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Admin" File="RaceJion.aspx.cs" Line="670">传递给 'Admin_RaceJion.btnExecl_Click(object, EventArgs)' 中的 'OleDbCommand.OleDbCommand(string, OleDbConnection)' 的查询字符串可能包含以下变量 'sbcn', 'sben'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Admin" File="RaceJion.aspx.cs" Line="708">传递给 'Admin_RaceJion.btnExecl_Click(object, EventArgs)' 中的 'OleDbCommand.OleDbCommand(string, OleDbConnection)' 的查询字符串可能包含以下变量 'sbcn', 'sben'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Admin" File="RaceJion.aspx.cs" Line="749">传递给 'Admin_RaceJion.btnExecl_Click(object, EventArgs)' 中的 'OleDbCommand.OleDbCommand(string, OleDbConnection)' 的查询字符串可能包含以下变量 'sbcn', 'sben'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Admin" File="RaceJion.aspx.cs" Line="790">传递给 'Admin_RaceJion.btnExecl_Click(object, EventArgs)' 中的 'OleDbCommand.OleDbCommand(string, OleDbConnection)' 的查询字符串可能包含以下变量 'sbcn', 'sben'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_mc4deo0z.dll">
+   <Modules>
+    <Module Name="app_web_mc4deo0z.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Pay_Flight_notify_url" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Pay\Flight" File="notify_url.aspx.cs" Line="366">可以在方法 'Pay_Flight_notify_url.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 366</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Pay_Flight_return_url" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Pay\Flight" File="return_url.aspx.cs" Line="295">可以在方法 'Pay_Flight_return_url.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 295</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_movskwrw.dll">
+   <Modules>
+    <Module Name="app_web_movskwrw.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Flight_flightpay" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Flight" File="flightpay.aspx.cs" Line="353">可以在方法 'Flight_flightpay.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 353</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Flight_Orderdetail" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Flight" File="Orderdetail.aspx.cs" Line="162">可以在方法 'Flight_Orderdetail.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 162</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_qygttygc.dll">
+   <Modules>
+    <Module Name="app_web_qygttygc.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Competetion_Alipay_wap_call_back_url" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Competetion\Alipay\wap" File="call_back_url.aspx.cs" Line="577">可以在方法 'Competetion_Alipay_wap_call_back_url.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 577</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Competetion_Alipay_wap_notify_url" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Competetion\Alipay\wap" File="notify_url.aspx.cs" Line="782">可以在方法 'Competetion_Alipay_wap_notify_url.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 782</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_ujisalo3.dll">
+   <Modules>
+    <Module Name="app_web_ujisalo3.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Competetion_Alipay_pc_notify_url" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Competetion\Alipay\pc" File="notify_url.aspx.cs" Line="705">可以在方法 'Competetion_Alipay_pc_notify_url.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 705</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Competetion_Alipay_pc_return_url" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Competetion\Alipay\pc" File="return_url.aspx.cs" Line="549">可以在方法 'Competetion_Alipay_pc_return_url.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 549</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_xi2ii0i5.dll">
+   <Modules>
+    <Module Name="app_web_xi2ii0i5.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Competetion_payment_wxNotifyUrl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Competetion\payment" File="wxNotifyUrl.aspx.cs" Line="562">可以在方法 'Competetion_payment_wxNotifyUrl.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 562</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\qiu\AppData\Local\Temp\tmp7B30.tmp.cadir\bin\App_Web_zwajndwi.dll">
+   <Modules>
+    <Module Name="app_web_zwajndwi.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Competetion_OrderDetails" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PostWebRequest(System.String,System.String,System.Text.Encoding)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-03-15 06:50:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Qiu\ErunRelease\www.erun360.com\Competetion" File="OrderDetails.aspx.cs" Line="550">可以在方法 'Competetion_OrderDetails.PostWebRequest(string, string, Encoding)' 中多次释放对象 'newStream'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 550</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>不要在构造函数中调用可重写的方法</Name>
+   <Description>不应通过构造函数调用类中定义的虚方法。如果某个派生类已重写该虚方法，则将在调用派生类的构造函数前，调用此派生类重写后的方法。</Description>
+   <Resolution Name="Default">{0} 包含调用链，该调用链导致调用此类所定义的虚方法。请检查以下调用堆栈，看是否有意外结果: {1}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>接口方法应可由子类型调用</Name>
+   <Description>定义的显式方法实现具有私有可访问性。除非基类提供了具有相应可访问性的备用方法，否则从具有显式方法实现的类派生，并选择在类中重新声明它们的类不能调入基类实现。如果重写的基类方法已被显式接口实现所隐藏，则为了调入基类实现，派生类必须将基指针强制转换为相关接口。但是，通过此引用调用基类实现时，实际调用的将是派生类实现，这会导致递归调用，并最终导致堆栈溢出。</Description>
+   <Resolution Name="Default">将 {0} 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 {1} 的功能且对派生类可见的新方法。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>再次引发以保留堆栈详细信息</Name>
+   <Description>重复引发捕获的异常时，请使用 IL 再次引发指令保留原始堆栈详细信息。</Description>
+   <Resolution Name="Default">{0} 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 82</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="为格式化方法提高正确的参数" Category="Microsoft.Usage" CheckId="CA2241">
+   <Name>为格式化方法提高正确的参数</Name>
+   <Description>为 String.Format 调用提供正确的参数数量。</Description>
+   <Resolution Name="MissingFormatItem">方法 {0} 调用 {1} 并且不为参数 {2} 提供格式项。提供的格式字符串为:“{3}”</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182361.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>检查 SQL 查询是否存在安全漏洞</Name>
+   <Description>通过用户输入生成的 SQL 命令字符串容易受到 SQL 注入式攻击。Microsoft SQL Server 和其他数据库服务器支持存储过程和参数化 SQL 查询，这将降低受到注入式攻击的风险。</Description>
+   <Resolution Name="WithNonLiterals">传递给 {1} 中的 {0} 的查询字符串可能包含以下变量 {2}。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,26 @@
+/*头和尾的公共css文件*/
+
+.articleh{width: 970px;margin: 0 auto}
+.erunlogo{float: left;margin-top: -5px;}
+.mediaLogin{width: 100%;}
+.mediaLogin .ml2{float: right;line-height: 54px;padding: 0 5px 0 4px;color: #990000;font-size: 14px;}
+.mediaLogin .ml3{height: 30px;border: 1px solid #dddddd;line-height: 30px;text-align: center;float: right;margin: 10px 0 0 6px;position: relative;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;box-shadow:2px 2px 0 #E6E6E6;font-size: 12px;color: #999;padding: 0 18px 0 14px;background: url(../images/jtx.png) no-repeat right 12px #F8F8F8;height: 100%;position: relative;z-index: 10;position: relative;width: 52px;}
+.mediaLogin .ml3:hover{color: #990000;cursor: pointer;height: 36px;border-bottom: 0;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;
+    box-shadow:2px 0px 0 #E6E6E6;}
+
+.mediaLogin .uname{background: none;color: #900;font-size: 14px;border: 0;box-shadow:none;width: auto;}
+.mediaLogin input{display: none}
+.mediaLogin input+ul{display: none;width: 100%; border: 1px solid #ddd;position: absolute;top: 29px;right: -1px;background: #F8F8F8;-moz-box-shadow:2px 2px 0 #E6E6E6;-webkit-box-shadow:2px 2px 0 #E6E6E6;box-shadow:2px 2px 0 #E6E6E6;z-index:9999;}
+
+.mediaLogin input+ul li{width: 82px;line-height: 30px;text-align: left;padding-left: 14px;position: relative;}
+.mediaLogin input+ul li:last-child{border-bottom: 0;}
+.mediaLogin .ml3 input+ul li i{display: none}
+.mediaLogin a{color: #999}
+.meidlogin{display: none}
+.mediaLogin .ml3:hover ul{display: block\9;}
+@media screen and (min-width:801px) {
+.mediaLogin .ml3:hover ul{display: block;}
+}
+
+.footer{width: 970px;text-align: center;clear: both;margin: 0 auto;border-top: 1px solid #ccc;line-height: 24px;color: #666;padding: 20px 0 10px 0}
+.footer a{color: #666}

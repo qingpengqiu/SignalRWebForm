@@ -1,0 +1,125 @@
+﻿using Erun360.Pay.WxPayAPI;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using DBShop = ErunMall.BLL.Shop;
+using DBMShop = ErunMall.Model.Shop;
+public partial class weixinpay_mallwxpay : System.Web.UI.Page
+{
+    public string idOrder = string.Empty;
+    public static string wxJsApiParam { get; set; } //H5调起JS API参数
+    private int ssmin = 120;//赛事过期时间
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        idOrder = TypeChangeDefault.NullToString(Request.QueryString["order"], "0");
+        if (!IsPostBack)
+        {
+            JsApiPay jsApiPay = new JsApiPay(this);
+            jsApiPay.GetOpenidAndAccessToken();
+
+            string openid = jsApiPay.openid;
+            Log.Info("微信支付openid:" + openid, "微信益跑商城微信支付");
+            DBShop.tblOrder bll = new DBShop.tblOrder();
+            DBMShop.tblOrder model = bll.GetModelByOrder(idOrder);
+            if (model == null)
+            {
+                Response.Write("订单不存在-退出微信支付" + idOrder);
+                return;
+            }
+            //if (model.iStatus != 1)
+            //{
+            //    Log.Info("订单不存在-退出微信支付" + idOrder, "微信益跑商城微信支付");
+            //    string url = "mall.erun360.com/pay.aspx?order=" + idOrder + "";
+            //    Response.Redirect(url);
+            //    return;
+            //}
+            ltlidOrder.Text = idOrder;
+            ltlTitle.Text = model.cProductName;
+            ltlNum.Text = model.iBuyNum.ToString();
+            //付款金额 
+            decimal total_fee = TypeChangeDefault.NullToDecimal(model.fPayPrice, 0);
+            //检测是否给当前页面传递了相关参数
+            if (string.IsNullOrEmpty(openid) || total_fee <= 0)
+            {
+                Log.Error(this.GetType().ToString(), "This page have not get params, cannot be inited, exit...");
+                return;
+            }
+
+            //若传递了相关参数，则调统一下单接口，获得后续相关接口的入口参数
+            jsApiPay.total_fee = (int)(total_fee * 100);//单位是分，不能有小数
+            jsApiPay.openid = openid;
+            //JSAPI支付预处理
+            try
+            {
+                Log.Info("JSAPI支付预处理", "微信益跑商城微信支付");
+                WxPayData unifiedOrderResult = jsApiPay.GetUnifiedOrderResult(model.cProductName, model.cProductName, model.cOrder_no, ssmin, "http://www.erun360.com/weixinpay/malljsapipay.aspx");
+
+                wxJsApiParam = jsApiPay.GetJsApiParameters();//获取H5调起JS API参数                    
+                Log.Debug(this.GetType().ToString(), "wxJsApiParam : " + wxJsApiParam);
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<span style='color:#FF0000;font-size:20px'>" + "下单失败，请返回重试" + "</span>");
+                Log.Error(this.GetType().ToString(), "下单失败，" + ex.Message + ";" + ex.StackTrace);
+            }
+        }
+      
+        
+        
+        
+
+        //string openid = string.Empty;
+        //JsApiPay jsApiPay = new JsApiPay(this);
+        //try
+        //{
+        //    //Log.Info("调用【网页授权获取用户信息】接口获取用户的openid和access_token " + idOrder, "进入微信益跑商城微信支付");
+        //    jsApiPay.GetOpenidAndAccessToken();
+        //    Response.Write("微信益跑商城获取openid:" + jsApiPay.openid);
+        //    //Log.Info(jsApiPay.openid, "微信益跑商城获取openid");
+        //    //获取收货地址js函数入口参数
+        //    //wxEditAddrParam = jsApiPay.GetEditAddressParameters();
+        //    ViewState["openid"] = jsApiPay.openid;
+        //}
+        //catch (Exception ex)
+        //{
+        //    Response.Write("获取openid 失败" + idOrder);
+        //    //Log.Info(this.GetType().ToString() + "获取openid 失败" + idOrder, "微信益跑商城页面加载出错，请重试(获取openid 失败)");
+        //    //string url = "http://mall.erun360.com/pay.aspx?order=" + idOrder + "";
+        //    //Response.Redirect(url, true);
+        //    return;
+        //}
+        
+        //double iCost = 0.00;
+        //iCost = TypeChangeDefault.NullToDouble(model.fPayPrice, 0);
+        //string total_fee = (iCost * 100).ToString();
+        //Log.Info(this.GetType().ToString(), "调用jsapi 支付钱数：" + total_fee);
+        ////检测是否给当前页面传递了相关参数
+        //if (string.IsNullOrEmpty(openid))
+        //{
+        //    Response.Write("获取openid 失败openid为空" + idOrder);
+        //    return;
+        //}
+        ////若传递了相关参数，则调统一下单接口，获得后续相关接口的入口参数
+
+        //jsApiPay.openid = openid;
+        //jsApiPay.total_fee = int.Parse(total_fee);
+        ////JSAPI支付预处理
+        //try
+        //{
+        //    WxPayData unifiedOrderResult = jsApiPay.GetUnifiedOrderResult(model.cProductName, model.cProductName, model.cOrder_no, ssmin, "http://www.erun360.com/weixinpay/malljsapipay.aspx");
+        //    //WxPayData unifiedOrderResult = jsApiPay.GetUnifiedOrderResult();
+        //    wxJsApiParam = jsApiPay.GetJsApiParameters();//获取H5调起JS API参数                    
+        //    Response.Write("获取H5调起JS API参数" + wxJsApiParam);
+            
+        //}
+        //catch (Exception ex)
+        //{
+        //    Response.Write("调统一下单接口" + idOrder);
+        //    return;
+        //}
+    }
+}

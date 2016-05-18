@@ -1,0 +1,66 @@
+@charset "gb2312";
+body{background: url(../images/tnfzt.jpg) no-repeat fixed  center 50px;position: relative;}
+/*mini header css star*/
+.header{height: 50px;background:  #fff ;background:hsla(0,0%,95%,0.9) ;width: 100%;position: relative;z-index: 10;position: fixed;}
+.header{padding: 0}
+.nav{float: left;width: 94px;height: 30px;background: #fff;border: 1px solid #dddddd;font-size: 12px;color: #888;line-height: 30px;text-align: center;margin:10px 0 0 10px;padding: 0;display: block;overflow: hidden;}
+.nav li{float: none;line-height: 30px;height: auto;background: #fff;padding: 0;font-size: 14px;width: 94px;position: inherit;display: block;}
+.nav img{display: none}
+.nav dl{display: inline-block;padding: 0;position: relative;border: 0;width: 100%;z-index: 1;top: 0;left: 0}
+.nav:hover{cursor: pointer;overflow: visible;}
+.nav:hover ul{display: block;}
+.nav ul{display: none;border: 1px solid #dddddd;width: 94px;margin-left: -1px;background: #fff}
+.nav a{color: #888;display: inherit;}
+.nav ul li:hover{background: #f3f3f3}
+.nav ul li:hover a{color: #ff6600;}
+.nav ul a{color: #888}
+.nav li em{display: none}
+.nav li a{color: #999}
+.nav dl dt{line-height: 30px;height: auto;padding: 0;width: 100%;display: inline-block;}
+.nav li a i{display: none}
+.nav dl a{font-size: 14px;}
+.nav li:last-child{background: #fff}
+.nav li:first-child em{display: block;color: #999;height: auto;}
+/*mini header css end*/
+.tnfbody{width: 938px;margin:0 auto 100px auto;padding-top:352px;}
+.tnfjs{height: 183px;background: #ebece8;color: #2d0707;line-height: 20px;padding:32px 38px;}
+.tnfjs span{font-size: 10px;vertical-align:super;}
+.tnfjs .tnfimgbox{float: left; margin-top: -46px;width: 329px;margin-left: 31px;background:url(../images/tnft.png) no-repeat right top;margin-right: 26px;}
+.tnfn{background: url(../images/tnfnt.png) no-repeat 36px 26px #f3f4f3;padding: 0 0 0 40px;overflow: hidden;}
+.tnfn h4{font-size: 18px;color: #c21500;line-height: 54px;height: 54px;}
+.tnfn img{float: left;margin: 14px 13px 0 0}
+.tnfrn{background: url(../images/tnfshan.png) no-repeat right bottom;float: left;width: 324px;padding:  24px 70px 66px 18px;line-height: 25px;color: #2d0707}
+.tnfmore{float: right;padding-top: 28px;color: #2d0707;margin-right: -16px;}
+.tnfz{background: url(../images/tnfnt.png) no-repeat 36px 26px #eaebe9;padding: 0 0 0 40px;overflow: hidden;}
+.tnfz h4{font-size: 18px;color: #c21500;line-height: 54px;height: 54px;}
+.tnfzr{background: url(../images/tnfz.png) no-repeat right bottom;float: left;width: 368px;height: 290px;line-height: 25px;color: #2d0707;padding: 30px 126px 0 0}
+.tnfsd{background: url(../images/tnfsd.jpg) no-repeat center center;width: 404px;height: 330px;float: left;position: relative;}
+.tnfsd a{display: block;position: absolute;}
+.fhl{width: 90px;height: 90px;left: 69px;top: 17px;}
+.kbly{width: 77px;height: 77px;left: 64px;top: 132px;}
+.xs{width: 78px;height: 82px;top: 60px;left: 100px;top: 90px;left: 136px;}
+.xsslgy{width: 79px;height: 79px;left: 195px;top: 47px;}
+.bjzwy{width: 68px;height: 62px;left: 148px;top: 170px;}
+.bjjf{width: 62px;height: 67px;left: 202px;top: 132px;}
+.djs{width: 84px;height: 46px;top: 174px;left: 252px;}
+.yts{width: 46px;height: 82px;top: 232px;left: 133px;}
+.tnfjt{background: url(../images/tnfnt.png) no-repeat 36px 26px #f3f3f3;padding: 0 0 0 40px;overflow: hidden;}
+.tnfjt h4{font-size: 18px;color: #c21500;line-height: 54px;height: 54px;}
+.jtnr{line-height: 24px;color: #000;padding: 22px 56px 30px 35px}
+.jtnr span{font-size: 10px;vertical-align:super;}
+.yyszj{background: url(../images/tnfnt.png) no-repeat 36px 26px #eaeae8;padding: 0 0 65px 40px;overflow: hidden;}
+.yyszj h4{font-size: 18px;color: #c21500;line-height: 54px;height: 54px;}
+.yyszj td{text-align: center;background: #fff;height: 38px;line-height: 38px;border-bottom: 1px solid  #d6dde2;border-right: 1px solid  #d6dde2;width: 102px;}
+.yyszj table{border: 1px solid  #d6dde2;margin: 35px 0 0 60px}
+.yyszj tr td:first-child{background: #d6dde2;color: #607e93;border-bottom: 1px solid #fff}
+.yyszj tr:nth-child(5) td{line-height: 16px;}
+.yyszj tr:nth-child(6) td{line-height: 16px;}
+.yyszj tr:last-child td{border-bottom: 1px solid #d6dde2}
+.tnfmap{background: url(../images/tnfnt.png) no-repeat 36px 26px #f4f4f4;padding: 0 0 0 40px;overflow: hidden;}
+.tnfmap h4{font-size: 18px;color: #c21500;line-height: 54px;height: 54px;}
+.maplist{background: url(../images/tnflb.png) no-repeat center bottom;margin-left: -40px;overflow: hidden;padding-top: 20px;padding-bottom: 30px;}
+.maplist li{float: left;margin-left: 14px;text-align: center;line-height: 24px;}
+.maplist li a{color: #000}
+.maplist li:first-child{margin-left: 84px;}
+.maplist li img{border: 3px solid #fff}
+.mnav{display: none;}

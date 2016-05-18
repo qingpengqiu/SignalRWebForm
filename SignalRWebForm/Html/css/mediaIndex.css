@@ -1,0 +1,24 @@
+@media screen and (min-width:100px) and (max-width:800px) {
+	/*shouye*/
+	.connav{display: none}
+	.indexctop .left,#preImage,#bigImage,.indexctop .right{width: 100%;height: auto;}
+	.indexctop .right{display: block;}
+	#preTitle{display: none}
+	#preImage{background-size: 100% auto;padding: 0}
+	#zhanwei{display: block;width: 100%;opacity: 0}
+	#bigImage{border: 0}
+	.zhuanti{padding-left: 4%}
+	.gg{display: none!important;}
+	#preview{height: auto;padding-top: 8px}
+	.hezhb span{width: auto;}
+	.ypzlx li{padding-left: 8px}
+	.ht{height: auto;}
+	.hezhb a{border: 0;width: auto;height: auto;margin: 0;line-height: 18px;padding: 0 0 0 6px;}
+	.hezhb img{display: none;}
+	.hezhb a:after{   content: attr(title);}
+	.yqljwz{margin-top: 0}
+	.yqljwz a{padding: 0 0 0 6px;line-height: 18px;float: left;}
+	.httong .htlistr{float: left;}
+	.httong{width: auto;}
+	.ypzlx li{width: auto;}
+}

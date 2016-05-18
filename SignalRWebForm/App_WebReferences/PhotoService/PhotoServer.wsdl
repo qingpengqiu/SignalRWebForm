@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="Erun360" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="Erun360" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="Erun360">
+      <s:element name="GetCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sfolder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bfolder" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImgs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bfolder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sfolder" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSize" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetImgsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetImgsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileNameByCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bigfoldername" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileNameByCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileNameByCacheResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCount" />
+  </wsdl:message>
+  <wsdl:message name="GetCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetImgsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetImgs" />
+  </wsdl:message>
+  <wsdl:message name="GetImgsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetImgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileNameByCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileNameByCache" />
+  </wsdl:message>
+  <wsdl:message name="GetFileNameByCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileNameByCacheResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PhotoServerSoap">
+    <wsdl:operation name="GetCount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据原图生产缩略图，并返回总文件数</wsdl:documentation>
+      <wsdl:input message="tns:GetCountSoapIn" />
+      <wsdl:output message="tns:GetCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImgs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取文件目录下的文件列表</wsdl:documentation>
+      <wsdl:input message="tns:GetImgsSoapIn" />
+      <wsdl:output message="tns:GetImgsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileNameByCache">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取文件目录下所有文件名</wsdl:documentation>
+      <wsdl:input message="tns:GetFileNameByCacheSoapIn" />
+      <wsdl:output message="tns:GetFileNameByCacheSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PhotoServerSoap" type="tns:PhotoServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCount">
+      <soap:operation soapAction="Erun360/GetCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImgs">
+      <soap:operation soapAction="Erun360/GetImgs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileNameByCache">
+      <soap:operation soapAction="Erun360/GetFileNameByCache" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PhotoServerSoap12" type="tns:PhotoServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCount">
+      <soap12:operation soapAction="Erun360/GetCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImgs">
+      <soap12:operation soapAction="Erun360/GetImgs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileNameByCache">
+      <soap12:operation soapAction="Erun360/GetFileNameByCache" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PhotoServer">
+    <wsdl:port name="PhotoServerSoap" binding="tns:PhotoServerSoap">
+      <soap:address location="http://114.247.234.229:8081/PhotoServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PhotoServerSoap12" binding="tns:PhotoServerSoap12">
+      <soap12:address location="http://114.247.234.229:8081/PhotoServer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

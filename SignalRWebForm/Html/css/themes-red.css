@@ -1,0 +1,31 @@
+body{background: url(../images/bg2.jpg) no-repeat center top #962120;}
+nav{background-color: rgba(231,7,13,0.7);color: #fff;box-shadow: 2px 2px 2px rgba(211,0,0,0.15);border: 1px solid rgba(231,7,13,0.7);}
+.main-left{width: 180px;float: left;border: 1px solid rgba(111,14,19,0.1);background-color: rgba(79,0,4,0.4);height: 100%}
+.main-left .name{color: #fff}
+.main-left .name a{color: #fcfcfc}
+.main-left p{color: #dadada}
+.main-left p a{color: #fcfcfc}
+.main-left ul li a{color: #fff}
+.main-left ul{background: url(../images/ltb2.png) no-repeat 7px 11px;}
+.topr span{background-color: rgba(229,29,29,1);color: #fff;box-shadow: 2px 2px 2px rgba(211,0,0,0.15);}
+.topr:hover span{color: #7f151a;background: url(../images/jtx2.png) no-repeat right 12px #fff;box-shadow:none}
+.c-list .c-dq{background: #e51d1d}
+.c-list .c-dq em{background-image: url(../images/sjx2.png);}
+.content li a{color: #fff}
+.content li a:hover{color: #fff;text-decoration: underline;}
+.content{color: #fff}
+.content li p{color: #fff}
+.relevance{color: #fff}
+.content li em a{color: #fff}
+.recom,.hot-act{background-image: url(../images/recom2.png);background-color: #e51d1d;color: #fff}
+.main-right-b{border: 1px solid rgba(111,14,19,0.1);background-color: rgba(79,0,4,0.4);color: #fff}
+.main-right-b .recomul li a{color: #fff}
+.main-right-b .recomul li .focus{background: #f2f2f2;color: #000}
+.main-right-b .recomul li .focus:hover{background: #e82626;color: #fff;border-color: #e82626}
+.hot-act-ul li a{color: #fff}
+.main-right-b .recomul li{border-color: #b79a96}
+.focus-other a{background: #e82626;}
+.user-club{color: #fff;background-image: url(../images/user-club2.png);background-color: #E51D1D;}
+.user-club-ul li a{color: #fff}
+footer{color: #fff}
+footer a{color: #fff}

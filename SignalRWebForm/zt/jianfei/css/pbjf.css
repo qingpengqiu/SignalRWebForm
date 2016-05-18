@@ -1,0 +1,54 @@
+@charset "gb2312";
+body{background: url(../images/bj.png);}
+.b_w{width: 950px; margin: 0 auto; position:relative;background: #fff; overflow:hidden;}
+.b_w img{margin: 0;display: block;}
+.t_w{width: 100%;}
+
+
+.footer_w{ text-align:center; color:#5a5a5a; font-size:12px; line-height:25px; padding: 15px 0 35px 0}
+.footer_w a{ color:#5a5a5a}
+.head_2{ height:40px; background:url(../images/topbj.png) repeat-x; overflow:hidden ; line-height:40px;}
+.head_2 .b_w{ background:none;}
+.head_2 ul{ float:right; margin:0}
+.head_2 ul li{ float:left; margin-right:10px; background:url(../images/shu.png) no-repeat left center; padding-left:10px;}
+.head_2 ul li.name_w{ color:#990000; background:none}
+.nr{padding-top: 34px;}
+.dwz{margin-bottom: 22px;}
+.dwz span{height: 35px;background:#416eb3 url(../images/titl.png) no-repeat 50px top ;display: block;line-height: 35px;padding-left: 100px;}
+.dwz span a{font-size: 24px; color: #416eb3;background: #fff url(../images/titr.png) no-repeat right top ;;font-weight: bold;height: 35px;display: inline-block;padding-right: 125px;}
+.dwz span a:hover{text-decoration: none}
+.dwz p{overflow: hidden;padding: 15px 50px 0 40px;line-height: 27px;color: #666;margin: 10px 0}
+.dwz p img{float: right;margin-left: 50px;margin-top: -10px;}
+.xkuai{overflow: hidden;width: 800px;border-radius: 30px;box-shadow: 0 0px 16px 0px #e5e5e5;padding: 38px 30px 0 25px;margin-left: 50px;}
+.dwzx{width: 400px; float: left;}
+.dwzx span{height: 35px;background:#416eb3 url(../images/titl.png) no-repeat left top ;display: block;line-height: 35px;padding-left: 50px;margin-bottom: 16px}
+.dwzx span a{font-size: 24px; color: #416eb3;background: #fff url(../images/titr.png) no-repeat right top ;;font-weight: bold;height: 35px;display: inline-block;padding-right: 125px;}
+.dwzx span a:hover{text-decoration: none}
+.top{height: 88px; overflow: hidden;padding-left: 11px}
+.dwzx img{float: left;}
+.dwzx p{margin: 0}
+
+
+/*creat by ljz*/
+.conDis{ padding:20px 0 100px;}
+.subDis{width:100%; margin:0 0 27px 0; overflow:hidden;}
+.subDisl,.subDisr{width:375px; height:233px; border:1px solid #c7c7c7; overflow:hidden; float:left; display:inline;}
+.subDisl{margin:0 24px 0 50px;}
+.subDisl h1{ width:357px; height:32px; margin:22px 0 10px 12px; overflow:hidden; background-image:url(../images/tit.gif); background-repeat:no-repeat;}
+.subDisl h1 span{ display:none;}
+.tit01{background-position:0 0;}
+.tit02{background-position:0 -42px;}
+.tit03{background-position:0 -84px;}
+.tit04{background-position:0 -126px;}
+.tit05{background-position:0 -168px;}
+.tit06{background-position:0 -210px;}
+.subDisr{ background:url(../images/subR-bg.gif) left bottom repeat-x;}
+.newsUL{ margin:30px 0 0 15px; padding:0;width:343px; overflow:hidden; height:168px;}
+.newsUL a{ color:#8a8a8a; font-size:14px;}
+.newsUL a:hover{ color:#f60!important; text-decoration:underline;}
+.newsUL li{ height:28px; line-height:28px; overflow:hidden; float:left; display:inline; background:url(../images/hdian.png) left 12px no-repeat; padding:0 0 0 20px;width: 330px;}
+.picShow{width:178px; height:126px; overflow:hidden; float:left; display:inline; margin:15px 10px 0 12px;}
+.picText{width:165px; float:left; display:inline;}
+.picText h2,.picText h3{ font-size:14px; font-family:"Î¢ÈíÑÅºÚ";height:21px; line-height:21px; overflow:hidden; margin:0; padding:0; color:#666; }
+.picText p{ color:#666; line-height:20px; padding:4px 0 0; margin:0;}
+h1 a{float: right;line-height: 32px;padding-right: 20px;font-weight: 100}

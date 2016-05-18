@@ -1,0 +1,32 @@
+body,button,input,select,textarea {font:12px/1.125 Arial,Helvetica,sans-serif;_font-family:"SimSun";}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+table {border-collapse:collapse;	border-spacing:0;}
+li {list-style:none;}
+fieldset,img {border:0;}
+
+a:focus,input,textarea {outline-style:none;}
+input[type="text"],input[type="password"],textarea {outline-style:none;	-webkit-appearance:none;}
+textarea {resize:none}
+address,caption,cite,code,dfn,em,i,th,var {font-style:normal;font-weight:normal;}
+abbr,acronym {border:0;font-variant:normal;}
+a {	text-decoration:none; color: #666}
+a:hover {text-decoration:underline;color: #ff6600}
+.c950{width: 950px;margin: 0 auto}
+.header{background: url(../images/zt_topbj.png) repeat-x; height: 41px}
+.header ul li{float: right;line-height: 41px;margin-right: 12px;}
+#huxi .content .c950{background:#fff;padding-bottom: 20px;}
+.footer{color: #5A5A5A; font-size: 12px; line-height: 25px; padding: 15px 0 35px;
+    text-align: center;}
+   .title1{display: block;width: 880px;height: 33px;background: url(../images/huxi1.png);margin: 25px 0 0 34px ;}
+   .nr1{width: 836px;height: 160px;background: #fbdcb8;border: 3px solid #f7ce72;border-radius:8px;padding: 17px;margin: 20px 0 0 34px;}
+   .nr1 p{background: #feebc7;overflow: hidden;line-height: 24px;color: #666}
+   .nr1 p img{float: left;margin: 3px 48px 5px 45px}
+   .nr1 p span{display: block;padding: 22px 30px 0 0;font-size: 14px}   
+   .title2{background-image: url(../images/huxi2.png);}
+   .nr2{background: #f9c3d5;border: 3px solid #f085b4;}
+   .nr2 p{background:#fce6ec }   
+   .title3{background-image: url(../images/huxi3.png);}
+   .nr3{background: #afddf7;border: 3px solid #7fbfe8;}
+   .nr3 p{background:#cee9fa }  
+   #huxi .content .c950 ul{width: 889px;height: 462px;background: url(../images/huxibj.png);margin: 32px 0 0 26px; padding: 10px 0 0 0} 
+   #huxi .content .c950 li{float: left;margin: 20px 0 0 54px;text-align: center;line-height: 24px;}

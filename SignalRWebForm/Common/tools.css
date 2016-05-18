@@ -1,0 +1,37 @@
+#H2_w{height: auto;width: 100%;overflow: hidden;}
+#H2_w{width: 970px; height: auto; margin: 0 auto}
+#guide{background: url(/images/del.jpg) no-repeat right center; width: 350px;padding-top: 40px;float: left;}
+#guide li{height: 38px; line-height: 38px;width: 270px;background: url(/Images/index/toolssj.png) no-repeat 13px center;padding-left: 30px;}
+#guide li a{font-size: 16px; color: #666}
+#guide li a:hover{text-decoration: none;color: #39942d;}
+#guide li.dq{background-color: #f1f7f0}
+#guide li.dq a{font-weight: bold;color: #39942d;}
+#guide li.dq em{font-weight: 100}
+#cont{width: 590px;float: right;padding-top: 50px;}
+#cont span{font-size: 24px; color: #6b99d1;font-weight: bold;}
+#cont span em{font-weight: 100;font-size: 20px;font-family: arial}
+#cont p{color: #666;line-height: 24px;padding-top: 8px;}
+#cont form{color: #666;padding-top: 26px;}
+#cont form a:hover{cursor: pointer;text-decoration: none}
+#cont form td{padding-bottom: 10px;}
+.tj{padding: 12px 0 0 40px;}
+#calorie{color: #f00}
+.footer_w{ text-align:center; color:#5a5a5a; font-size:12px; line-height:25px; padding: 15px 0 35px 0}
+.footer_w a{ color:#5a5a5a}
+#jieguo{background: url(/Images/index/dht.png) no-repeat top left; margin-top: 22px; color: #333;line-height: 28px;padding-top: 20px;}
+#jieguo table{background: #f7f7f7;border: 1px solid #dfdfdf;border-right: 0;border-bottom: 0;font-size: 12px;color: #5e5e5e}
+#jieguo table td{border: 1px solid #dfdfdf;border-left: 0; border-top: 0;padding: 0px 8px }
+.radio1 { float:left;height:17px;background-image:url(/images/radio.gif);background-position:-0px -0px;background-repeat:no-repeat;padding-left:15px;cursor:pointer;margin-right:13px;line-height:17px;margin-bottom:3px; }
+.radio2 { float:left;height:17px;background-image:url(/images/radio.gif);background-position:-0px -17px;background-repeat:no-repeat;padding-left:15px;cursor:pointer;margin-right:13px;line-height:17px;margin-bottom:3px; }
+tr.title td{background: #dfdfdf;text-align: center;}
+#tab2 tr td{padding-left: 20px;}
+#form1 li{height: 42px;}
+#form1 ul{width: 280px;}
+span#btn{float: right;}
+#form1 ul input{width: 48px;}
+#guide li i{font-style: normal;}
+.calcu{color:#fff;background: #5eb84c;border-radius: 5px;display: inline-block;width: 100px;line-height: 30px;text-align: center;padding-top: 2px;}
+.calcure{color: #fff;background: #a0a99e;border-radius: 5px;display: inline-block;width: 100px;;line-height: 30px;text-align: center;padding-top: 2px}
+.calcu:hover{color: #fff}
+.calcure:hover{color: #fff}
+.appdownv{display: none}

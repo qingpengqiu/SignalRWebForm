@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html class="webapp" 
+	  data-design="640/1010" 
+	  data-scale="min" 
+	  data-mode="screen" 
+	  data-widget-mode="everytime" 
+	  data-scroll="vertical" 
+	  data-scene-loop="true" 
+	  data-scene-deg="28"
+      data-scene-duration="0.4" 
+      data-scene-timing="ease" 
+      data-scene-perspective="300px" id="webapp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Expires" content="-1" />
+<meta name="viewport" content="user-scalable=no, minimal-ui, target-densitydpi=device-dpi" />
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta content="37303" name="appId">
+<title>神户马拉松</title>
+<link rel="stylesheet" type="text/css" href="g.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="app.css">
+<style type="text/css">
+article{background-color: #2B2B2B;}
+article.webapp-view{opacity: 0;}
+.transparent{opacity:1}
+.opaque{opacity:1}
+.widget{position: absolute;}
+.table{display: table;}
+.table .table-cell{display: table-cell;}
+.table .table-cell.vtop{vertical-align: top;}
+.table .table-cell.vmiddle{vertical-align: middle;}
+.table .table-cell.vbottom{vertical-align: bottom;}
+.innerbox{z-index: 1;}
+.resultWindow{position: absolute;}
+.photo{-webkit-transform:scale(3) rotateZ(30deg) translate(80%,80%) translateZ(0); transform:scale(3) rotateZ(30deg) translate(80%,80%) translateZ(0);}
+.copyright{-webkit-transform: translate(0,0) translateZ(0); transform: translate(0,0) translateZ(0);}
+.page-loaded{
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+</style>
+<script>
+var G_MAP_OPTIONS = [];
+var G_BMAP_CALLBACK = {};
+var G_MASKLAYER_OPTIONS = [];
+</script>
+<script type="text/template" name="wx">
+
+imgUrl=http://m.zuikuapp.com/newadmin/res/img/nopic150x150.jpg;
+lineLink=http://www.ibtsys.cn/m22;
+descContent=神户马拉松;
+shareTitle=神户马拉松1;
+imgWidth=200;
+imgHeight=200;
+appid=;
+shareClick=http://www.ibtsys.cn/m22
+
+</script>
+</head>
+<body>
+<img src="img/all_bg.gif" width="200" height="200" class="f-hide"/>
+<div class="webapp-loading flexbox center middle">
+   <figure class="loading-logo">
+      <figcaption class="flexbox center middle loading-logo-bg icon-ringlogo">
+        <div class="loading-logo-img icon-ringlogo"></div>
+      </figcaption>
+   </figure>
+</div>
+ <!-- 蒙板end -->
+<article class="webapp-view none-header none-footer" id="view"  >
+  <div class="webapp-modules"><!-- modules -->
+     <section data-appid="37303" data-moduleid="336421" data-index="1" style="z-index:700;">
+     	<div class="innerbox fullbg" style="background-image:url(img/all_bg.gif)">
+      
+    <div data-appid="37303" data-moduleid="1355384" id="widget_1355384" class="widget hidden ipic "   style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:123px;   border: 1px none rgb(0, 0, 0);;  width:450px; height:298px;" data-widget="animation::fadeInDown:!1.0s ease 0.0s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/title1.png"></div>
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1355390" id="widget_1355390" class="widget hidden ipic "   style="z-index:2;  left: 0px; right: 0; margin: 0 auto; top:477px;   border: 1px none rgb(0, 0, 0);;  width:311px; height:214px;" data-widget="animation::fadeInUp:!1.0s ease 0.5s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/title2.png"></div>
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1355512" id="widget_1355512" class="widget hidden ipic "   style="z-index:3;  left: 0px; right: 0; margin: 0 auto; top:864px;   border: 1px none rgb(0, 0, 0);;  width:252px; height:34px;" data-widget="animation::fadeInUp:!1.5s ease 2.0s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/up.png"></div>
+    </div>
+    
+    
+      
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+     <section data-appid="37303" data-moduleid="336530" data-index="2" style="z-index:699;">
+       	<div class="innerbox fullbg" style="background-image:url(about:blank)" data-lazysrc="bg!img/all_bg.gif">
+      
+     <div id="widget_1355735" data-widget="animation::pullRight:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1355735"  class="widget hidden stxt   f-tc" style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:30px;    border: 1px dotted rgb(255, 255, 255);; border-radius: 6px; width:633px;height:91px; color:#ffffff;   font-size:68px;  line-height: 1.1em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">神户马拉松介绍</div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1355951" data-widget="animation::zoomIn:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1355951"  class="widget hidden stxt   f-tl" style="z-index:2;  left:0px; top:123px;    border: 1px none rgb(255, 255, 255);;  width:640px;height:415px; color:#FFFFFF;   font-size:28px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);"><p style="margin-left:0in;">
+	第5届神户马拉松大赛
+</p>
+<p style="margin-left:0in;">
+	（英文名称：Kobe
+Marathon 2015）
+</p>
+<p style="margin-left:0in;">
+	<br />
+</p>
+<p style="margin-left:0in;">
+	开赛日期：2015年11月22日 周日
+</p>
+<p style="margin-left:0in;">
+	全马：18000名（限制时间7小时）
+</p>
+<p style="margin-left:0in;">
+	<span style="line-height:1.5;">10公里：2000名（限时时间1.5小时）</span> 
+</p>
+<p style="margin-left:0in;">
+	20日21日报到10:00-19:00
+</p>
+<p style="margin-left:0in;">
+	<span style="line-height:1.5;"><br />
+</span> 
+</p>
+<p style="margin-left:0in;">
+	<span style="line-height:1.5;">〜神户马拉松的主题“感谢和友谊”〜</span> 
+</p></div>
+     
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1356057" id="widget_1356057" class="widget hidden ipic "   style="z-index:3;  left: 0px; right: 0; margin: 0 auto; top:828px;   border: 1px none rgb(0, 0, 0);;  width:309px; height:103px;" data-widget="animation::fadeIn:!3.5s ease 7.0s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/img0.png"></div>
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1356249" id="widget_1356249" class="widget hidden ipic "   style="z-index:4;  left:12px; top:546px;  -webkit-transform: rotate(348deg); transform: rotate(348deg); border: 1px none rgb(0, 0, 0);;  width:254px; height:238px;" data-widget="animation::zoomIn:!1.5s ease 1.5s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/img1.png"></div>
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1356424" id="widget_1356424" class="widget hidden ipic "   style="z-index:4;  left:164px; top:540px;  -webkit-transform: rotate(357deg); transform: rotate(357deg); border: 1px none rgb(0, 0, 0);;  width:311px; height:227px;" data-widget="animation::zoomIn:!2.0s ease 3.0s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/img2.png"></div>
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1356432" id="widget_1356432" class="widget hidden ipic "   style="z-index:6;  left:358px; top:540px;  -webkit-transform: rotate(9deg); transform: rotate(9deg); border: 1px none rgb(0, 0, 0);;  width:325px; height:238px;" data-widget="animation::zoomIn:!2.0s ease 4.5s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/img3.png"></div>
+    </div>
+    
+    
+      
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+     <section data-appid="37303" data-moduleid="337108" data-index="3" style="z-index:698;">
+       	<div class="innerbox fullbg" style="background-image:url(about:blank)" data-lazysrc="bg!img/all_bg.gif">
+      
+     <div id="widget_1356659" data-widget="animation::pullRight:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1356659"  class="widget hidden stxt   f-tc" style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:30px;    border: 1px dotted rgb(255, 255, 255);; border-radius: 6px; width:633px;height:91px; color:#ffffff;   font-size:68px;  line-height: 1.1em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">路线介绍<br /></div>
+     
+    </div>
+    
+    
+    
+    <div data-appid="37303" data-moduleid="1356810" id="widget_1356810" class="widget hidden ipic "   style="z-index:3;  left: 0px; right: 0; margin: 0 auto; top:570px;   border: 1px none rgb(0, 0, 0);;  width:640px; height:352px;" data-widget="animation::bounceInLeft:!1.5s ease 4.0s 1 forwards" >
+      <div style="width:100%; height:100%;"><img src="about:blank" width="100%" height="100%" data-lazysrc="src!img/map.gif"></div>
+    </div>
+    
+    
+    
+     <div id="widget_1356976" data-widget="animation::fadeInLeft:!1.0s ease 1.0s 1 forwards" data-appid="37303" data-moduleid="1356976"  class="widget hidden stxt   f-tc" style="z-index:3;  left: 0px; right: 0; margin: 0 auto; top:144px; background-color:rgba(247,150,70,1.0);    border: 5px solid rgb(255, 255, 0);;  width:450px;height:100px; color:#FFFFFF;   font-size:40px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">START &nbsp;神户市政府</div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1357331" data-widget="animation::zoomIn:!1.0s ease 1.5s 1 forwards" data-appid="37303" data-moduleid="1357331"  class="widget hidden stxt   f-tc" style="z-index:4;  left: 0px; right: 0; margin: 0 auto; top:215px;    border: 1px none rgb(255, 255, 255);;  width:320px;height:100px; color:#FFFFFF;   font-size:40px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">↓</div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1357437" data-widget="animation::fadeInRight:!1.0s ease 2.0s 1 forwards" data-appid="37303" data-moduleid="1357437"  class="widget hidden stxt   f-tc" style="z-index:5;  left: 0px; right: 0; margin: 0 auto; top:295px; background-color:rgba(247,150,70,1.0);    border: 5px solid rgb(255, 255, 0);;  width:450px;height:100px; color:#FFFFFF;   font-size:40px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">折返点 明石大桥</div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1357517" data-widget="animation::zoomIn:!1.0s ease 2.5s 1 forwards" data-appid="37303" data-moduleid="1357517"  class="widget hidden stxt   f-tc" style="z-index:6;  left: 0px; right: 0; margin: 0 auto; top:362px;    border: 1px none rgb(255, 255, 255);;  width:320px;height:100px; color:#FFFFFF;   font-size:40px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">↓</div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1357573" data-widget="animation::fadeInLeft:!1.0s ease 3.0s 1 forwards" data-appid="37303" data-moduleid="1357573"  class="widget hidden stxt   f-tc" style="z-index:7;  left: 0px; right: 0; margin: 0 auto; top:440px; background-color:rgba(247,150,70,1.0);    border: 6px solid rgb(255, 255, 0);;  width:450px;height:100px; color:#FFFFFF;   font-size:40px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">终点 EXPO展览中心</div>
+     
+    </div>
+    
+    
+      
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+     <section data-appid="37303" data-moduleid="337504" data-index="4" style="z-index:697;">
+       	<div class="innerbox fullbg" style="background-image:url(about:blank)" data-lazysrc="bg!img/all_bg.gif">
+      
+     <div id="widget_1358560" data-widget="animation::pullRight:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1358560"  class="widget hidden stxt   f-tc" style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:30px;    border: 1px dotted rgb(255, 255, 255);; border-radius: 6px; width:633px;height:91px; color:#ffffff;   font-size:68px;  line-height: 1.1em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">参赛资格<br /></div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1358561" data-widget="animation::fadeInUp:!1.0s ease 1.0s 1 forwards" data-appid="37303" data-moduleid="1358561"  class="widget hidden stxt   f-tl" style="z-index:2;  left:0px; top:132px;    border: 1px none rgb(255, 255, 255);;  width:640px;height:769px; color:#FFFFFF;   font-size:28px;  line-height: 1.4em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);"><p style="margin-left:0in;">
+	<span style="line-height:1.5;">（1）马拉松</span> 
+</p>
+<p style="margin-left:0in;">
+	出生于1996年（平成8年）4月1日以前者。
+</p>
+<p style="margin-left:0in;">
+	① 登记参赛者<span>：</span><span style="line-height:1.5;">日本田径竞赛联盟的注册运动员</span> 
+</p>
+<p style="margin-left:0in;">
+	② 一般参赛者：未注册日本田径竞赛联盟者等
+</p>
+<p style="margin-left:0in;">
+	※① 、② 均包含本届大赛的国内外推荐运动员，有能力在
+6小时40分钟以内到达终点的男士或女士。
+</p>
+<p style="margin-left:0in;">
+	<br />
+</p>
+<p style="margin-left:0in;">
+	（2）四分马拉松
+</p>
+<p style="margin-left:0in;">
+	出生于1999年（平成11年）4月1日以前者。
+</p>
+<p style="margin-left:0in;">
+	一般参赛者：有能力在 1小时30分钟以内到达终点的男士或女士。
+</p>
+<p style="margin-left:0in;">
+	※坐轮椅者不能参赛。
+</p>
+<p style="margin-left:0in;">
+	※难以单独行走的残障人士（持有残障证者）可以在陪跑员（只限一名）的带领下参加比赛。（不能带导盲犬参赛）
+</p>
+<p style="margin-left:0in;">
+	※四分马拉松赛并非正规赛事活动，而是面向业余爱好者的娱乐运动项目。
+</p>
+<p>
+	<br />
+</p>
+<p style="margin-left:0in;">
+	<span style="line-height:1.5;"></span> 
+</p></div>
+     
+    </div>
+    
+    
+      
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+     <section data-appid="37303" data-moduleid="337604" data-index="5" style="z-index:696;">
+       	<div class="innerbox fullbg" style="background-image:url(about:blank)" data-lazysrc="bg!img/all_bg.gif">
+      
+     <div id="widget_1358837" data-widget="animation::pullRight:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1358837"  class="widget hidden stxt   f-tc" style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:30px;    border: 1px dotted rgb(255, 255, 255);; border-radius: 6px; width:633px;height:91px; color:#ffffff;   font-size:68px;  line-height: 1.1em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">任性神户马拉松<br /></div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1358838" data-widget="animation::fadeInUp:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1358838"  class="widget hidden stxt   f-tl" style="z-index:2;  left: 0px; right: 0; margin: 0 auto; top:123px;    border: 1px none rgb(255, 255, 255);;  width:640px;height:691px; color:#FFFFFF;   font-size:28px;  line-height: 1.4em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);"><p>
+	任性神户马拉松行程（4天3晚行程，周五出发，周一返回，酒店以中档酒店为主，可以有两个不同档次的选择，赠送福袋等礼品）主打中高端用户
+</p>
+<p>
+	<br />
+</p>
+<p>
+	1.交通自理行程套餐：
+</p>
+<p>
+	<span style="line-height:1.5;">可以预订接送机服务，但需要将起飞降落的时间填好，待工作人员联系，超过20人以后，可以成行。</span> 
+</p>
+<p>
+	<span style="line-height:1.5;">2.交通自理观赛行程套餐：</span> 
+</p>
+<p>
+	一位参赛选手可以预定最多2个观赛行程，且必须与参赛人员的行程一致。
+</p>
+<p>
+	<span style="line-height:1.5;">3.可以选择机票</span> 
+</p>
+<p>
+	<span style="line-height:1.5;">4.京都一日游可选</span> 
+</p>
+<p>
+	<span style="line-height:1.5;">5.酒店升级</span> 
+</p>
+<p>
+	<span style="line-height:1.5;">6.签证可选</span> 
+</p>
+<div>
+	<br />
+</div>
+<span style="line-height:1.5;"></span></div>
+     
+    </div>
+    
+    
+    
+    
+    
+   	
+   	<div   id="widget_1359114"  data-appid="37303" data-moduleid="1359114"  class="widget hidden btn-block btn f-radius f-tc   " style=" background-color:rgba(51,127,229,0.8); z-index:3;  left: 0px; right: 0; margin: 0 auto; top:780px;    border: 1px none rgb(255, 255, 255);;  width:320px;height:80px;" data-widget="animation::fadeInUp:!1.0s ease 0.0s 1 forwards">
+   	<a class="js-simple-button" href="../travelA.html" style="color:#FFFFFF;" >了解详情</a>
+   	</div>
+   	  
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+     <section data-appid="37303" data-moduleid="337721" data-index="6" style="z-index:695;">
+       	<div class="innerbox fullbg" style="background-image:url(about:blank)" data-lazysrc="bg!img/all_bg.gif">
+      
+     <div id="widget_1359266" data-widget="animation::pullRight:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1359266"  class="widget hidden stxt   f-tc" style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:30px;    border: 1px dotted rgb(255, 255, 255);; border-radius: 6px; width:633px;height:91px; color:#ffffff;   font-size:68px;  line-height: 1.1em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">跑者神户马拉松<br /></div>
+     
+    </div>
+    
+    
+    
+     <div id="widget_1359267" data-widget="animation::fadeInUp:!1.0s ease 0.0s 1 forwards" data-appid="37303" data-moduleid="1359267"  class="widget hidden stxt   f-tl" style="z-index:2;  left: 0px; right: 0; margin: 0 auto; top:123px;    border: 1px none rgb(255, 255, 255);;  width:640px;height:691px; color:#FFFFFF;   font-size:28px;  line-height: 1.4em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);"><p>
+	跑者神户马拉松行程（只包含周六一晚住宿和跑步服务）主打低端用户
+</p>
+<p>
+	<br />
+</p>
+<p>
+	1.包含周六一晚的商务酒店和报名费。
+</p>
+<p>
+	<span style="line-height:1.5;"></span> 
+</p>
+<p>
+	<span style="line-height:1.5;">2.可选项目包括：</span> 
+</p>
+<p>
+	<span>1)接送机（可以预订接送机服务，但需要将起飞降落的时间填好，待工作人员联系，超过20人以后，可以成行）</span><br />
+<span>2)统一领取参赛包及参观博览会（可以预约专车领取参赛包，但需要注明可以从酒店出发的时间，待工作人员联系，超过20人以后，可以成行）</span><br />
+<span>3)热身活动</span><br />
+<span>4)赛后温泉恢复</span><br />
+<span>5)可以选择机票</span><br />
+<span>6)京都一日游可选</span><br />
+<span>7)酒店升级</span><br />
+<span>8)签证可选</span> 
+</p>
+<div>
+	<br />
+</div>
+<span style="line-height:1.5;"></span></div>
+     
+    </div>
+    
+    
+    
+    
+    
+   	
+   	<div   id="widget_1359268"  data-appid="37303" data-moduleid="1359268"  class="widget hidden btn-block btn f-radius f-tc   " style=" background-color:rgba(51,127,229,0.8); z-index:3;  left: 0px; right: 0; margin: 0 auto; top:813px;    border: 1px none rgb(255, 255, 255);;  width:320px;height:80px;" data-widget="animation::fadeInUp:!1.0s ease 0.0s 1 forwards">
+   	<a class="js-simple-button" href="../travelB.html" style="color:#FFFFFF;" >了解详情</a>
+   	</div>
+   	  
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+     <section data-appid="37303" data-moduleid="337756" data-index="7" style="z-index:694;">
+       	<div class="innerbox fullbg" style="background-image:url(about:blank)" data-lazysrc="bg!img/all_bg.gif">
+      
+     <div id="widget_1359395"  data-appid="37303" data-moduleid="1359395"  class="widget hidden stxt   f-tc" style="z-index:1;  left: 0px; right: 0; margin: 0 auto; top:300px;    border: 1px none rgb(255, 255, 255);;  width:547px;height:100px; color:#FFFFFF;   font-size:58px;  line-height: 1.6em;" ><div style="width:100%; height:auto; max-width:100%; max-height:100%; position:relative; left:50%; top:50%; -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%);">期待您的参加！</div>
+     
+    </div>
+    
+    
+    
+    
+    
+   	
+   	<div   id="widget_1359401"  data-appid="37303" data-moduleid="1359401"  class="widget hidden btn-block btn f-radius f-tc   sp-links" style=" background-color:rgba(51,127,229,0.8); z-index:2;  left: 0px; right: 0; margin: 0 auto; top:456px;    border: 1px none rgb(255, 255, 255);;  width:320px;height:80px;" >
+   	<a class="js-simple-button" href="../index.html" style="color:#FFFFFF;" >了解详情</a>
+   	</div>
+   	  
+   </div> 
+     <!-- 背景结束 -->
+  
+    </section>
+
+ </div><!-- modules -->  
+  <div class="icon-arrow-up" data-type="arrow">
+     <i class="ani-up5"></i>
+  </div>
+</article>
+<header class="webapp-header" id="header"></header>
+<footer class="webapp-footer" id="footer"></footer>
+<div id="submit_tips" data-offset="150"></div>
+<script>
+(function(){
+	var ImageLoader = window["ImageLoader"] = function(){
+		this.images = [];
+		this.counter = {
+			success: 0,
+			failed: 0
+		};
+	};
+
+	ImageLoader.prototype = {
+		add: function(url){
+			this.images.push(url);
+			return this;
+		},
+		notify: function(key){
+			this.counter[key]++;
+
+			var counter = this.counter;
+			var size = this.images.length;
+			var loaded = counter.success + counter.failed;
+			var percent = Math.min(((loaded / size) * 100).toFixed(0), 100);
+			var nShadow = document.querySelector(".loading-shadow");
+			var nPercent = document.querySelector(".loading-percent");
+
+			if(nShadow){
+				nShadow.style.height =  (100 - percent) + "%";
+			}
+			if(nPercent){
+				nPercent.innerHtml = (percent + "%");
+			}
+
+			ImageLoader.complete = (loaded >= size);
+		},
+		load: function(){
+			var imgs = this.images;
+			var size = imgs.length;
+
+			ImageLoader.startTime = (new Date().getTime());
+
+			for(var i = 0; i < size; i++){
+				ImageLoader.loader(this, imgs[i]);
+			}
+		}
+	};
+
+	ImageLoader.start = 0;
+	ImageLoader.complete = false;
+	ImageLoader.loader = function(imageLoader, url){
+		var img = new Image();
+
+		img.onload = function(){
+			imageLoader.notify("success");
+
+			img = null;
+		};
+
+		img.onerror = function(){
+			imageLoader.notify("failed");
+
+			img = null;
+		}
+
+		img.src = url;
+	};
+	ImageLoader.timeout = function(){
+		var end = (new Date().getTime());
+		var diff = end - ImageLoader.start;
+
+		return (diff >= 5000);
+	};
+
+	var loader = new ImageLoader();	
+loader.add('img/all_bg.gif');
+loader.add('img/title1.png');
+loader.add('img/title2.png');
+loader.add('img/up.png');
+loader.load();
+
+})();
+</script>
+<script src="se.js"></script>
+<script>
+for(var i = 0; i < G_MASKLAYER_OPTIONS.length; i++){
+	if(G_MASKLAYER_OPTIONS[i].backImage){
+		new Image().src = G_MASKLAYER_OPTIONS[i].backImage;
+	}
+}
+seajs.use(["logic/default/webapp.fbf30523eace02c4220ca6f4ae6a2c6254178965", "logic/tpl/bmap.7dfcb51fdafe32333c2402c58e10f6b43661f38e"], function(app, map){
+
+	var layout = app.app.layout;
+	var design = layout.design;
+
+	var timer = app.app.getTimer("default", 2.5, {
+		callback: function(_timer){
+			if(ImageLoader.complete || ImageLoader.timeout()){
+				var loading = $(".webapp-loading");
+
+                if(loading.length > 0){
+                    loading.addClass("hide");
+                }
+
+                _timer.stop();
+                
+                this.view.addClass("page-loaded");
+			}
+		},
+		context: app.app
+	});
+
+	timer.start();
+
+  	setTimeout(function(){
+      	
+      	for(var i = 0; i < G_MASKLAYER_OPTIONS.length; i++){
+			var maskOptions = G_MASKLAYER_OPTIONS[i];
+			var id = "#masklayer_" + maskOptions.key;
+			var stage = $(id);
+			if(!maskOptions.frontImage || !maskOptions.backImage){continue;}
+			var maskLayer = new app.MaskLayer(stage[0]);
+
+			maskLayer.setBrushSize(55)
+					 .setBlurRadius(0)
+					 .setScratchText({
+						font: "80px Arial",
+						textAlign: "center", 
+						textBaseline: "middle", 
+						color: "#000", 
+						x: design.width / 2, 
+						y: design.height * 0.8, 
+						text:maskOptions.maskText
+					  })
+			    	 .setReady({
+						callback: function(id, backImage){
+							$(id).parent().css("background-image", "url(" + backImage + ")");
+						},
+						args: [id, maskOptions.backImage]
+					  })
+					 .setComplete({
+						callback : function(remain, removed, id){
+							var total = remain + removed;
+
+							//解决Android下渲染问题
+							$(id).width(design.width - 0.001) //根据实际情况调整
+							.width(design.width);  //根据实际情况调整
+
+							if(remain / total <= 0.75){
+								this.clean();
+								$(id).remove();
+								$(id).attr("data-lockapp", "0");
+								app.app.setLocked(false);
+							}
+						},
+						context: maskLayer,
+						args: [id]  
+					  })
+					 .paintImage("about:blank", maskOptions.frontImage, 
+									0, 0, design.width, design.height,
+									0, 0, design.width, design.height);
+	    }//end for
+      	app.app.create();
+
+      
+  }, 200);
+
+  for(var i = 0; i < G_MAP_OPTIONS.length; i++){
+    //{id, tel, address, latitude, longitude, info{width, height, title}}
+    var m = G_BMAP_CALLBACK[G_MAP_OPTIONS[i].id] = map.newInstance(G_MAP_OPTIONS[i]);
+  }
+});
+</script>
+
+</body>
+</html>

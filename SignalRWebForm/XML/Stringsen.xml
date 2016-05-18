@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Strings>
+  <idOccupations>
+    <idOccupation>
+      <TextField>Agriculture &amp; Husbandry</TextField>
+      <ValueField>0</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Fishery</TextField>
+      <ValueField>1</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Forestry</TextField>
+      <ValueField>2</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Minning and Quarrying</TextField>
+      <ValueField>22</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Transportation and Logistics</TextField>
+      <ValueField>3</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Catering and Travelling</TextField>
+      <ValueField>4</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Construction</TextField>
+      <ValueField>5</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Manufacture</TextField>
+      <ValueField>6</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Publishing and Advertising</TextField>
+      <ValueField>7</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Hygiene and Sanitation</TextField>
+      <ValueField>8</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Entertainment</TextField>
+      <ValueField>9</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Culture and Education</TextField>
+      <ValueField>10</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Religion</TextField>
+      <ValueField>11</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Civil Service</TextField>
+      <ValueField>12</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Commercial</TextField>
+      <ValueField>13</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Service</TextField>
+      <ValueField>14</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>House hold</TextField>
+      <ValueField>15</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Low enforcement</TextField>
+      <ValueField>16</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Military personnel</TextField>
+      <ValueField>17</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Information technology</TextField>
+      <ValueField>18</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Professional</TextField>
+      <ValueField>19</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Others</TextField>
+      <ValueField>20</ValueField>
+    </idOccupation>
+    <idOccupation>
+      <TextField>Amateur</TextField>
+      <ValueField>21</ValueField>
+    </idOccupation>
+  </idOccupations>
+</Strings>

@@ -1,0 +1,30 @@
+@charset "gb2312";
+body{background: url(../images/bj.png);}
+.b_w{width: 950px; margin: 0 auto; position:relative;background: #fff}
+.b_w_top{width: 950px; margin: 0 auto; position:relative;}
+.b_w img{margin: 0;display: block;}
+.t_w{width: 100%;}
+.footer_w{ text-align:center; color:#5a5a5a; font-size:12px; line-height:25px; padding: 15px 0 35px 0;border-top: 0}
+.footer_w a{ color:#5a5a5a}
+.head_2{ height:40px; background:url(../images/topbj.png) repeat-x; overflow:hidden ; line-height:40px;}
+.head_2 ul{ float:right; margin:0}
+.head_2 ul li{ float:left; margin-right:10px; background:url(../images/shu.png) no-repeat left center; padding-left:10px;}
+.head_2 ul li.name_w{ color:#990000; background:none}
+.nr{padding-top: 34px;}
+.dwz{margin-bottom: 22px;}
+.dwz span{height: 35px;background:#416eb3 url(../images/titl.png) no-repeat 50px top ;display: block;line-height: 35px;padding-left: 100px;}
+.dwz span a{font-size: 24px; color: #416eb3;background: #fff url(../images/titr.png) no-repeat right top ;;font-weight: bold;height: 35px;display: inline-block;padding-right: 125px;}
+.dwz span a:hover{text-decoration: none}
+.dwz p{overflow: hidden;padding: 15px 50px 0 40px;line-height: 27px;color: #666;margin: 10px 0;}
+.dwz p img{float: right;margin-left: 50px;margin-top: -10px;}
+.xkuai{overflow: hidden;width: 800px;border-radius: 30px;box-shadow: 0 0px 16px 0px #e5e5e5;padding: 38px 30px 0 25px;margin-left: 50px;}
+.dwzx{width: 400px; float: left;padding-bottom: 35px}
+.dwzx span{height: 35px;background:#416eb3 url(../images/titl.png) no-repeat left top ;display: block;line-height: 35px;padding-left: 50px;margin-bottom: 16px}
+.dwzx span a{font-size: 24px; color: #416eb3;background: #fff url(../images/titr.png) no-repeat right top ;;font-weight: bold;height: 35px;display: inline-block;padding-right: 125px;}
+.dwzx span a:hover{text-decoration: none}
+.top{height: 85px; overflow: hidden;padding:2px 50px 0 11px;line-height: 21px;}
+.dwzx img{float: left;}
+.dwzx p{margin: 0;font-size: 12px;color: #666;}
+.top a{color: #666;font-weight: bold;font-size: 14px;}
+.dwzx ul{padding: 0}
+.dwzx li{background: url("../images/hdian.png") no-repeat scroll 0 center transparent;  line-height: 26px; padding-left: 10px;padding-right: 12px;}

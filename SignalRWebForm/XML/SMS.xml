@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312"?>
+<sms>
+  <send>
+    <id>SendSms</id>   
+    <userid>bjypw-1</userid>
+    <psd>85edcb</psd>
+    <url>http://si.800617.com:4400/SendSms.aspx</url>
+  </send>
+  <send>
+    <id>SendSmsGroup</id>
+    <userid>bjypw-2</userid>
+    <psd>e71738</psd>
+    <url>http://si.800617.com:4400/SendSmsGroups.aspx</url>
+  
+</send>
+  <send>
+    <id>SendLenSmsGroup</id>
+    <userid>bjypw-3</userid>
+    <psd>d03830</psd>
+    <url>http://si.800617.com:4400/SendLenSmsGroups.aspx</url>
+  </send>
+</sms>

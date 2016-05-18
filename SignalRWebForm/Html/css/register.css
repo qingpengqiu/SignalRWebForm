@@ -1,0 +1,173 @@
+body{background: url(../images/rbg.jpg) repeat-y top center;}
+.rebox{width: 720px;border-radius: 5px;background: #fff;background-color: rgba(255, 255, 255, 0.9); padding: 0 57px;margin: 96px auto 60px auto;overflow: hidden;}
+.retop{height: 93px;border-bottom: 2px solid #82b54b}
+.retop span{float: right;font-size: 14px;color: #7c8f7a;padding: 55px 3px 0}
+.retop span a{width: 51px;height: 22px;display: inline-block;text-align: center;line-height: 22px;color: #fff;background: #92c55a;border-radius: 3px;font-size: 12px;}
+.refrome {}
+.refrome .refrometr{display: inline-block;width: 100%;}
+.refrome .refrometr .refrometd{line-height: 45px;*height: 58px;*line-height: 65px;float: left;}
+.recard .refrometr .refrometd{line-height: 30px;}
+.refrome .refrometr .refrometd:first-child{width: 190px;text-align: right;}
+.refrome label{font-size: 14px;color: #7c8f7a;padding-right: 6px;cursor: pointer;display: inline-block;font-weight: 100}
+.refrome input,.refrome select{width: 182px;height: 31px;border: 1px solid #e6e8e6;border-radius: 5px;padding-left: 6px;background: #f5f5f5;color: #7c8f7a;box-shadow:0px 0px 2px #eee inset;*padding-top: 8px;*height: 22px;}
+.refrome select{padding: 6px;height: 33px;*padding-top: 8px;*height: 26px;}
+.refrome em input{width: auto;height: auto;float: left;margin: 17px 3px 0 3px}
+.refrome em label{color: #8d8d8d;font-size: 12px;float: left;padding-right: 3px;padding-right: 20px;}
+.rlogo{float: left;margin: 32px 0 0 10px}
+.rlogo img{width: 140px;}
+#agree{width: auto;height: auto; margin-right: 4px;float: left;margin-top: 0px;}
+.agree{color: #7C8F7A;text-decoration: underline;}
+#register,#ensure{width: 130px;height: 40px;line-height: 40px;font-size: 18px;color: #ffffff;background: #a0d468;border-radius: 5px;text-align: center;margin: 10px auto 30px auto;display: block;border: 0;*height: 42px;*padding-top: 2px;}
+#register:hover,#ensure:hover{background: #ace074;cursor: pointer;}
+.reok .refrome{padding-top: 20px;}
+.reok .refrome em img{margin: -5px 0 -21px 0}
+.reok .refrome em {padding-bottom: 10px;*display: block;}
+.reok h1{font-size: 31px;color: #fa8802;text-align: center;padding: 40px 0 0 0;font-weight: 100;margin: 0}
+.reok h3{font-size: 14px;color: #5c695b;line-height: 52px;padding:26px 0 26px 40px;line-height: 24px;font-weight: 100;margin: 0}
+.reok h3 span{font-size: 16px;color: #ffa200}
+.reok h3 a{color: #438DC3}
+.reok h3 a:hover{text-decoration: underline;}
+.reok .sex .refrometd{padding-bottom: 16px;}
+.reok .refrome .birthday{background-image: url(../images/rili.png);background-repeat: no-repeat;background-position: 158px 9px}
+.uicon img{border-radius: 5px;cursor: pointer;float: left;margin-right: 6px;width: 40px;opacity:0.7}
+.uicon img:hover{opacity:1}
+.uicon .refrometd{padding: 8px 0 14px 0}
+.refrome .renext,.renext{width: 130px;height: 40px;line-height: 40px;font-size: 18px;color: #ffffff;background: #a0d468;border-radius: 5px;text-align: center;border: 0;cursor: pointer;display: inline-block;*padding-top: 2px}
+#renextm{display: none;}
+.rebutton .refrometd{padding: 20px 0}
+.rebutton span{padding-left: 6px;font-size: 14px;color: #7c8f7a}
+.rebutton span a{color: #7c8f7a;text-decoration: underline;}
+.bmfrome{padding-top: 0;}
+.bmfrome .refrometd{position: relative;}
+.bmfrome .Validform_checktip{position: absolute;margin-right: -40px;}
+.refrome h3{font-size: 14px;color: #5c695b;line-height: 52px;padding:14px 50px;line-height: 24px;font-weight: 100;margin: 0}
+.refrome h3 span{font-size: 16px;color: #ffa200}
+.refrome h3 a{color: #438DC3}
+.refrome h3 a:hover{text-decoration: underline;}
+.bmfrome .refrometr .refrometd:first-child{width: 80px;text-align: right;}
+.bmfrome .refrometable{width: 50%;float: left;}
+.bmfrome em label{padding-right: 6px;}
+#ddlCard{width: 80px;}
+.bmfrome .cardin{margin:0 -100px 0 6px;width: 150px}
+#ddlProvince,#ddlCity{width: 80px;}
+#address{width: 132px;margin-right: -100px;}
+.upimg{clear: both;padding: 8px 0}
+.upimg img:first-child{margin-bottom: -6px}
+#tjzm{display: none}
+#tjzmt{padding-left: 6px;color: #7c8f7a}
+#tjzmt img{margin-bottom: -2px;}
+.bottom{padding:40px 0  40px 210px;clear: both;}
+.bottom span{padding-left: 6px;font-size: 14px;color: #7c8f7a}
+.bottom span a{color: #7c8f7a;text-decoration: underline;}
+#add-records .record{width: 44px;margin-right: 6px;}
+.refrome .registmi{width: 66px;}
+#marathonbest{width: 104px;}
+#_contents{width: 300px;height: 40px;background: #fff6e5;border: 1px solid #ffe2aa;padding: 5px;color: #666}
+#_contents select{width: 56px;float: left;height: 27px;padding: 3px 6px;}
+#_contents label{float: left;width: 22px;line-height: 28px; padding-left: 5px;margin: 0;padding-right: 0}
+#_contents input{width: 48px;height: 25px;text-align: center;padding: 0;float: left;line-height: 20px;border: 1px solid #e5d6cf;margin-top: 1px;background: rgb(255,255,255); }
+.chartform #_contents{ top: 33px;left: 359px;}
+#onegame{width: 280px;}
+.add-records{background: none repeat scroll 0 0 #378ED6;border-radius: 3px;color: #FFFFFF;float: left;height: 24px;line-height: 24px;text-align: center;width: 80px;margin: 4px 0 0 4px}
+.add-records:hover,.add-records:focus{color: #fff;}
+.recard .newmls{width: 66px;margin-left: 6px;}
+#add-records{width: 312px;}
+.recard #add-records tr td:first-child{text-align: left;}
+.repepple{background: url(../images/people.png) 96px 80px no-repeat;}
+.repshow{padding:0px 0 0 280px;}
+.repshow li{height: 50px;line-height: 24px;overflow: hidden;}
+.repshow input{width: 62px;}
+.repshow h3{padding-left: 0}
+.py-data{padding: 50px 0 20px 90px}
+.retju{padding: 18px 0 0 0}
+.retju h3{font-size: 14px;color: #5c695b;padding:0px 0 14px 0;line-height: 24px;font-weight: 100;margin: 0}
+.retjtitle{background: url(../images/redav.png) no-repeat left center;overflow: hidden;padding: 8px 0}
+.retjtitle a{color: #fd9d3e;float: right;}
+.focus{border: 0;background: none}
+.focus .blog-top{border: 1px solid #DDDDDD}
+.focus ul{margin: 0;}
+.focus li{margin:  0 0 12px 0 ;width: 289px;border: 1px solid #fee69f;padding: 12px 12px 4px 22px;float: left;color: #666}
+.focus li:nth-child(even){margin-left: 20px;}
+.focus li img{width: 50px;border: 1px solid #cecece;float: left;margin-right: 16px;margin-bottom: 40px;height: 50px;}
+.focus li .focus-a img{border: 0 none; float: none; height: 21px; margin: 0;
+    width: 21px;}
+.focus li .focusgz:hover{background: none repeat scroll 0 0 #c3c1c1;}
+.focus li a{color: #333;font-size: 14px;font-weight: bold;*float: left;}    
+.focus li a:hover{text-decoration: underline; color: #ff6600}
+.focus li .focus-a:hover,.focus li .focus-b:hover{text-decoration: none; color: #fff}
+.focus .focus-a{font-size: 12px;color: #fff;background: #afafaf;padding: 6px;line-height: 12px;float: left;border-radius: 5px;position: relative;outline: none;font-weight: 100;}
+.focus .focus-b{font-size: 12px;color: #fff;background: #378ed6;padding: 6px;line-height: 12px;float: left;border-radius: 5px;margin-left: 12px;font-weight: 100;text-shadow:0.08em 0.08em 0.04em #296694}
+.focus .focus-c{font-size: 12px;color: #fff;background: #ff9600;padding: 6px;line-height: 12px;float: left;border-radius: 5px;margin-left: 12px;}
+.focus li p{padding: 4px 0 4px 0;margin: 0}
+.focus li .registly,.focus li .registxhgz,.focus li .registygz,.focus li .registfoucs{font-size: 12px;color: #fff;border-radius: 3px;display: inline-block;background: #87bb54;font-weight: 100;padding: 1px 6px;margin-right: 2px;}
+.focus li .registly:hover,.focus li .registxhgz:hover,.focus li .registygz:hover,.focus li .registfoucs:hover{color: #fff;text-decoration: none;background: #99cc66}
+.registfoucs{}
+.registly{}
+.focus li .registxhgz{background: #ccc}
+.focus li .registxhgz:hover{background: #ccc}
+.registygz{}
+.focus-tly{width: 57px;height: 19px;display: inline-block;margin-left: 4px;}
+.retju .bottom{padding: 20px 0 30px 210px}
+.Validform_checktip{display: inline;padding-left: 6px}
+.Validform_right{color: #71B83D}
+.Validform_wrong{color: #FF0000}
+#txtAsk{width: 130px;}
+#thumb{width: 630px;height: 472px;background: #fff;padding-top: 40px;}
+#idBlood li{float: left;}
+#tjzmOrcszs{display: none;}
+.refi{padding-top: 40px;}
+.Validformr{margin-left: 100px}
+.focusalert{width: 180px;height: 60px;position: absolute;line-height: 60px;text-align: center;background: #fff ;top: 25px;left: -6px;border: 3px solid hsla(0,0%,0%,0.15);font-size: 14px;color: #333;z-index: 999;text-indent:0;}
+.focus li .focusalert img{float: none;width: 21px;height: 21px;border: 0;margin: 0 0 -5px 0;}
+.upimg .ysc img{margin-bottom: -3px;}
+.yxz{display: none;}
+#idgender li{float: left;}
+.mediaretop{display: none}
+.rcodebox{display: inline-block;}
+.newregist{line-height: 1;padding:0 0  16px 160px;font-size: 12px;}
+.refrome .newregist input{background: #fff;border-radius: 3px;line-height: 1;padding-top: 2px;width: 184px;}
+.getmsgcode{display: inline-block;background: #ccc;color: #fff;text-align: center;line-height: 31px;width: 98px;margin:0 0 -1px 6px;border-radius: 3px;}
+.getmsgcode:hover,.getmsgcode:focus{color: #fff;}
+.gomsgcode{background: #fc842c;cursor: pointer;}
+.vimg {display: inline-block;margin: 0 6px;height: 31px;cursor: pointer;}
+
+.refrome input, .refrome select{outline: none;}
+.refrome input:focus{border-color: #60c300}
+.refrome .newregist .m80{width: 80px;}
+.refrome .rightlogin{border-color: #82b54b}
+.refrome .errorlogin{border-color: #f49a00}
+
+.refrome .newregist label{font-size: 12px;font-weight: 100}
+.footer{color: #fff;}
+.footer a{color: #fff;}
+.refrome .newregist .dispsw{background: #ccc}
+.mediatip,.registtoptip{display: none;}
+
+.reboxma{width: 780px;}
+
+.upimg .upxzimg{display: inline-block;background: #f2f0ec;border: 1px solid #cdc6b9;border-radius: 5px;font-size: 12px;color: #7c8f7a;padding: 2px 8px;}
+.refrome .errorinput{border-color: red}
+.the-title{margin-top: 0;}
+
+
+.the-title tr:first-child td{padding: 0;margin: 0}
+.recoretr{overflow: hidden;padding-bottom: 4px;}
+.recoretr .recoretd{float: left;text-align: center;}
+.recoretr .recoretd:nth-child(1){width: 50px;}
+.recoretr .recoretd:nth-child(1) input{width: 44px;}
+.recoretr .recoretd:nth-child(2){width: 180px;}
+.recoretr .recoretd:nth-child(3){width: 80px;}
+.recoretr .recoretd:nth-child(3) input{width: 68px;}
+.footer{display: none;}
+
+
+.checkpasswd{padding: 60px 0 0 0}
+.checkpasswd .registtoptip{font-size: 14px;width: 83%}
+
+.oldcheckpasswd{padding:  0}
+.zclxa{padding: 28px }
+.oldcheckpasswd input[type=radio]{width: auto;box-shadow: none;height: auto;margin: 0 4px 0 4px}
+.oldcheckpasswd #cAnswer{width: 100px;}
+.oldcheckpasswd #total_echo{height: 22px;padding-left: 160px;}
+.oldsavepasswd{padding: 30px 0}
+.oldsavepasswd .newregist{padding-left: 200px;}

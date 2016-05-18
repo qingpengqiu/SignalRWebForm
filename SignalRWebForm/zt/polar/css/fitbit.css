@@ -1,0 +1,67 @@
+@charset "gb2312";
+/*mini header css star*/
+.header{height: 50px;background:  #fff ;background:hsla(0,0%,95%,0.9) ;width: 100%;position: relative;z-index: 10;position: fixed;}
+.header{padding: 0}
+.nav{float: left;width: 94px;height: 30px;background: #fff;border: 1px solid #dddddd;font-size: 12px;color: #888;line-height: 30px;text-align: center;margin:10px 0 0 10px;padding: 0;display: block;overflow: hidden;}
+.nav li{float: none;line-height: 30px;height: auto;background: #fff;padding: 0;font-size: 14px;width: 94px;position: inherit;display: block;}
+.nav img{display: none}
+.nav dl{display: inline-block;padding: 0;position: relative;border: 0;width: 100%;z-index: 1;top: 0;left: 0}
+.nav:hover{cursor: pointer;overflow: visible;}
+.nav:hover ul{display: block;}
+.nav ul{display: none;border: 1px solid #dddddd;width: 94px;margin-left: -1px;background: #fff}
+.nav a{color: #888;display: inherit;}
+.nav ul li:hover{background: #f3f3f3}
+.nav ul li:hover a{color: #ff6600;}
+.nav ul a{color: #888}
+.nav li em{display: none}
+.nav li a{color: #999}
+.nav dl dt{line-height: 30px;height: auto;padding: 0;width: 100%;display: inline-block;}
+.nav li a i{display: none}
+.nav dl a{font-size: 14px;}
+.nav li:last-child{background: #fff}
+.nav li:first-child em{display: block;color: #999;height: auto;}
+/*mini header css end*/
+@media screen and (min-width:801px) {
+.mediaLogin .ml3:hover ul{display: block;}
+}
+
+.vertical ul{width: 100%;padding-top: 0;top: 29px;}
+.vertical ul li{margin: 0;text-align: left;padding-left: 14px;}
+.imgcach{width: 1px;height: 1px;overflow: hidden;}
+.msgshowa,.msgshowl,.msgshowb,.msgshowf,.msgshowpl{position: relative;}
+.msgshowa em,.msgshowl em,.msgshowb em,.msgshowf em,.msgshowpl em{position: absolute;display: inline-block;background: #fb9100;width: 16px;height: 16px;border-radius: 8px;top:-4px;line-height: 16px;color: #fff;text-align: center;font-size: 10px;}
+.fitbitBanner{width: 100%;height: 409px;background: url(../images/polarbanner.jpg) no-repeat center top;margin: 0px 0 0 0;}
+.fitbitAbout{height: 281px;width: 100%;background: url(../images/polarabout.jpg) no-repeat center top;border-bottom: 1px solid #d2d2d2}
+.FACont{line-height: 24px;font-size: 14px;color: #333;width: 536px;padding: 135px 0px 0 420px;margin: 0 auto;}
+.FACont h4{font-size: 28px;height: 80px;line-height: 80px;}
+.FACont a{float: right;margin: 10px 0px 0 0;color: #000;font-size: 12px;}
+.FACont a i{display: inline-block;background: #000;color: #fff;width: 15px;height: 15px;border-radius: 7px;font-size: 10px;line-height: 17px;font-style: normal;text-align: center;font-family: arial}
+.ExplainTitle{height: 70px;background: #fbfbfb;width: 100%;overflow: hidden;border-top: 1px solid #fbfbfb;border-bottom: 1px solid #fbfbfb}
+.ExplainTitle span{font-size: 28px;color: #333;display: block;width: 840px;margin: 0 auto;background: url(../images/polaricon.jpg) no-repeat 6px top;padding-left: 140px;line-height: 76px;}
+.fitbitExplain{overflow: hidden;position: relative;border-bottom: 7px solid #fff}
+.ExplainBgLT{height: 243px;float: left;width: 50%;background: #4ebfc0;}
+.ExplainBgRT{height: 243px;float: right;width: 50%;background: #3fa3a7;}
+.ExplainBgLB{height: 240px;float: left;width: 50%;background: #3fa3a7;}
+.ExplainBgRB{height: 240px;float: right;width: 50%;background: #4ebfc0;}
+.ExplainCenter{width: 968px;position: absolute; top: 0;z-index: 9;left: 50%;margin-left: -485px;height: 483px;padding: 0 1px}
+.ExplainCenter a{float: left;font-size: 0;}
+.fitbitN{width: 970px;margin: 15px auto;display: table;padding-bottom: 10px;}
+.fitbitN .title{height: 60px;color: #fff;font-size: 24px;line-height: 60px;padding-left: 12px;position: relative;}
+.fitbitTnf{float: left;width: 49%;background: #fff;box-shadow: 0px 0px 10px #ccc;height: 448px;}
+.fitbitTnf .title{background: #4ebfc0}
+.fitbitTnf .title span{width:0px;height:0px;border-width:10px;border-style:solid;border-color:#4ebfc0 #fff #fff #fff;display: block;position: absolute;left: 24px;bottom: -20px;}
+.fitbitNews{float: right;width: 49%;background: #fff;box-shadow: 0px 0px 10px #ccc;height: 448px;}
+.fitbitNews .title{background: #ee7e4a;}
+.fitbitNews .title span{width:0px;height:0px;border-width:10px;border-style:solid;border-color:#ee7e4a #fff #fff #fff;display: block;position: absolute;left: 24px;bottom: -20px;}
+.fitbitN ul{padding: 12px 0 10px 44px}
+.fitbitN li{line-height: 30px;height: 30px;color: #666;list-style-type: disc;font-size: 14px}
+.fitbitN li a{color: #666}
+.fitbitN a:hover{color: #438DC3}
+.mnav{display: none;}
+.more{float: right;margin: 2px 16px 0 0;color: #666666;font-size: 12px;}
+.more i{display: inline-block;background: #666666;color: #fff;width: 15px;height: 15px;border-radius: 7px;font-size: 10px;line-height: 17px;font-style: normal;text-align: center;font-family: arial}
+.polarth{overflow: hidden;padding: 28px 24px 0 34px;color: #666666;line-height: 30px;}
+.polarth img{float: left;margin-right: 14px;}
+.polarth a{color: #666666;font-size: 14px;}
+.polarth p{line-height: 24px}
+

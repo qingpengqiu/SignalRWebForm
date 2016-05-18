@@ -1,0 +1,108 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Xml;
+using DB1 = Erun360.BLL.DB1;
+using DBM1 = Erun360.Model.DB1;
+public partial class XML_Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string orderid = new DB1.tblShopping().GetMaxOrderId();
+        if (orderid == "")
+        {
+            orderid = DateTime.Now.ToString("yyyyMMdd") + "000001";
+        }
+
+        else
+        {
+            orderid = DateTime.Now.ToString("yyyyMMdd") + (Convert.ToInt32(orderid.Substring(10, 6)) + 1).ToString().PadLeft(6, '0');
+        }
+        string idOrdert = "PT" + orderid;
+        Response.Write(idOrdert);
+        //if (good.iType == 1)
+        //{
+        //    model.idOrder = "PT" + orderid;
+        //}
+        //else if (good.iType == 2)
+        //{
+        //    model.idOrder = "JF" + orderid;
+        //}
+
+        ////XMLProcess xml = new XMLProcess();
+        ////XMLProcess.Read("Pay.xml", "show_url");
+
+        //XmlDocument xmlDoc = new XmlDocument();
+        //xmlDoc.Load(Server.MapPath("Pay.xml"));
+
+        //XmlNode xn = xmlDoc.SelectSingleNode("paylist");
+
+        //XmlNodeList xnl = xn.ChildNodes;
+
+        //foreach (XmlNode xnf in xnl)
+        //{
+        //    XmlElement xe = (XmlElement)xnf;
+        //    //Console.WriteLine(xe.GetAttribute("id"));//显示属性值
+        //    //Console.WriteLine(xe.GetAttribute("ISBN"));
+        //    if (xe.GetAttribute("id") == "Competetion")
+        //    {
+        //        XmlNodeList xnf1 = xe.ChildNodes;
+        //        foreach (XmlNode xn2 in xnf1)
+        //        {
+        //            string name = xn2.InnerText;
+        //            //Console.WriteLine(xn2.InnerText);//显示子节点点文本
+        //        }
+        //    }
+        //}
+        //XMLOperation xmlOpr = new XMLOperation();
+
+        //操作二：获得单个节点的值
+        XmlDocument xmlDoc = new XmlDocument();
+        xmlDoc.Load(Server.MapPath("Pay.xml"));
+        //XmlNodeList xmlNodeList = xmlDoc.SelectNodes("smallfoolsRoot/poems[contains(author,'" + Request.QueryString["Xid"].ToString() + "')]");//糊模查找记录
+        XmlNodeList xmlNodeList = xmlDoc.SelectNodes("paylist/pay[id='Competetion']");//查找
+        XmlNode xmlNode = xmlNodeList.Item(0);
+        string test = xmlNode["show_url"].InnerText;
+        string test1 = xmlNode["notify_url"].InnerText;
+        string test2 = xmlNode["return_url"].InnerText;
+        //this.tbauthor.Text = xmlNode["author"].InnerText;
+        //this.tbtitle.Text = xmlNode["title"].InnerText;
+        //this.tbcontent.Text = xmlNode["content"].InnerText;
+
+        //XmlDocument xmlOpr = new XmlDocument();
+        //XmlNode xn = xmlOpr.getXmlNode("activity.xml", "2");
+        //string ActivityId = (xn.SelectSingleNode("ActivityId")).InnerText;
+        //string ActivityName = (xn.SelectSingleNode("ActivityName ")).InnerText;
+        //string ActivityLevel = xn.SelectSingleNode("ActivityLevel").InnerText;
+      
+    }
+    /// <summary>  
+    ///通过ActivityLevel获取xmlnode，需要保证ActivityLevel在一个xml文档中是唯一的。
+    /// </summary>  
+    public XmlNode getXmlNode(string filename, string activitylevel)
+    {
+        XmlDocument xmlDoc = new XmlDocument();
+        try
+        {
+            xmlDoc.Load(filename);
+            XmlNodeList xnList = xmlDoc.SelectNodes("//Activity");//当节点Workflow带有属性是，使用SelectSingleNode无法读取        
+            foreach (XmlNode xn in xnList)
+            {
+                string ActivityLevel = xn.SelectSingleNode("ActivityLevel").InnerText;
+                if (activitylevel == ActivityLevel)
+                {
+                    return xn;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            //显示错误信息
+            Console.WriteLine(e.Message);
+        }
+        return null;
+    }
+}

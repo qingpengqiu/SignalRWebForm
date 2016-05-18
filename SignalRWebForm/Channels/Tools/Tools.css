@@ -1,0 +1,20 @@
+
+.ik { width:49px;border:solid 1px #CCCCCC;padding:2px;font-size:12px; }
+
+#cal_main { height:382px;text-align:left;border-left:dotted 1px #CCCCCC;border-right:dotted 1px #CCCCCC;padding:40px;font-size:12px;color:#666666;background-image:url(/images/del.jpg);background-repeat:no-repeat; }
+#tab td { padding:5px; }
+#guide { width:250px;float:left;overflow:hidden;line-height:25px; }
+#guide a { font-size:14px; }
+
+#btn { float:left;width:47px;text-align:center;padding:3px;font-size:12px;color:#000000;border:solid 1px #CCCCCC;cursor:pointer;background-color:#EEEEEE;margin-right:8px; }
+#btn2 { float:left;width:47px;text-align:center;padding:3px;font-size:12px;color:#FFFFFF;border:solid 1px #943B00;cursor:pointer;background-color:#FF6701;margin-right:8px; }
+
+#calorie { padding-top:20px;color:#0000AA;font-size:12px;line-height:25px; }
+
+#cont { width:550px;float:right;font-size:12px; }
+
+.radio1 { float:left;height:17px;background-image:url(/images/radio.gif);background-position:-0px -0px;background-repeat:no-repeat;padding-left:15px;cursor:pointer;margin-right:13px;line-height:17px;margin-bottom:3px; }
+.radio2 { float:left;height:17px;background-image:url(/images/radio.gif);background-position:-0px -17px;background-repeat:no-repeat;padding-left:15px;cursor:pointer;margin-right:13px;line-height:17px;margin-bottom:3px; }
+
+.checkbox1 { float:left;height:17px;background-image:url(/images/radio.gif);background-position:-0px -38px;background-repeat:no-repeat;padding-left:15px;cursor:pointer;margin-right:13px;line-height:17px;margin-bottom:3px; }
+.checkbox2 { float:left;height:17px;background-image:url(/images/radio.gif);background-position:-0px -55px;background-repeat:no-repeat;padding-left:15px;cursor:pointer;margin-right:13px;line-height:17px;margin-bottom:3px; }

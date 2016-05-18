@@ -1,0 +1,139 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Xml;
+using DBShop = ErunMall.BLL.Shop;
+using DBMShop = ErunMall.Model.Shop;
+using System.Data;
+using System.Collections.Specialized;
+using DBM3 = Erun360.Model.DB3;
+using DB3 = Erun360.BLL.DB3;
+using DB1 = Erun360.BLL.DB1;
+using DBM1 = Erun360.Model.DB1;
+public partial class weixinpay_malljsapipay : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string wxNotifyXml = "";
+
+        byte[] bytes = Request.BinaryRead(Request.ContentLength);
+        wxNotifyXml = System.Text.Encoding.UTF8.GetString(bytes);
+
+        if (wxNotifyXml.Length == 0)
+        {
+            return;
+        }
+
+        XmlDocument xmldoc = new XmlDocument();
+
+        xmldoc.LoadXml(wxNotifyXml);
+
+        string ResultCode = xmldoc.SelectSingleNode("/xml/result_code").InnerText;
+        string ReturnCode = xmldoc.SelectSingleNode("/xml/return_code").InnerText;
+
+        if (ReturnCode == "SUCCESS" && ResultCode == "SUCCESS")
+        {
+            //验证成功
+            //取结果参数做业务处理
+            string out_trade_no = xmldoc.SelectSingleNode("/xml/out_trade_no").InnerText;
+            //财付通订单号
+            string trade_no = xmldoc.SelectSingleNode("/xml/transaction_id").InnerText;
+            //金额,以分为单位
+            string total_fee = xmldoc.SelectSingleNode("/xml/total_fee").InnerText;
+
+            /********************************
+             * 
+             * 自己业务处理
+             * 
+            *********************************/
+            DBShop.tblOrder bll = new DBShop.tblOrder();
+            DBMShop.tblOrder model = new DBMShop.tblOrder();
+            DataTable dtOrder = bll.GetList(1, "cOrder_no='" + out_trade_no + "'", "id desc").Tables[0];
+            if (dtOrder.Rows.Count == 1)
+            {
+                int id = TypeChangeDefault.NullToInt(dtOrder.Rows[0]["id"], 0);
+                string iStatus = dtOrder.Rows[0]["iStatus"].ToString();
+                int idUser = TypeChangeDefault.NullToInt(dtOrder.Rows[0]["idUser"], 0);
+                string cParentOrder = dtOrder.Rows[0]["cParentOrder"].ToString();
+                int iFromTpye = TypeChangeDefault.NullToInt(dtOrder.Rows[0]["iFromTpye"], 0);
+                string cContent = dtOrder.Rows[0]["cProductName"].ToString();
+                decimal fPayPrice = TypeChangeDefault.NullToDecimal(dtOrder.Rows[0]["fPayPrice"].ToString().Trim(), 0);
+                if ("1" == iStatus)
+                {
+                    model.id = id;
+                    model.cTrade_no = trade_no;
+                    model.iStatus = 2;
+                    model.dPayTime = bll.GetTime(0);
+                    model.cMake = "微信手机支付";
+                    if (bll.Update(model))
+                    {
+                        if (iFromTpye == 1)//合并付款
+                        {
+                            //修改所有订单状态
+                            if (bll.UpdateList(trade_no, "select id from tblOrder where cParentOrder='" + out_trade_no + "'"))
+                            {
+                                string Content = "您在《<a target=\"_blank\" href=\"mall.erun360.com/orderlist.aspx\">" + cContent + "</a>》中付款成功！请您持续关注，谢谢！";
+                                AddDiscuss(idUser, Content, 100334777);
+                                //报名赛事最低送10积分
+                                int iScore = TypeChangeDefault.NullToInt(dtOrder.Rows[0]["iScore"], -1);
+                                if (iScore == 0)
+                                {
+                                    new DB1.tblIntegral().InsertScore(idUser, 200860001, 6, fPayPrice);
+                                }
+                            }
+                        }
+                        else if (iFromTpye == 2)//单个商品付款
+                        {
+                            if (cParentOrder.Trim().Length != 0)
+                            {
+                                bll.UpdateStatusByOrder(cParentOrder.Trim());//父订单置过期
+                                bll.UpdateByParentOrder(cParentOrder.Trim());//父订单号置空
+                            }
+                            string Content = "您在《<a target=\"_blank\" href=\"mall.erun360.com/orderlist.aspx\">" + cContent + "</a>》中付款成功！请您持续关注，谢谢！";
+                            AddDiscuss(idUser, Content, 100334777);
+                            //报名赛事最低送10积分
+                            int iScore = TypeChangeDefault.NullToInt(dtOrder.Rows[0]["iScore"], -1);
+                            if (iScore == 0)
+                            {
+                                new DB1.tblIntegral().InsertScore(idUser, 200860001, 6, fPayPrice);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    #region 插入评论
+    /// <summary>
+    /// 插入评论
+    /// </summary>
+    /// <param name="idUser">接受消息人</param>
+    /// <param name="IdCritic">发送消息人（一般是益跑赛事，100001183）</param>
+    /// <param name="Content">评论内容（消息内容）</param>
+    private static void AddDiscuss(int idUser, string Content, int IdCritic = 100001183)
+    {
+        DBM3.tblDISCUSS disModel = new DBM3.tblDISCUSS();
+        DB3.tblDISCUSS disBll = new DB3.tblDISCUSS();
+        DBM1.tblMEMBER user = new DB1.tblMEMBER().GetModel(IdCritic);
+        disModel.cContent = Content;//"您在《" + model.iTypeName + "-" + model.cItemName + "》中付款成功！请您持续关注！";
+        disModel.idInfo = idUser;
+        disModel.idUser = IdCritic;
+        disModel.cLoginname = user.cNickName;
+        disModel.dCreate = new DBShop.tblOrder().GetTime(0);
+        int imessage = disBll.Add(disModel);
+        if (imessage > 0)
+        {
+            DBM3.tblMessage mMessage = new DBM3.tblMessage();
+            mMessage.cId = IdCritic;
+            mMessage.uId = idUser;
+            mMessage.itype = 31;
+            mMessage.idcode = imessage;
+            new DB3.tblMessage().Add(mMessage);
+        }
+    }
+    #endregion
+}

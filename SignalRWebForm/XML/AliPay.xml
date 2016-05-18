@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<paylist>
+  <pay>
+    <id>Competetion</id>
+    <show_url>http://paytest.erun360.com/Competetion/SearchEvent.aspx</show_url>
+    <notify_url>http://paytest.erun360.com/competetion/Alipay/pc/notify_url.aspx</notify_url>
+    <return_url>http://paytest.erun360.com/competetion/Alipay/pc/return_url.aspx</return_url>
+    <wapnotify_url>http://paytest.erun360.com/competetion/Alipay/wap/notify_url.aspx</wapnotify_url>
+    <wapcall_back_url>http://paytest.erun360.com/competetion/Alipay/wap/call_back_url.aspx</wapcall_back_url>
+  </pay>
+</paylist>

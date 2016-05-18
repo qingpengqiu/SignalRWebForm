@@ -1,0 +1,33 @@
+@media screen and (min-width:100px) and (max-width:800px) {
+	
+.nwf label{width: 90%;}
+
+.zugong label{width: 90%;}
+
+.zhaodi label{width: 90%;}
+.hasimg label:first-child{margin-left: 0;}
+.hasimg p{margin: 6px 0}
+.hasimg img{display: none;}
+
+.pshoefind .tr{display: block;overflow: hidden;}
+.pshoefind .td{display: block;float: left;}
+.pshoefind .td:nth-child(1){width: 40%;}
+.pshoefind .td:nth-child(2){width: 60%;}
+.pshoefind .td:nth-child(3){width: 40%;}
+.pshoefind .td:nth-child(4){width: 60%;}
+.shoeresultstip{width: 100%;}
+#container{width: 100%;}
+
+.shoex{width: 100%;}
+#shoechart{width: 90%;margin: 0 5%;}
+.shoembox{margin: 0 10px;}
+.shoem h2{padding: 0 10px;}
+.shoen h1{font-size: 18px;line-height: 1.5}
+
+.shoebuy1 i{font-size: 24px;}
+.shoebuy1 .shoebuybox{font-size: 14px;}
+.shoebuy2 .shoebuybox{width: 100%;margin: 0;margin: 10px 0}
+.shoebuy3 .shoebuybox{width: 100%;margin: 0;margin: 10px 0}
+.shoebetestbox{width: 100%;}
+.shoebetestbox:nth-child(even){margin: 0}
+}

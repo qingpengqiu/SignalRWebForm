@@ -1,0 +1,117 @@
+
+* { font-size:14px;font-family:Î¢ÈíÑÅºÚ,ËÎÌå; }
+
+img{ cursor:pointer; border:0px;}
+body { margin:1px;background-color:#FFFFFF;}
+u { cursor:pointer; }
+table { border-collapse:collapse; }
+ul,ol,li { list-style:none; }
+
+a        { font-size:12px;font-family:Î¢ÈíÑÅºÚ,ËÎÌå;color:#666666;cursor:pointer;text-decoration: none; }
+a:hover  { font-size:12px;font-family:Î¢ÈíÑÅºÚ,ËÎÌå;color:#FF6701;cursor:pointer;text-decoration: underline; }
+
+#page_nav { width:950px;padding-top:10px;color:#7E7E7E;text-align:left;font-size:12px; }
+#page_nav a { font-size:12px;color:#4C98CC; }
+#page_nav a:hover { font-size:12px;color:#FFFFFF;background-color:#FC6902; }
+
+/* Ê×Ò³µÚÒ»¶Î */
+#h_clear { clear:both;width:1px;height:1px;font-size:1px;line-height:0px; }
+
+#H1_w { width:950px;height:350px;padding-top:20px; }
+#H1_L_0 { float:left;width:630px;height:350px; }
+#H1_R_1 { float:right;width:300px;height:350px;text-align:left;overflow:hidden; }
+
+#H1_R_1_1 { width:300px;height:25px;overflow:hidden;white-space:nowrap; }
+#H1_R_1_1 a { font-size:18px;color:#FF6701; }
+#H1_R_1_1 a:hover { font-size:18px;color:#FF6701; }
+
+#H1_R_1_2a { width:300px;height:95px;line-height:22px;overflow:hidden;white-space:nowrap; }
+
+#H1_R_1_2 { width:300px;height:95px;line-height:22px;overflow:hidden;white-space:nowrap; }
+#H1_R_1_2 a { font-size:12px;color:#666666; }
+#H1_R_1_2 a:hover { font-size:12px;color:#FF6701; }
+
+#H1_R_2_1 { width:300px;height:25px;padding-top:5px;overflow:hidden;white-space:nowrap; }
+#H1_R_2_1 a { font-size:16px;color:#5C6F9A; }
+#H1_R_2_1 a:hover { font-size:16px;color:#FF6701; }
+#H2_R_t span {
+    float: left;
+    margin-right: 10px;
+    line-height: 23px;
+}
+
+/* Ê×Ò³µÚ2¶Î */
+
+#H2_w { width:950px;height:266px;padding-top:15px; }
+#H2_L_1 { float:left;width:630px;height:266px; }
+#H2_L_t { width:620px;height:31px;cursor:pointer;background-image:url(/images/temp/05.jpg);background-position:-0px -36px;font-size:16px;text-align:left;padding-left:10px;padding-top:5px;margin-bottom:15px;color:#FFFFFF; }
+
+#H2_L_1_1 { width:630px;height:230px;text-align:left; }
+#H2_L_1_1A { float:left;width:310px;margin-right:10px; }
+#H2_L_1_1B { float:right;width:310px; }
+
+#H2_L_1_img { float:left;width:110px;height:110px; }
+#H2_L_1_txt { float:left;width:190px;height:100px;font-size:12px;color:#666666;overflow:hidden;line-height:20px; }
+#H2_L_1_title { font-size:14px;color:#4C98CC; }
+#H2_L_1_title:hover { font-size:14px;color:#FF6701; }
+
+#H2_R_1 { float:right;width:296px;height:266px;padding:1px;border:solid 1px #E0E0E0;text-align:left; }
+#H2_R_t { width:286px;height:29px;cursor:pointer;background-color:#E0E0E0;font-size:14px;text-align:left;padding-left:10px;padding-top:5px;color:#5C6F9A; }
+#H2_R_t a { font-size:14px;color:#5C6F9A; }
+#H2_R_1_1 { width:266px;text-align:left;padding:10px;white-space:nowrap;overflow:hidden; }
+#H2_R_1_1a { width:276px;text-align:left;padding:10px; }
+#H2_R_1_img { float:left;width:135px;height:110px;text-align:center; }
+
+
+/* Ê×Ò³µÚ3¶Î */
+
+#H3_L_1_1 { float:left;width:310px;height:266px; }
+#H3_L_1_t1 { float:left;width:300px;height:31px;cursor:pointer;background-image:url(/images/temp/05.jpg);background-position:-0px -0px;font-size:16px;text-align:left;padding-left:10px;padding-top:5px;margin-bottom:10px;color:#FFFFFF; }
+#H3_L_1_t2 { float:left;width:300px;height:31px;cursor:pointer;background-image:url(/images/temp/05.jpg);background-position:-0px -72px;font-size:16px;text-align:left;padding-left:10px;padding-top:5px;margin-bottom:10px;color:#FFFFFF; }
+
+#H3_L_1_2 { width:310px;height:230px;text-align:left;font-size:12px;overflow:hidden; }
+#H3_L_1_3 { float:left;width:310px;height:120px;font-size:12px;color:#666666;overflow:hidden;white-space:nowrap; }
+#H3_L_1_3 a { font-size:14px;color:#4C98CC; }
+#H3_L_1_3 a:hover { font-size:14px;color:#FF6701; }
+
+#H3_L_2_1 { float:right;width:310px;height:266px; }
+
+#H2_L_2_t { float:left;padding-left:10px;width:280px;height:23px;background-image:url(/images/dot.gif);background-position:-0px 1px;white-space:nowrap;overflow:hidden; }
+#H2_L_2_t a { font-size:14px;color:#4C98CC; }
+#H2_L_2_u { float:right;width:65px;height:18px;white-space:nowrap;overflow:hidden;text-align:right;padding-right:5px; }
+#H2_L_2_u a { font-size:12px;color:#666666; }
+
+#H2_L_2A_t { float:left;padding-left:10px;width:195px;height:18px;background-image:url(/images/dot.gif);background-position:-0px 1px;white-space:nowrap;overflow:hidden; }
+#H2_L_2A_t a { font-size:12px;color:#666666; }
+#H2_L_2A_u { float:right;width:50px;height:18px;white-space:nowrap;overflow:hidden;text-align:right; }
+#H2_L_2A_u a { font-size:12px;color:#333333; }
+
+#H2_L_2B_t { float:left;padding-left:10px;width:225px;height:23px;background-image:url(/images/dot.gif);background-position:-0px 4px;white-space:nowrap;overflow:hidden; }
+#H2_L_2B_t a { font-size:14px;color:#4C98CC; }
+#H2_L_2B_t a:hover { font-size:14px;color:#FF6701; }
+#H2_L_2B_u { float:right;width:50px;height:23px;white-space:nowrap;overflow:hidden;text-align:right; }
+#H2_L_2B_u a { font-size:12px;color:#666666; }
+
+#H2_L_2C_t { float:left;width:235px;height:25px;white-space:nowrap;overflow:hidden; }
+#H2_L_2C_t a { font-size:18px;color:#FF6701; }
+#H2_L_2C_t a:hover { font-size:18px;color:#FF6701; }
+#H2_L_2C_u { float:right;width:50px;height:22px;padding-top:3px;white-space:nowrap;overflow:hidden;text-align:right; }
+#H2_L_2C_u a { font-size:12px;color:#666666; }
+
+#H2_L_2D_t { float:left;width:235px;height:25px;white-space:nowrap;overflow:hidden; }
+#H2_L_2D_t a { font-size:16px;color:#5C6F9A; }
+#H2_L_2D_t a:hover { font-size:16px;color:#FF6701; }
+#H2_L_2D_u { float:right;width:50px;height:22px;padding-top:3px;white-space:nowrap;overflow:hidden;text-align:right; }
+#H2_L_2D_u a { font-size:12px;color:#666666; }
+
+.check_echo { font-size:12px;color:#FF0000; }
+
+.trTitle { background-color:#F0F8F4;font-weight:bold;font-size:12px; }
+
+#competInfos a { font-size:14px;color:#4C98CC; }
+#competInfos a:hover { font-size:14px;color:#FF6701; }
+
+#comp_join { padding-left:2px;padding-right:3px;font-size:12px;background-color:#FF6701;color:#FFFFFF;cursor:pointer; }
+.subject { font-size:12px;color:#FF6701; }
+
+#smart td { font-size:12px;color:#666666; }

@@ -1,0 +1,136 @@
+.shoelt{background: #eeeee8;line-height: 1;}
+.shoelt a{color: #503939;display: inline-block;padding: 12px;}
+.shoelt a:hover{background: #ffa300;color: #fff}
+.shoelt .this{background: #ffa300;color: #fff}
+
+
+.shoen h1{font-size: 30px;color: #00a2dc;line-height: 1;padding: 40px 16px;margin: 0;}
+.shoex{line-height: 34px;color: #666666;font-size: 14px;overflow: hidden;}
+.shoex img{width: 250px;display: block;margin: 0 auto}
+.shoex ul{width: 330px;float: left;}
+.shoex li{float: left;width: 165px;}
+.shoem{overflow: hidden;clear: both;}
+.shoer img{width: 300px;margin-bottom: 12px;}
+.shoeresultstip{float: left;width: 50%;color: #000;line-height: 1;padding: 72px 60px 60px 26px;}
+.shoeresultstip p{font-size: 12px;line-height: 30px;margin: 14px 0}
+.shoeresultstip i{color: #959595;padding: 0 10px;}
+.shoeresultstip a{color: #ff0000;margin: 0px 4px;padding: 0 1px;}
+.shoeresultstip a:hover{border-bottom: 1px solid #ff0000}
+#container{width: 50%;height: 320px;float: left;display: none;}
+.shoeda li{position: relative;}
+.shoeda span{width: 152px;padding-left:2px; height: 12px;background: url(../images/shoel.png);display: inline-block;position: absolute;left: 90px;top: 8px;}
+.shoeda span em{width: 154px;height: 12px;background: url(../images/shoeb.png);display: inline-block;position: absolute;}
+.shoev{width: 480px;height: 400px;}
+.shoep{font-size: 14px;}
+.discuss-border li{padding: 17px 0;background:url(../images/lvdian.png) repeat-x bottom;overflow: hidden;color: #333;line-height: 30px;}
+.discuss-border li a img{width: 58px;border: 1px solid #cfcfcf;float: left;margin-right: 13px;}
+.discuss-border li a{color: #666;font-size: 14px;}
+.discuss-border li span{float: right;color: #999}
+.discuss-border li p{width: 576px;min-height: 30px;float: left;}
+.discuss-border li a.huifu{float: right;margin-top: -30px;font-size: 12px;color: #438dc3}
+.huifuk{width: 540px;height: 94px;border: 1px solid #ededed;background: #f3f3f3;font-size: 12px;line-height: 24px;color: #333;padding: 5px 19px;float: right;position: relative;}
+.discuss-text{padding-bottom: 20px;}
+.discuss-text .huifuk textarea{height: 25px; line-height: 17px; padding: 5px; width: 98%;}
+.huifuk .reply{width: 46px;height: 20px;line-height: 20px;text-align: center;background: #ff973b;float: right;font-size: 12px;color: #fff}
+.huifuk .reply:hover{background: #ff803b}
+.huifuk .qreply{width: 46px;height: 20px;line-height: 20px;text-align: center;background: #999;float: right;font-size: 12px;color: #fff;margin-right: 6px;}
+.huifuk em{width: 7px;height: 7px;background: url(/Html/images/hfs.png);padding: 0;position: absolute;right: 19px;top: -7px;}
+.discuss-text textarea{height: 78px;width: 98%;float: left;margin-bottom: 10px;}
+.shoez span{color: #333}
+
+#idgender input{display: inline;width: auto;}
+.idgender span{padding: 0;}
+.findshoe{width: 140px;height: 36px;line-height: 36px;font-size: 14px;color: #fff;font-weight: bold;background: #91c56a;margin: 60px auto;text-align: center;border-radius: 5px;}
+.findshoe:hover{cursor: pointer;background: #9fda73}
+.findresult {width: 100%;}
+.findresult li{width: 100%;padding: 32px 0;border-top: 1px solid #e5e5e5;overflow: hidden;}
+.findresult img{width: 150px;float: left;margin-right: 22px;}
+.shoenr{display: table-cell;}
+.shoenr .shoelisttitle{color: #2c2c2c;font-size: 22px;line-height: 1}
+.shoenr .shoelisttitle:hover{color: #2c2c2c;border: 0;}
+.shoenr em{padding: 0 0 4px 0;color: #ff3217;display: block;}
+.shoenr p{padding: 0px;font-size: 14px;color: #695f5d;margin: 8px 0;line-height: 20px;}
+.shoenr a{color: #0aa3da;display: inline-block;line-height: 1;padding-bottom: 1px}
+.shoenr a:hover{border-bottom: 1px solid #0aa3da;}
+.fshoepage{background: none;padding: 30px 0 ;text-align: center;float: none;clear: both;margin: 0}
+.fshoepage a{font-size: 12px;color: #aaa;border: 1px solid #e0e0e0;line-height: 12px;padding: 5px 6px;display: inline-block;margin-right: 6px}
+.fshoepage a:hover,.fshoepage a.on{background:#fff;color:#999;border:1px solid #fff;}
+.fshoepage a.unclick,.fshoepage a.unclick:hover{background:none;border:1px solid #eee;color:#999;cursor:default;}
+
+.shoesim tr td:first-child{width: 100px;text-align: right;padding-right: 10px;}
+.shoesim tr td:first-child label{margin-left: -100px;}
+.shoesim label{display: inline-block;color: #666666}
+.shoesim input{margin:0 6px 0 0}
+.shoesim input[type=radio]{margin-top: 4px;}
+.shoesim select{margin-bottom: 0}
+
+.shoefind{padding-top: 60px;}
+.shoefind .td{padding: 6px 0}
+.shoefind .td:nth-child(1){width: 30%;text-align: right;vertical-align:top}
+.shoefind .td:nth-child(2){width: 70%}
+.shoefind input{width: 100px;margin: 0 8px}
+.shoefind .shoeminput{width: 50px}
+.shoefind input[type=radio]{width: auto;margin: 0 8px}
+.shoefind select{width: 100px;margin: 0 8px}
+.shoefind .tr:nth-child(-n+8) .td:nth-child(1){vertical-align: middle;}
+.hasimg label{float: left;cursor: pointer;}
+.hasimg label:first-child{margin-left: 8px;}
+.hasimg img{display: block;margin-bottom: 4px;}
+.zugong label{width: 80px;}
+.zugong img{width: 38px;height: 66px;}
+.nwf label{width: 24%;}
+.nwf img{width: 98px;height: 93px;}
+.zhaodi label{width: 24%;}
+.sftit{background: #fffac2;font-size: 12px;line-height: 21px;padding: 6px 12px;}
+.pshoefind .td:nth-child(1){width: 30%;text-align: right;vertical-align:top}
+.pshoefind .td:nth-child(2){width: 20%;}
+.pshoefind .td:nth-child(3){width: 10%;text-align: right;vertical-align:top}
+.pshoefind .td:nth-child(4){width: 40%;}
+.shoefindresult{padding-top: 8px;}
+.shoex{float: left;width: 45%;}
+#shoechart{height: 400px;width: 55%;float: left;}
+.shoeinfobox{margin-left: 18px;overflow: hidden;line-height: 25px;color: #000000;position: relative;margin-top: 30px;}
+.shoeinfobox .vsl{float: left;padding-right: 0px;padding-left: 16px;width: 50%;}
+.shoeinfobox .vsr{float: left;width: 50%;}
+.shoeinfobox:before{content: "";width: 5px;height: 15px;background: #ffa300;display: block;position: absolute;top: 5px;}
+.shoebuy{clear: both;height: 76px;text-align: center;color: #3e3a3a;line-height: 76px;margin: 18px 0}
+.shoebuy a{display: block;float: right;color: #fff;width: 30%;font-weight: bold;height: 100%;}
+.shoebuy .shoebuybox{position: relative;}
+.shoebuy .shoebuybox:nth-child(1){border: 1px solid #f81d51;}
+.shoebuy .shoebuybox:nth-child(1) a{background: #f81d51}
+.shoebuy .shoebuybox:nth-child(2){border: 1px solid #fe9423;}
+.shoebuy .shoebuybox:nth-child(2) a{background: #fe9423}
+.shoebuy .shoebuybox:nth-child(3){border: 1px solid #78c544;}
+.shoebuy .shoebuybox:nth-child(3) a{background: #78c544}
+.shoebuy i,.shoebuy em,.shoebuy span{color: #ff0000}
+.shoebuy1 .shoebuybox{width: 100%;height: 100%;font-size: 18px;font-weight: bold;}
+.shoebuy1 a{font-size: 18px;}
+.shoebuy1 i{font-size: 35px;}
+.shoebuy1 span{font-size: 30px;padding-left: 10px;}
+
+.shoebuy2 .shoebuybox{width: 49%;height: 100%;font-size: 18px;font-weight: bold;margin-right: 2%;float: left;}
+.shoebuy2 .shoebuybox:last-child{margin: 0}
+.shoebuy2 a{font-size: 14px;}
+.shoebuy2 i{font-size: 28px;}
+.shoebuy2 span{font-size: 25px;padding-left: 10px;}
+
+.shoebuy3 .shoebuybox{width: 32%;height: 100%;font-size: 18px;font-weight: bold;margin-right: 2%;float: left;line-height: 96px;}
+.shoebuy3 .shoebuybox:last-child{margin: 0}
+.shoebuy3 a{font-size: 14px;line-height: 76px}
+.shoebuy3 i{font-size: 28px;}
+.shoebuy3 span{font-size: 25px;padding-left: 10px;}
+.shoebuy3 b{position: absolute;font-size: 12px;left: 0;top: 0;line-height: 1;display:block;padding: 8px;font-weight: 100}
+.shoem h2{font-size: 24px;color: #3e3a3a;margin-top: 0;}
+.shoembox{padding: 18px;position: relative;margin-bottom: 46px;}
+.shoembox:before{content: "";display: block;border: 4px solid #b2b2b2;width: 18px;height: 18px;border-right: 0;border-bottom: 0;left: 0;top: 0;position: absolute;}
+.shoembox:after{content: "";display: block;border: 4px solid #b2b2b2;width: 18px;height: 18px;border-top: 0;border-left: 0;bottom: 0;right: 0;position: absolute;}
+.shoembox{color: #695f5d;line-height: 25px;}
+.shoevidobox{width: 100%;height: 400px;background: #002639}
+.shoebetest{border: 1px solid #d0d0d0;line-height: 1;padding: 22px;overflow:hidden;margin-bottom: 50px;}
+.shoebetest span{display: block;}
+.shoebetestbox{width: 48%;float: left;padding: 22px 0}
+.shoebetestbox a{display: block;line-height: 21px;color: #6b5f5f;}
+.shoebetestbox p{display: table-cell;font-size: 12px;color: #695f5d;line-height: 18px;}
+.shoebetestbox:nth-child(even){margin-right: 4%;}
+.shoebetestbox img{width: 100px;float: left;margin-right: 14px;}
+.shoeinfo{overflow: hidden;padding-bottom: 16px;}

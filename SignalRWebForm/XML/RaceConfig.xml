@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<textlist>
+  <text>
+    <id>300000459</id>
+    <Img>/Html/images/tztop.jpg</Img>
+    <Path>../Competetion/zs/2014/tz/</Path>
+  </text>
+  <text>
+    <id>300000434</id>
+    <Img>/Html/images/tztop.jpg</Img>
+    <Path>../Competetion/zs/2014/gzhh10k/</Path>
+  </text>
+  <text>
+    <id>300000465</id>
+    <Img>/Html/images/tztop.jpg</Img>
+    <Path>../Competetion/zs/2014/gzjlmls/</Path>
+  </text>
+  <text>
+    <id>300000454</id>
+    <Img>/Html/images/tztop.jpg</Img>
+    <Path>../Competetion/zs/2014/gzrdyys/</Path>
+  </text>
+  <text>
+    <id>300000485</id>
+    <Img>/Channels/Competetion/zs/2014/gzpysjb/top.jpg</Img>
+    <Path>../Competetion/zs/2014/gzpysjb/</Path>
+  </text>
+  <text>
+    <id>300000490</id>
+    <Img>/Channels/Competetion/zs/2014/wf/top.jpg</Img>
+    <Path>../Competetion/zs/2014/wf/</Path>
+  </text>
+  <text>
+    <id>300000491</id>
+    <Img>/Channels/Competetion/zs/2014/gzzd/top.jpg</Img>
+    <Path>../Competetion/zs/2014/gzzd/</Path>
+  </text>
+</textlist>

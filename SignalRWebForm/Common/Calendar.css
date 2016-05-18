@@ -1,0 +1,15 @@
+#CalendarDiv { margin:auto; width:200px; z-index:1001; position:absolute; border:1px solid #d4d4d4;background: #fafafc}
+#CalendarDiv *{margin:0px; padding:0px; text-align:center; font-size:13px;line-height:26px;}
+#CalendarDiv #CalendarDivMain {margin:auto; text-align:center; background-color:#fcfcfe; z-index:10011; zoom:1; position:relative;}
+#CalendarDiv .head{background:#a6b4bd;background:-moz-linear-gradient(top, #a6b4bd, #8b99a4);height: 26px;
+    padding-top: 7px;padding-right: 7px}
+#CalendarDiv #IfrBg{width:10px; height:10px; border:none; top:0px; left:0px; position:absolute; z-index:10001;}
+#CalendarDiv #Calendar{ clear:both; overflow:hidden;border-left:solid 1px #d3d3d5;border-top:solid 1px #d3d3d5;margin: 5px;}
+#CalendarDiv dl{clear:both; margin:auto; overflow:hidden;}
+#CalendarDiv dt,#CalendarDiv dd,#CalendarDiv span{width:26px; height:26px; display:block; float:left; overflow:hidden;zoom:1; border:solid 1px #d3d3d5; border-left: 0; border-top: 0}
+#CalendarDiv dt{color:#555;}
+#CalendarDay dd{color:#555;cursor:pointer;}
+#CalendarDay dd.slt { background-color:#5ba2da;color:#FFFFFF;}
+#CalendarDiv #Hide {width:11px;height:11px; font-size:14px; display:block;cursor:pointer;border:1px solid #FFFFFF;color:#FFFFFF;line-height: 11px;position: absolute;top: 8px; right: 8px;}
+#Month{height: 19px;}
+#CalendarDiv .head td{width: 46px;}

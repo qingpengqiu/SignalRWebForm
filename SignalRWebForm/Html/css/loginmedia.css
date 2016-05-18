@@ -1,0 +1,32 @@
+@media screen and (min-width:100px) and (max-width:800px) {
+	body{background: #f1f1f1}
+	.login_cen{width: 100%;height: auto;padding: 0}
+	.fenxiang{display: none}
+	.login_right{display: none}
+	.login_left{width: 100%;}
+	.login_left ul{display: none}
+	.login_left em{display: none;}
+	.lmediah{display: block;background: #e9e9e9;font-size: 1.2em;color: #666666;height: 2em;line-height: 2em;padding-left: 0.7em}
+	.medialogo{display: block;width: 60%;margin: 0 auto}
+	.logo{display: none}
+	.login_left{padding-top: 0;}
+	#form1{padding: 10px 0 0 0;}
+	#form1 td{text-align: center;height: 4em}
+	#form1 input{border: 1px solid #cccccc;box-shadow:none;width: 70%;margin: 0 auto;border-radius: 4px;display: block;height: 1em;padding: 0.8em 10% 0.6em 10%;font-size: 1.2em;line-height: 1em;color: #7c8f7a;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;}
+	#form1 input:focus{border-color: #66afe9;  outline: 0;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);}
+	.check_echo{display: none}
+	#form1 #cLoginName{background: #fff url(../images/muser.png) no-repeat 0.4em center }
+	#form1 #cPassword{background: #fff url(../images/mpass.png) no-repeat 0.4em center;}
+	#form1 #auto{display: none}
+	.autologin{display: none}
+	#total_echo{display: none}
+	.jryp{display: none}
+	#submit_command{padding: 0;}
+	.auto .loginbott{background: #469d32;color:#fff;text-indent: 0;height: 2.2em;line-height: 2.2em;width: 90%;font-size: 1.6em;border-radius: 4px;}
+	.auto>a{display:none}
+	.loginm{color: #7c8f7a;font-size: 1.4em;padding: 1.2em;display: block;}
+	.loginm a{color: #7c8f7a}
+}

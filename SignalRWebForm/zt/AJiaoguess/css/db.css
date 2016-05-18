@@ -1,0 +1,101 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-style: inherit;
+}
+
+body {
+    font: 14px Lucida Sans Unicode, Myriad Pro, Hiragino Sans GB, Heiti SC, Microsoft YaHei, arial;
+    color: #ccc;
+    height: 100%;
+    background: #ececec;
+    -moz-user-select: none; /*火狐*/
+-webkit-user-select: none; /*webkit浏览器*/
+-ms-user-select: none; /*IE10*/
+-khtml-user-select: none; /*早期浏览器*/
+user-select: none;
+}
+:focus {
+    outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+form legend {
+    display: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+select,input,img,select {
+    vertical-align: middle;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+*html .clearfix {
+    height: 1%;
+}
+
+*+html .clearfix {
+    height: 1%;
+}
+
+em {
+    font-style: normal;
+}
+a{text-decoration: none;}
+.indecen {
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    clear: both;
+    background:#062480;
+}
+.hd{height: 88px;background: url(../img/t1.png) no-repeat right bottom}
+.hd img{float: right;margin: 31px 53px 0 0;}
+.show{height: 434px;background: url(../img/bg.jpg) no-repeat right bottom;}
+.show img{margin: 16px 0 0 53px;}
+.showbox{width: 340px;padding-left: 54px;color: #fff;font-size: 12px;line-height: 17px;}
+.showbox h1{font-size: 18px;color: #fff100;line-height: 1;padding: 20px 0 17px 0;}
+.timebox{padding-top: 56px;width: 904px;margin: 0 auto;}
+.cai{width: 192px;padding: 0 17px;float: left;}
+.q{width: 180px;height: 154px;background: #1b1464;border: 6px solid #fff;border-radius: 50%;text-align: center;line-height: 20px;color: #fff;font-size: 15px;padding-top: 26px;}
+.q i{display: block;font-style: normal;color: #ff00ff;font-size: 16px;margin-top: 5px;}
+.q em{display: block;color: #ffff00;}
+.c{width: 40px;height: 36px;background: #ffff00;color: #0000ff;border-radius: 50%;display: block;font-weight: bold;padding: 15px 12px 13px 12px;text-align: center;line-height: 1;margin: 21px auto;font-size: 18px;}
+.time{font-size: 18px;color: #fff;text-align: center;line-height: 1;padding: 23px 0;background: url(../img/t2.png) no-repeat right bottom;}
+.time i{font-weight: bold;font-style: normal;}
+.g{padding-left: 56px;color: #fff;font-size: 12px;line-height: 18px;height: 686px;background: url(../img/bg2.jpg) no-repeat bottom;}
+.g h3{font-size: 22px;font-weight: bold;padding: 24px 0  10px 0;line-height: 1;}
+.g a{font-size: 22px;color: #ffff00;font-weight: bold;display: block;line-height: 1;margin-top: 21px;}
+.g i{font-style: normal;font-size: 12px;font-weight: 100;}
+.tc{display: none;}
+.timeout .cai{position: relative;}
+.timeout .cai:after{content: "";width: 180px;height: 180px;background: rgba(0,0,0,.5);position: absolute;top: 6px;left: 23px;border-radius: 50%;}
+.timeout .this:after{display: none;}
+.timeout .c{display: none;}
+.timeout .this .tc{color: #ffff01;font-size: 18px;text-align: center;padding-top: 20px;display: block;}
+.timeout .tc i{font-size: 24px;display: block;font-style: normal;font-weight: bold;}
+.jbg{width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: rgba(0,0,0,.5);z-index: 10;display: none;}
+.jbox{width: 400px;height: 224px;background: #352aac;position: fixed;top: 50%;left: 50%;margin-left: -200px;border: 5px solid #fff;border-radius: 10px;z-index: 11;margin-top: -132px;font-size: 18px;color: #fff;text-align: center;line-height: 36px;padding-top: 40px;display: none;}
+.x{position: absolute;right: 8px;top: 8px;color: #fff;line-height: 1}
+.cb{display: block;width: 109px;height: 38px;margin: 8px auto 0 auto;background: #ffff01;color: #0000fe;font-size: 18px;text-align: center;line-height: 40px;border-radius: 5px}
+.ci{border: 1px solid #4b3fcd;background: #271d98;cursor: pointer;width: 200px;height: 38px;margin: 4px auto}
+.ci i{font-style:  normal;width: 40px;text-align: center;float: left;height: 100%;line-height: 38px;}
+.ci i:first-child{border-right: 1px solid #4b3fcd}
+.ci input{float: left;line-height: 1;border: 0;padding:5px 6px;font-size: 24px;width: 106px;background: none;border-right: 1px solid #4b3fcd;text-align: center;color: #fff;font-weight: 100}
+.jbox span{font-size: 12px;font-weight: 100;line-height: 1}
+.over a{display: none;}
+.resultbox{text-align: center;color: #b33428;font-size: 44px;clear: both;padding-top: 10px;}
+
+
+.mine{width: 1024px}

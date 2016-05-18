@@ -1,0 +1,11 @@
+@charset "gb2312";
+/* CSS Document */
+body{background: url(../images/bg.jpg) no-repeat center 126px #000;}
+.header{background-image: url(../images/tnfbjtop.png);height: 126px;}
+.topnav{height: 68px;padding-top: 12px;}
+.nav{height: 46px;}
+.nav li{line-height: 46px;background: url(../images/tnfnavhover.png) right center;}
+.nav li:last-child{background-position: left center}
+.nav li:hover{background:url(../images/tnfnavhover.png) right center;color: #ff3300}
+.nav li:hover a{color: #ff3300;transition: color 0s linear 0s;}
+.tnflogo{float: left;width: 400px;margin-right: -300px;padding-top: 16px;position: relative;z-index: 999}

@@ -1,0 +1,31 @@
+body,button,input,select,textarea {font:12px/1.125 Arial,Helvetica,sans-serif;_font-family:"SimSun";}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+table {border-collapse:collapse;	border-spacing:0;}
+li {list-style:none;}
+fieldset,img {border:0;}
+
+a:focus,input,textarea {outline-style:none;}200005737
+
+
+input[type="text"],input[type="password"],textarea {outline-style:none;	-webkit-appearance:none;}
+textarea {resize:none}
+address,caption,cite,code,dfn,em,i,th,var {font-style:normal;font-weight:normal;}
+abbr,acronym {border:0;font-variant:normal;}
+a {	text-decoration:none; color: #666}
+a:hover {text-decoration:underline;color: #ff6600}
+.c950{width: 970px;margin: 0 auto;overflow: hidden;}
+.header{background: url(../images/zt_topbj.png) repeat-x; height: 41px}
+.header ul li{float: right;line-height: 41px;margin-right: 12px;}
+#strategy .content .c950{background: url(../images/bottombj.jpg) no-repeat bottom #fff;padding-bottom: 150px;}
+#strategy{background: url(../images/bj.png) repeat;}
+.content ul{overflow: hidden;float: left;width: 400px;margin:22px 0 0 0;}
+.content  ul li:first-child{color: #fff;background: #498cc3;font-size: 14px;padding: 7px 13px;display: inline-block;line-height: 14px;margin-bottom: 5px;}
+.content ul li{line-height: 39px;background: url(../images/hdian.png) no-repeat 4px center,url(../images/xu.png) repeat-x  bottom;padding-left: 18px;}
+.content ul li a{color:  #2d7fc2;font-size: 14px;}
+.content ul li a:hover{color:  #ec5c0d}
+.left{float: left;width: 400px;margin-left:  57px}
+.footer{color: #5A5A5A;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 15px 0 35px;
+    text-align: center;}

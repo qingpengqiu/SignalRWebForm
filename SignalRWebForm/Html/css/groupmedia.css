@@ -1,0 +1,46 @@
+@media screen and (min-width:100px) and (max-width:800px) {
+	/*tuangou*/
+	.groupbox{width: 46%;margin: 0;border: 0;padding: 8px 2%;}
+	.shopimg{width: 100%;}
+	.fenxiang{display: none}
+	.shopt{width: 100%;padding: 0}
+	.shopt h1{font-size: 18px;font-weight: 100;padding-left: 2%;}
+	.cpgge img{width: 100%!important;height: auto!important;}
+	#thumbtg{width: 55%;height: auto;float: left;}
+	.thumblist{width: 45%;float: left;padding: 0;overflow: visible}
+	.thumblist .this{width: 30%;border: 0px;height: auto;-webkit-box-shadow:0px 0px 5px #999;position: relative;z-index: 10}
+	.thumblist img{width: 30%;height: auto;}
+	.shopt .sc,.shopt .dc{padding-left: 6%;}
+	.tpopn{margin-left: 4%}
+	.tuantip{position: relative;top: 0;left: 0;width: auto;padding: 10px 6%;margin: 10px 0}
+	.kfbutton{display: none}
+	.buylc{display: none;}
+	.sbox{border-right: 0;border-top: 0;border-left: 0}
+	.sbox .sboxtd{padding: 12px 0}
+	.sbox .sboxtr{padding: 0;width: 100%;}
+	.sbox .sboxtr .sboxtd:first-child,.sbox .sboxtr .sboxth:first-child{width: 16%;font-size: 12px;word-wrap: break-word;padding-left: 2%}
+	.sbox .sboxth:nth-child(2), .sbox .sboxtd:nth-child(2){width: 28%;padding-left:2%;padding-right: 2%;}
+	.sbox .sboxtd:nth-child(2){padding-top: 30px;}
+	.sbox .sboxth:nth-child(5), .sbox .sboxtd:nth-child(5),.sbox .sboxtr .sboxth:last-child{width: 15%;}
+	.sbox .sboxth:nth-child(3), .sbox .sboxtd:nth-child(3){width: 23%}
+	.sbox .sboxtd:nth-child(3){padding-top: 25px;}
+	.sbox .sboxth:nth-child(4), .sbox .sboxtd:nth-child(4){width: 12%;}
+	.sbox .sboxtd:nth-child(4),.sbox .sboxtd:nth-child(5){padding-top: 36px;}
+	.sbox .sboxtr img{width: 100%;height: auto;}
+	.sbox select{width: 100%;text-align: center;height: 2em;-webkit-appearance: none;padding-top: 0.5em}
+	.sbox .data{width: 10%;}
+	#imgtile em{display: block;height: 2em;overflow: hidden;}
+	#payb #topay{display: none}
+	#payb #waptourpay{display: inline-block;width: 90px;background-size: 100%;height: 26px}
+	#payb .weixinpay{display: inline-block;width: 90px;background-size: 100%;height: 26px}
+	#address{width: 100%!important;height: 100%!important;}
+	.address{line-height: 1.6em;padding-top: 12px;height: auto;padding-bottom: 12px;}
+	/*colorbox */
+	#cboxOverlay{display: none!important;}
+	#colorbox{width: 100%!important;height: 100%!important;position: fixed!important;top: 0px!important;left: 0!important}
+	#cboxWrapper{width: 100%!important;height: 100%!important;}
+	#cboxWrapper > div:nth-child(2){width: 100%;height: 100%;}
+	#cboxContent{width: 100%!important;height: 100%!important;margin: 0!important}
+	#cboxLoadedContent{border: 0;width: 100%!important;height: 100%!important;overflow: hidden!important;}
+
+}

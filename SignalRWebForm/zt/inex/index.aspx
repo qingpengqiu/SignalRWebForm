@@ -1,0 +1,48 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="zt_nikerun_index" %><%@ Register Src="~/Controls/Erun_Header.ascx" TagPrefix="ERUN360" TagName="Erun_Header" %><%@ Register Src="~/Controls/Erun_Footer.ascx" TagPrefix="ERUN360" TagName="Erun_Footer" %><!DOCTYPE html>
+<html>
+<head>
+    <base target="_blank">
+    <link rel="shortcut icon" href="/Html/images/erun.png" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>益跑积分兑换上线-专题-益跑网-ERUN360.COM</title>
+<meta name="description" content="中国第一大专业跑步门户网站。我们致力于以专业的跑步内容和产品，面向跑步爱好者、俱乐部、厂商和赛事组织者的全方位专业服务，打造业界一流的全跑步生态链平台，让跑步不仅能提升身心健康，更将成为社会潮流新时尚。" />
+    <meta name="keywords" content="peak,peak,跑了就懂,初马指南,跑步,训练,健身,跑步网站,跑步网,越野,跑步机,跑步训练,红粉跑者,女性跑步,女生跑步,营养,瘦身,赛事,城市,跑步人生,初级跑者,跑步入门,跑步工具,5KM,10KM,半程马拉松,全程马拉松,越野跑,跑步技巧,专项训练,养颜塑身,女性装备,训练技巧,跑步问题,跑鞋,跑步鞋,铁人三项,跑步服装,跑步配件,健康跑步,伤病恢复,身体解密,饮食,减肥,国际赛事,国内赛事,跑在各地,我是跑者,跑步英雄,跑步随笔,为什么跑,如何开始,第一次比赛,新手问题 ,田径短跑,田径赛道,公路跑,无袖,背心,短袖,长袖,短裤,裤子,紧身裤,夹克,马甲,内衣,袜子,鞋套,压缩,恢复,电子产品,补剂,袖套,腿套,腰带,腰包,手套,帽子,头饰,饮水系统,反光,照明,保护治疗,鞋垫,运动包,跑步眼镜,GPS,心率,跑步手表,能量胶,嚼片,饮品,补液,能量棒" />
+<link rel="stylesheet" type="text/css" href="/Html/css/base.css" />
+
+<link rel="stylesheet" type="text/css" href="/Html/css/themes.css" />
+<link rel="stylesheet" type="text/css" href="/Html/css/public.css" />
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/Html/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/Html/js/modernizr.js"></script>
+<script type="text/javascript" src="/Common/jPopupfbk.js?2012111"></script>
+</head>
+<body>
+<ERUN360:Erun_Header runat="server" ID="Erun_Header" />
+    <div class="inexb"></div>
+    <div class="inex">
+        <div class=" inextop">
+        </div>
+        <div class="d11"><img src="images/d11.png"><a href="/blog/200016255.aspx"></a></div>
+        <a class="d1" href="/GroupBuy/IntegRallist.aspx"><img src="images/d1.png"></a>
+        <a class="d2" href="/GroupBuy/IntegRallist.aspx"><img src="images/d2.png"></a>
+        <a class="d3" href="/GroupBuy/IntegRallist.aspx"><img src="images/d3.png"></a>
+        <a class="d4" href="/GroupBuy/IntegRallist.aspx"><img src="images/d4.png"></a>
+        <a class="d5" href="/GroupBuy/IntegRallist.aspx"><img src="images/d5.png"></a>
+        <a class="d6" href="/GroupBuy/IntegRallist.aspx"><img src="images/d6.png"></a>
+        <a class="d7" href="/GroupBuy/IntegRallist.aspx"><img src="images/d7.png"></a>
+        <a class="d8" href="/GroupBuy/IntegRallist.aspx"><img src="images/d8.png"></a>
+        <a class="d9" href="/GroupBuy/IntegRallist.aspx"><img src="images/d9.png"></a>
+        <a class="d10" href="/GroupBuy/IntegRallist.aspx"><img src="images/d10.png"></a>
+        <a class="d12" href="/GroupBuy/IntegRallist.aspx"><img src="images/d12.png"></a>
+        <a class="d13" href="/GroupBuy/IntegRallist.aspx"><img src="images/d13.png"></a>
+    </div>
+<ERUN360:Erun_Footer runat="server" ID="Erun_Footer" />
+<!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=5&amp;pos=right&amp;uid=6500883" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+    </script>
+<!-- Baidu Button END -->
+</body>
+</html>

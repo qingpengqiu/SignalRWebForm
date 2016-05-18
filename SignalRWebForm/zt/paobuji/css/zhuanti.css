@@ -1,0 +1,31 @@
+body,button,input,select,textarea {font:12px/1.125 Arial,Helvetica,sans-serif;_font-family:"SimSun";}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+table {border-collapse:collapse;	border-spacing:0;}
+li {list-style:none;}
+fieldset,img {border:0;}
+
+a:focus,input,textarea {outline-style:none;}
+input[type="text"],input[type="password"],textarea {outline-style:none;	-webkit-appearance:none;}
+textarea {resize:none}
+address,caption,cite,code,dfn,em,i,th,var {font-style:normal;font-weight:normal;}
+abbr,acronym {border:0;font-variant:normal;}
+a {	text-decoration:none; color: #666}
+a:hover {text-decoration:underline;color: #ff6600}
+.c950{width: 950px;margin: 0 auto}
+.header{background: url(../images/zt_topbj.png) repeat-x; height: 41px}
+.header ul li{float: right;line-height: 41px;margin-right: 12px;}
+#paobuji .content .c950{background: #fff;padding-bottom: 40px;}
+.title{background: url(../images/pbjnav.png) no-repeat 56px;height: 60px;margin: 20px 0;font-size: 28px;color: #235a5a;line-height: 60px;padding-left: 80px;font-weight: bold;}
+.bannerimage{display: inline-block;margin-bottom: 26px;}
+#paobuji{background: url(../images/bj.png) repeat;}
+#paobuji .content .nr{padding: 8px 0 10px 56px;overflow: hidden;background: url(../images/nrbj.png) no-repeat 270px;}
+#paobuji .content .first{width: 430px;float: left;line-height: 20px;font-size: 12px;color: #666}
+#paobuji .content .first img{float: left;margin-right: 20px;}
+#paobuji .content .first a{display: block;font-size: 14px;padding-bottom: 4px;}
+#paobuji .content ul{width: 360px;float: left;padding-left: 60px;}
+#paobuji .content ul li {font-size: 14px;line-height: 20px;list-style-type: disc;}
+.footer{color: #5A5A5A;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 15px 0 35px;
+    text-align: center;}

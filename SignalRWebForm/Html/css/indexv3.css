@@ -1,0 +1,255 @@
+body{background: #fff}
+/*body{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none;user-select: none;background: #fff}*/
+.V3Banner{width: 100%;height: 360px;overflow: hidden;}
+.V3BannerBox{max-width:1200px;height:360px;margin:0px auto;position:relative;}
+.V3BannerBox ul{margin: 0;padding: 0;overflow: hidden;height: 360px}
+.V3BannerBox  li{width:96px;height:360px;border-left:1px solid #fff;position:relative;overflow:hidden;float:left;opacity:0.4;transition: opacity 300ms ease-out,width 300ms ease-out;}
+.V3BannerBox  .tm{opacity:1;width: 720px;}
+.V3BannerBox  li .imgCen{width:720px;height:50px;background:rgba(0,0,0,0.5);color:#fff;font-size:18px;line-height:50px;position:absolute;left:0px;bottom:0px;text-indent:20px;display:none;}
+.V3BannerBox  .tm .imgCen{display: block;}
+.V3BannerBox  li .imgBot{width:720px;height:45px;background:#222;}
+.V3BannerBox  li.fast{position:absolute;right:0px;bottom:0px;}
+.V3Center{width: 1200px;margin: 0 auto;overflow: hidden;}
+.V3Left{width: 830px;float: left;}
+.V3Righr{float: right;width: 340px;text-align: center;padding: 22px 20px 0 20px;}
+.V3G0 img,.V3G1 img,.V3G2 img{width: 100%;}
+.V3G0,.V3G1,.V3G2{margin-bottom: 20px;clear: both;}
+.V3G2{display: none;}
+
+.V3ConsultList .ggimg0 img,.V3ConsultList .ggimg1 img,.V3ConsultList .ggimg2 img{width: 100%;}
+.ggimg0,.ggimg1,.ggimg2{margin-bottom: 25px;}
+.ggflash1,.ggflash2,.ggflash0{margin-bottom: 25px;}
+.ggimg2{display: none;}
+.V3RiP{text-align: left;color: #695f5d;padding-bottom: 24px;border-bottom: 1px solid #979797;margin-bottom: 24px;}
+.V3RiP img{display: block;width: 200px;margin: 18px auto}
+.V3RiP a{color: #2c2c2c;}
+.V3RiP a span{font-size: 11px;color: #ffffff;background: #ae71cd;height: 18px;text-align: center;line-height: 18px;display: inline-block;padding: 0 3px;margin-left: 3px;}
+.V3RiP em{color: #ff0000;font-weight: bold;}
+.V3RiP i{font-weight: 400}
+.V3RiP .V3RiPB{color: #ffffff;width: 92px;height: 34px;line-height: 34px;text-align: center;background: #87bb54;border-radius: 3px;margin: 0 auto;display: block;}
+.V3RiP .V3RiPB:hover{color: #fff;background: #99cc66}
+.V3Hot{padding-top: 22px;position: relative;}
+.V3Hot:after{content: '';height: 4px;background: #eeeeee;width: 100%;display: block;clear: both;}
+.V3Hot i{width: 86px;height: 34px;background: #e74e34;color: #fff;display: inline-block;text-align: center;line-height: 34px;margin:0 9px 19px 9px   ;}
+.V3Hot a{color: #555555;padding: 0 4px;line-height: 34px;}
+.V3Hot a:hover{color: #3297e1}
+.V3Hot .hotserch{color: #fff;width: 92px;height: 34px;border-radius: 3px;background: #87bb54;text-align: center;display: inline-block;}
+.V3Hot .hotserch:hover{color: #fff;background: #99cc66}
+.V3Hot input{width: 248px;height: 34px;border: 1px solid #cccccc;line-height: 34px;border-radius: 3px;margin-right: 4px;padding-left: 16px;color: #555555;outline: none;margin-bottom: 3px;}
+.serchresult{width: 220px;border: 1px solid #d0d0d0;position: absolute;background: #fff;top: 55px;left: 500px;font-size: 12px;color: #555555;line-height: 1;display: none;}
+.serchbox{float: right;}
+.serchresult li{padding: 0px 15px;border-bottom: 1px solid #d0d0d0}
+.serchresult em{color: #ff0000}
+.V3Train{padding: 28px 0 0 0}
+.V3Train i{font-size: 16px;color: #fff;background: #9a58bc;width: 100px;height: 48px;line-height: 48px;border-radius: 3px;text-align: center;margin: 0 21px 0 8px;float: left;}
+.V3Train p{margin: 0;line-height: 1;color: #2c2c2c;float: left;padding-right: 26px;}
+.V3Train em{display:block;font-weight: bold;font-size: 18px;padding: 6px 0 10px 0}
+.V3TrainClose{width: 92px;height: 34px;line-height: 34px;background: #87bb54;color: #fff;float: left;text-align: center;border-radius: 3px;margin-top: 18px}
+.V3TrainClose:hover{color: #fff;background: #99cc66}
+.V3TrainAdd{clear: both;padding-top: 34px;text-align: center;}
+.V3TrainAdd:before{content: '';height: 4px;background: #eeeeee;width: 100%;display: block;}
+.V3TrainAddButtom{width: 196px;height: 44px;border-radius: 5px;display: block;margin: 0 auto;background: #87c257;color: #fff;line-height: 44px;font-size: 18px;}
+.V3TrainAddButtom:hover{color: #fff;background: #99cc66}
+.V3TrainAdd img{margin: 34px 0 ;display: inline-block;}
+.V3APPBox{width: 100%;height: 190px;background: #eeeeee;margin-top: 25px;border-radius: 5px;}
+.V3APPBox a{font-size: 16px;color: #4c4545;float: left;width: 20%;text-align: center;line-height: 1}
+.V3APPBox a:hover{color: #7a6f6f}
+.V3APPBox img{display: block;margin: 18px auto 14px auto;height: 125px;}
+.V3ConsultList{padding-top: 25px;}
+.V3ConsultList  .V3Consulth:first-child{display: none;}
+.V3Consult{position: relative;font-size: 12px;color: #8f8f8f;margin-bottom: 25px;}
+.V3Consulth{border-bottom: 1px solid #d9dcdf;width: 100%;height: 0;margin:0 0 25px 0}
+.V3Consult img{float: left;margin-right: 18px;width: 360px;height: 200px;}
+.V3Consult .V3TopTip{font-size: 12px;display: block;height: 22px;line-height: 22px;text-align: center;color: #fff;background: #e74e34;position: absolute;left: 0;top: 0;z-index: 10;padding: 0 8px;}
+.V3Consult h3{	font-size: 20px;color: #2c2c2c;margin: 0;line-height: 30px;padding: 0 0 6px 0;font-weight: 400;height: 32px;overflow: hidden;}
+.V3Consult h3:hover{color: #0aa3da}
+.V3Consult > em{padding-right: 10px;font-size: 14px;color: #555;}
+.V3Consult p{color: #695f5d;line-height: 24px;margin: 8px 0 0 0;overflow: hidden;font-size: 14px;min-height: 140px;}
+.V3ConsultButtom{width: 92px;height: 34px;line-height: 34px;background: #87bb54;color: #fff;text-align: center;border-radius: 3px;display: block;margin-top: 6px;}
+.V3ConsultButtom:hover{color: #fff;background: #99cc66}
+.V3ConsultP em{font-weight: bold;color: #ff0000} 
+.V3ConsultP i{color: #ff0000;text-decoration: line-through}
+.V3ConsultP span{color: #ff0000}
+.V3HotUserList{border-bottom: 1px solid #d9dcdf;overflow: hidden;height: 239px;overflow: hidden;margin-top: 30px;}
+.V3HotUser{float: left;width: 20%;position: relative;color: #989898;line-height: 20px;padding: 0 12px 34px 12px;display: none}
+.V3HotUser img{width: 100%;margin-bottom: 7px;display: block;}
+.V3HotUser i{width: 60px;height: 22px;text-align: center;background: #e74e34;display: block;position: absolute;left:12px;top: 0;z-index: 10;color: #fff;font-size: 12px;}
+.V3HotUser a{color: #2c2c2c;display: block;}
+.V3HotUser em{font-size: 12px;color: #fff;text-align: center;line-height: 22px;width: 60px;height: 22px;display: block;background: #87bb54;border-radius: 3px;margin-top: 5px;cursor: pointer;}
+.V3HotUser em:hover{color: #fff;background: #99cc66}
+.V3HotUser p{margin: 0;height: 20px;overflow: hidden;}
+.vus1 .V3HotUser:nth-child(1){display: block;} 
+.vus1 .V3HotUser:nth-child(2){display: block;} 
+.vus1 .V3HotUser:nth-child(3){display: block;} 
+.vus1 .V3HotUser:nth-child(4){display: block;} 
+.vus1 .V3HotUser:nth-child(5){display: block;} 
+.vus2 .V3HotUser:nth-child(6){display: block;} 
+.vus2 .V3HotUser:nth-child(7){display: block;} 
+.vus2 .V3HotUser:nth-child(8){display: block;} 
+.vus2 .V3HotUser:nth-child(9){display: block;} 
+.vus2 .V3HotUser:nth-child(10){display: block;} 
+.vus3 .V3HotUser:nth-child(11){display: block;} 
+.vus3 .V3HotUser:nth-child(12){display: block;} 
+.vus3 .V3HotUser:nth-child(13){display: block;} 
+.vus3 .V3HotUser:nth-child(14){display: block;} 
+.vus3 .V3HotUser:nth-child(15){display: block;} 
+
+
+.V3HotUserLeft{float: left;width: 4%;height: 100%;background: url(../images/v3left.png) no-repeat left 60px;cursor: pointer;}
+#V3HotUserCenter{float: left;width: 92%;cursor: pointer;}
+.V3HotUserRight{float: left;width: 4%;height: 100%;background: url(../images/v3right.png) no-repeat right 60px;cursor: pointer;cursor: pointer;}
+.V3Tools{margin-top: 40px;line-height: 36px;position: relative;}
+.V3Tools i{font-size: 11px;display: block;width: 60px;height: 22px;line-height: 22px;text-align: center;color: #fff;background: #e74e34;position: absolute;left: 0;top: 0;z-index: 10}
+.V3Tools img{float: left;margin-right: 32px;width: 43%;}
+.toolsbox{overflow: hidden;}
+.V3Tools h4{font-size: 20px;color: #2c2c2c;margin: 0;line-height: 1;padding-top: 3px;}
+.V3Tools input{width: 46px;height: 22px;line-height: 22px;border: 1px solid #b7b7b7;margin: 0 6px;display: inline-block;font-size: 12px;padding-left: 4px;outline: none;}
+.V3Tools a{display: inline-block;width: 60px;height: 22px;line-height: 24px;text-align: center;color: #fff;font-size: 12px;border-radius: 3px;margin-right: 14px;}
+.toolsgo{background: #87bb54}
+.toolsgo:hover{color: #fff;background: #99cc66}
+.toolsre{background: #b1b1b1}
+.toolsre:hover{background: #c8c8c8;color: #fff;}
+.V3Tools .toolerror{color: red;width: auto;}
+.v3hotbox{float: left;}
+.footer{border-top: 1px solid #d9dce0;max-width: 1200px;margin: 14px auto 0 auto}
+
+
+.listtitle{font-size: 26px;color: #5e5454;border-bottom: 4px solid #eeeeee;line-height: 1;padding: 44px 0 13px 3px;margin-bottom: -15px}
+.listtitlel{position: relative;}
+.listtitlel img{width: 100%;}
+.listtitlel h3{position: absolute;z-index: 100;top: 38px;left: 41px;margin: 0;font-size: 50px;color: #fff;}
+#divSmallBox{overflow:hidden;*display:inline;*zoom:1;width:10px;height:10px;margin:0 5px;border-radius:10px;background:#ffffff;}
+.listlb{ width: 100%;height: 360px; position:relative; overflow:hidden;}
+.listlb ul,.listlb li{margin: 0;padding: 0}
+.listlb img{width: 840px;height: 360px;}
+.listlb .oUlplay { height: 9999px; position:absolute; left:0; top:0;width: 100%;}
+.listlb .oUlplay li{ float:left;}
+.listlb .pre{ cursor:pointer; width:45px; height:65px; position:absolute; top:160px; left:10px; z-index:10;}
+.listlb .next{ cursor:pointer; width:45px; height:65px; position:absolute; top:160px; right:10px; z-index:10;text-align: right;}
+.listlb .pre:before{content: "\e62c";font-size: 36px;color: #fff;}
+.listlb .next:before{content: "\e62b";font-size: 36px;color: #fff;}
+.listlb .smalltitle {display: block;overflow: hidden;width: 100%;height: 50px;position: absolute;bottom: 0;background: rgba(0,0,0,0.5); z-index:10}
+.listlb .smalltitle ul{ }
+.listlb .smalltitle ul li{ display: none;line-height: 50px;color: #fff;padding-left: 10px;font-size: 18px;}
+.listlb .smalltitle .thistitle{ display: block;}
+.newsmore,.newsmorelist{text-align: center;cursor: pointer;padding:8px;background: #fff8c7;border:1px solid #f4e78a;color: #117fb9;font-size: 12px;line-height: 1}
+.ggimg2{margin-bottom: 32px;height: auto;width: 100%;overflow: hidden;}
+.ggimg2 img{width: 100%;}
+
+
+
+.bodyhiden{height: 100%;overflow: hidden;padding-right: 15px}
+.header{	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;}
+.nav{position: fixed;background: #a19d9d;height: 100%;height: calc(100% - 80px);width: 260px;right: -260px;z-index: 999;top: 80px;overflow-y:auto;padding-bottom: 80px;transition: right 300ms ease-out;}
+.nav .nava{font-size: 20px;color: #ffffff;text-decoration: none;display: inline-block;cursor: pointer;width: 100%;padding: 20px 0 20px 52px;line-height: 1;border-bottom: 1px solid #d0cece;font-weight: bold;display: block;}
+.nav .nava:last-child{border: 0}
+.nav .nava:first-child{padding-top: 32px}
+.nav .nava > a{color: #fff}
+.nav .nava:hover{background: #b4b1b1}
+.nav .this{background: #e74e34;border-bottom: 0;padding-bottom: 14px}
+.nav .this:hover{background: #e74e34}
+.nav dl{font-size: 14px;line-height: 30px;display: none;}
+.nav dl dt{font-weight: 400}
+.nav dl a{color: #fff;}
+.nav dl a:hover{color: #fff;text-decoration: underline;}
+.nav .this dl{display: block;padding: 14px 0 0 0;margin: 0}
+.nnav{font-size: 18px;float: left;line-height: 1;padding: 32px  0 4px 46px;overflow: hidden;}
+.nnav a{color: #87a5b3;float: left;}
+.nnav i{color: #87a5b3;padding: 2px 12px;float: left;font-size: 12px;}
+.navrighrf{right: 0}
+
+.mh{color: #a5bcc6;float: right;margin-right: 22px;text-align: center;font-size: 28px;padding-top:20px;    transition: color 300ms ease-out;cursor: pointer;}
+.mh:before{content: "\e621";font-size: 32px;}
+.mh:active{color: #90a5ae}
+.mh:hover{color: #b5d1dd}
+
+/*赛事日历*/
+.Calendarheader {background: #99cc66;font-size: 35px;color: #fff;height: 90px;position: relative;display: block;line-height: 90px;text-align: center;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.Calendarheader a {color: #fff}
+.Calendarbody{position: relative;}
+.Calendarbodyleft{float: left;width: 875px;text-align: center;background: #fff;}
+.Calendarbodyright{width:325px;background: #fdfdfd;padding: 0px 30px  20px 20px;height: 574px;overflow-y:auto;padding-top: 26px;line-height: 21px;
+	-moz-box-shadow:2px 8px 5px #eee inset;
+	-webkit-box-shadow:2px 8px 5px #eee inset;
+	box-shadow:2px 8px 5px #eee inset;
+	}
+.moremoth {position: relative;cursor: pointer;display: inline-block;}
+.moremotha {position: absolute;width: 470px;height: 40px;background: #fff;background: rgba(255,255,255,.9);z-index: 9999;left: -134px;top: 68px;border-radius: 20px;display: none;line-height: 26px;}
+.moremoth:hover .moremotha {display: block;}
+.moremotha a{font-size: 14px;color: #f88824;font-weight: bold;padding: 0 5px}
+.moremotha a:hover {color: #ffc14d}
+.weekfist:before{content: "\e62c";font-size: 26px;}
+.weeklast:before{content: "\e62b";font-size: 26px;}
+.thisdata{font-size: 18px;color: #ffc228;font-weight: bold;text-align: right;line-height: 1;padding: 29px 0 9px 0;border-bottom: 1px solid #f6f6f6;padding-right: 6px;}
+.Calendarbodyleft div{float:left;width:125px;cursor:pointer;font-size:18px;color:#a4aeb9; line-height: 1;padding: 20px 0 9px 0;min-height: 75px;}
+.Calendarbodyleft .weekbox {font-size:12px;line-height: 1;color: #ff9c00 ;padding: 12px 0;background: #f6f8fa;height: auto;border: 0;min-height: auto} 
+.Calendarbodyleft em{display:block;}
+.Calendarbodyleft span{height: 15px;display: inline-block;width: 15px;overflow: hidden;font-family:"iconfont" !important;font-size: 15px;color: #fff;margin: 10px 1px 0 0}
+.Calendarbodyright span{height: 15px;display: inline-block;width: 15px;overflow: hidden;font-family:"iconfont" !important;font-size: 15px;color: #fff;line-height: 1;margin-bottom: -2px;}
+.Calendarbodyrighttop{height: 36px;background: #f6f8fa;position: absolute;width: 325px;top: 0;right: 0}
+.comp_icon_u:before{content: "\e619";background: #990500;} 
+.comp_icon_m:before{content: "\e61b";background: #0d9900;} 
+.comp_icon_h:before{content: "\e61a";background: #0000a0;} 
+.comp_icon_r:before{content: "\e618";background: #ff7900;} 
+.comp_icon_c:before{content: "\e617";background: #98009f;} 
+.comp_icon_t:before{content: "\e61c";background: #bad800;} 
+.Calendarbodyleft .thisday{ font-size:16px;color:#fff;background: url(/Html/images/href_h.png) no-repeat center top;} 
+.Calendarbodyleft .cal_spacen{display: none;}
+.Calendarbodyleft .iconex{width: 100%;border: 0;font-size: 12px;color: #666666;margin: 0;text-align: left;padding: 15px 0 40px 0}
+.Calendarbodyleft .iconex span{margin:0 0px 0 24px;width: auto;color: #666666}
+.Calendarbodyleft .iconex span:before{color: #fff;margin-right: 2px}
+.Calendarbodyleft .comclear{width: 100%;clear: both;height: 0px;display: block;border-bottom:solid 1px #edeff1;padding: 0;min-height: 0}
+.Calendarbodyright a { font-size:14px;color:#4C98CC; }
+.Calendarbodyright a:hover { font-size:14px;color:#FF6701; }
+.chaoguo{position: relative;background:url(/images/index/jiantou.png)  no-repeat right bottom}
+.chaoguo span{float:left;margin-left:3px;line-height:16px!important;}
+.chaoguo p{padding:7px 17px 7px 14px;border: 3px solid #b0b0b0;left: 37px;position: absolute; top: 25px;background:url(/images/index/jiantoux.png) no-repeat left top #fff;display: none;  width: 65px; z-index: 100;}
+.chaoguo:hover p{display:block}
+.Calendarbodyright .comp_join,.Calendarbodyright .comp_lbm{width: 54px;height: 21px;cursor: pointer;display: inline-block;background: #378ed6;border-radius: 3px;color: #fff;font-size: 10px;text-align: center;text-shadow: #286599 0 1px 0;margin: 6px 3px 0 0}
+.Calendarbodyright .comp_join:before{content: "\e61d";font-family: "iconfont";font-size: 12px;}
+.Calendarbodyright .comp_join:hover,.Calendarbodyright .comp_lbm:hover{color: #fff;font-size: 10px;}
+.Calendarbodyright .comp_ygz,.Calendarbodyright .comp_ybm,.Calendarbodyright .comp_yjz{color: #fff;font-size: 12px;}
+.Calendarbodyright .comp_ygz:hover,.Calendarbodyright .comp_ybm:hover,.Calendarbodyright .comp_yjz:hover{color: #fff;font-size: 12px;}
+.comp_ygz,.comp_ybm,.comp_yjz{width: 54px;
+    height: 21px;
+    cursor: pointer;
+    display: inline-block;
+    background: #bababa;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    text-shadow: #9d9c9c 0 1px 0;
+    margin: 6px 3px 0 0;}
+.todyno{font-size: 14px;}
+.Calendarrbox{padding: 15px 0 18px 0;color: #666666;font-size: 12px;border-bottom: 1px solid #f7f7f7;}
+.Calendarrbox a{font-size: 14px;}
+.hlink{width: 100%;clear: both;padding-top: 36px;}
+.hlinktitle{font-size: 14px;color: #333333;line-height: 1;padding: 8px 4px;border-bottom: 1px solid #d4d8dc;margin-bottom: 16px;}
+.hlinkbox img{border: 1px solid #d0d0d0;width: 100%;}
+.hlinkbox a{float: left;margin: 0 .4% 10px 0;width: 9.6%;}
+.hlinkbox a:nth-child(10n){margin-right: 0}
+.hlinkzbox{width: 100%;clear: both;padding: 0 6px}
+.hlinkzbox a{color: #666666;line-height: 1;float: left;margin: 16px 16px 0 0}
+.xhbody{height: 100%;overflow: hidden;}
+.xhbody .V3Center,.xhbody .footer,.xhbody .header,.xhbody .am-icon-arrow-up,.xhbody .V3Banner{-webkit-filter:blur(5px);filter:blur(5px)}
+.navtipone{width: 100%;height: 100%;position: fixed;left: 0;top: 0; z-index: 100;display: none;}
+.closexhbody{background: rgba(97,88,72,.9);width: 600px;height: 100px;border: 5px solid rgba(0,0,0,.11);border-radius: 12px;background-clip:padding-box;position: absolute;top: 160px;left: 50%;margin-left: -300px;font-size: 44px;color: #fff;line-height: 86px;text-align: center;}
+.closexhbody i:before{content: "\e621";color: #aeccda;padding: 0 8px;font-size: 40px;}
+.closexhbody:before{content:"";display:inline-block;width: 44px;height: 44px;background: rgba(0,0,0,.11);border-radius: 50%;position: absolute;right: -20px;top: -20px;z-index: -1}
+.closexhbody:after{content:"\e609";display:inline-block;width: 34px;height: 34px;position: absolute;right: -15px;top: -15px;background:  rgba(97,88,72,.9);border-radius: 50%;line-height: 35px;text-align: center;color: #fff100;  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+  .navtiphead{width: 58px;position: absolute;right:-34px;top: 50px;z-index: 1000}
+  .navtipone .nav{overflow: hidden;}
+  .navtipone .mine{position: relative;}
+.table{display: table;width: 100%;}
+.tr{display: table-row}
+.td{display: table-cell}
