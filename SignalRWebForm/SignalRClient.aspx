@@ -5,19 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <script src="http://signalr.erun360.com/Scripts/jquery-1.10.2.js"></script>
-    <script src="http://signalr.erun360.com/Scripts/jquery.signalR-2.2.0.js"></script>
-    <script src='http://signalr.erun360.com/signalr/hubs/'></script>
+    <script src="/Scripts/jquery-1.6.4.js"></script>
+    <script src="/Scripts/jquery.signalR-1.2.2.js"></script>
+    <script src="/signalr/hubs"></script>
     <title>SignalR Demo</title>
 </head>
 <body>
     <script>
+
+
         var chat;
         $(function () {
-            // Created proxy,此处要特别注意，Hub类的首字母是大写MyChat，但前端使用时，首字母要小写           
+            // Created proxy,此处要特别注意，Hub类的首字母是大写MyChat，但前端使用时，首字母要小写   
             chat = $.connection.myChat;
             // Assign a function to be called by the server        
-            chat.client.addMessage = onAddMessage;
+            chat.client.addMessage = onAddMessage;  
             // Register a function with the button click               
             $("#broadcast").click(onBroadcast);
             // Start the connection        

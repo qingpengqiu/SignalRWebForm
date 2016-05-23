@@ -231,7 +231,7 @@ public class ajaxtrained : IHttpHandler, IReadOnlySessionState
         int pageIndex = TypeChangeDefault.NullToInt(context.Request["p"], 1);//当前页数        
         int Pagesize = 20;//显示条数
         DB4.tblRACE_HISTORY uRace_History = new DB4.tblRACE_HISTORY();
-        DataTable dt = uRace_History.GetListByPage(" idUser=" + uId, " dCreate desc", pageIndex, Pagesize, uId).Tables[0];
+        DataTable dt = uRace_History.GetListByPage(" idUser=" + uId, " dExpectTime desc", pageIndex, Pagesize, uId).Tables[0];
 
         Hashtable RaceInfo = null;
         List<Hashtable> RaceInfoList = new List<Hashtable>();
