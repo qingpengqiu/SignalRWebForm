@@ -14,7 +14,7 @@ namespace ApplicationName
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            RouteTable.Routes.MapHubs();
+            RouteTable.Routes.MapHubs(new HubConfiguration { EnableCrossDomain = true });
         }
     }
 }

@@ -12,8 +12,6 @@
 </head>
 <body>
     <script>
-
-
         var chat;
         $(function () {
             // Created proxy,此处要特别注意，Hub类的首字母是大写MyChat，但前端使用时，首字母要小写   
